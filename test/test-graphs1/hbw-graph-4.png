@@ -1,5 +1,6 @@
 digraph {
 	f
+		c -> f
 	"g 1"
 		f -> "g 1"
 	c

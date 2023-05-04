@@ -9,14 +9,6 @@ c
 b
 
 f
-f
-f
-g 1
-c
-
-b
-
-f
 g 1
 g 1
 c
@@ -40,51 +32,18 @@ c
 
 b
 
-f
-f
-g 1
-g 1
-g 1
-c
-c
-d
 
-f
+f 1
+f 2
+f 5
+g 3
+c 1
+f 6
+c 2 
+c 3
 g 1
-c
-
-b
-
-f
-f
-f
-g 1
-g 1
-c
-
-b
-
-f
-g 1
-g 1
-c
-
-b
-
-f
-f
-f
-g 1
-g 1
-c
-
-b
-
-f
-g 1
-c
 """
-start_tracking_from = 'f'
+start_tracking_from = input("Enter the event name: ")
 
 def parse_input(input_str):
     lines = input_str.split("\n")
@@ -93,7 +52,7 @@ def parse_input(input_str):
     function_call = None
     functions = []
     globals = []
-    values = []
+    callInsts = []
     false_block = None
     true_block = None
     current_graph = graphviz.Digraph(f'hbw-graph-{i}')
@@ -101,6 +60,9 @@ def parse_input(input_str):
 
     for line in lines:
         if line.startswith("b"):
+            functions = []
+            globals = []
+            callInsts = []
             graphs.append(current_graph)
             current_graph = graphviz.Digraph()
 
@@ -114,9 +76,9 @@ def parse_input(input_str):
                 if len(functions) > 0:
                     current_graph.edge(functions[-1], global_var)
                     functions = []
-                elif len(values) > 0:
-                    current_graph.edge(values[-1], global_var)
-                    values = []
+                elif len(callInsts) > 0:
+                    current_graph.edge(callInsts[-1], global_var)
+                    callInsts = []
                 elif len(globals) > 0:
                     current_graph.edge(globals[-1], global_var)
                 globals.append(global_var)
@@ -127,30 +89,30 @@ def parse_input(input_str):
             if len(globals) > 0:
                 current_graph.edge(globals[-1], function_name)
                 globals = []
-            elif len(values) > 0:
-                current_graph.edge(values[-1], function_name)
-                values = []
+            elif len(callInsts) > 0:
+                current_graph.edge(callInsts[-1], function_name)
+                callInsts = []
             elif len(functions) > 0:
                 current_graph.edge(functions[-1], function_name)
             functions.append(function_name)
 
         elif "c" in line and found:
             calling = True
-            value = line.replace("(", "\\(").replace(")", "\\)").replace(":","-").replace(":","-")
-            current_graph.node(value)
+            callInst = line.replace("(", "\\(").replace(")", "\\)").replace(":","-").replace(":","-")
+            current_graph.node(callInst)
             if len(globals) > 0:
-                current_graph.edge(globals[-1], value)
+                current_graph.edge(globals[-1], callInst)
                 globals = []
             elif len(functions) > 0:
-                current_graph.edge(functions[-1], value)
+                current_graph.edge(functions[-1], callInst)
                 functions = []
-            elif len(values) > 0:
-                current_graph.edge(values[-1], value)
-            values.append(value)
+            elif len(callInsts) > 0:
+                current_graph.edge(callInsts[-1], callInst)
+            callInsts.append(callInst)
 
         if i == 1000:
             break
-
+    graphs.append(current_graph)
     return graphs
 
 graphs = parse_input(input_str)
