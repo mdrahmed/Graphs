@@ -1,0 +1,7 @@
+digraph "hbw-graph-0" {
+	"g 1"
+	c
+		"g 1" -> c
+	f
+		c -> f
+}

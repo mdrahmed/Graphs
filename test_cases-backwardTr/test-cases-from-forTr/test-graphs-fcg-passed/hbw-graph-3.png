@@ -1,0 +1,19 @@
+digraph {
+	f
+	f
+		f -> f
+	f
+		f -> f
+	c
+		f -> c
+	c
+		c -> c
+	c
+		c -> c
+	c
+		c -> c
+	"g 1"
+		c -> "g 1"
+	"g 1"
+		"g 1" -> "g 1"
+}
