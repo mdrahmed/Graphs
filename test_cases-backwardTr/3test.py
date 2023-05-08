@@ -189,8 +189,8 @@ def parse_input(input_str):
 graphs = parse_input(input_str)
 print("total edges: ",edges)
 for i, graph in enumerate(graphs):
-    graph.render(f'hbw-graph-{i}.png')
-    with open(f'hbw-graph-{i}.png') as f:
+    graph.render(f'3test-cases/hbw-graph-{i}.png')
+    with open(f'3test-cases/hbw-graph-{i}.png') as f:
         dot_graph = f.read()
     graphviz.Source(dot_graph)
 
