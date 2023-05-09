@@ -1,0 +1,23 @@
+digraph "hbw-graph-0" {
+	f
+	f
+		f -> f [dir=back]
+	"g 1"
+		"g 1" -> f [dir=back]
+	"g 1"
+		"g 1" -> "g 1" [dir=back]
+	c
+		c -> "g 1" [dir=back]
+	lcc
+		lcc -> c [dir=back]
+	c
+		c -> lcc [dir=back]
+	c
+		c -> c [dir=back]
+	"f 6 "
+		"f 6 " -> c [dir=back]
+	"f 5"
+		"f 5" -> "f 6 " [dir=back]
+	"f 2"
+		"f 2" -> "f 5" [dir=back]
+}

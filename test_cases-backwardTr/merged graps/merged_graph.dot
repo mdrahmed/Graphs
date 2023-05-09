@@ -1,0 +1,40 @@
+digraph root {
+	node [label="\N"];
+	{
+		node [label="\N"];
+		edge [dir=""];
+		"g 1" -> "f 1"		 [dir=back];
+		"g 1" -> "g 1"		 [dir=back];
+		"g 1" -> f		 [dir=back];
+		"c 3" -> "g 1"		 [dir=back];
+		"c 2" -> "c 3"		 [dir=back];
+		"c 1" -> "c 2"		 [dir=back];
+		f -> "c 1"		 [dir=back];
+		f -> f		 [dir=back];
+		f -> f		 [dir=back];
+		"g--- 1" -> "g 1"		 [dir=back];
+	}
+	{
+		node [label="\N"];
+		edge [dir=""];
+		c -> "g--- 1_gv1"		 [dir=back];
+		c -> c		 [dir=back];
+		c -> c		 [dir=back];
+		c -> c		 [dir=back];
+		c -> "g 1_gv1"		 [dir=back];
+		f_gv1 -> c		 [dir=back];
+		f_gv1 -> c		 [dir=back];
+		"g 1_gv1" -> f_gv1		 [dir=back];
+		"g 1_gv1" -> f_gv1		 [dir=back];
+		"g 1_gv1" -> "g 1_gv1"		 [dir=back];
+	}
+	{
+		node [label="\N"];
+		edge [dir=""];
+		c_gv1 -> c_gv1		 [dir=back];
+		c_gv1 -> c_gv1		 [dir=back];
+		c_gv1 -> "g 1_gv2"		 [dir=back];
+		f_gv2 -> c_gv1		 [dir=back];
+		"g 1_gv2" -> f_gv2		 [dir=back];
+	}
+}
