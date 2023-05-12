@@ -1,5 +1,11 @@
 Function: __cxx_global_var_init.63 1
 Function: _ZN3fmt2v516format_arg_storeINS0_20basic_format_contextISt20back_insert_iteratorINS0_8internal12basic_bufferIcEEEcEEJiEE9get_typesEv 2
+Global Variable:   %14 = load i32, i32* %13, align 4, !dbg !28888, !tbaa !28889 1
+Global Variable:   %17 = load i32, i32* %16, align 4, !dbg !28895, !tbaa !28896 1
 Function: _ZN3fmt2v58internal9get_typesINS0_20basic_format_contextISt20back_insert_iteratorINS1_12basic_bufferIcEEEcEEiJEEEyv 3
 Function: _ZN3fmt2v58internal9get_typesINS0_20basic_format_contextISt20back_insert_iteratorINS1_12basic_bufferIcEEEcEEEEyvi 4
 Function: __cxx_global_var_init.64 5
+Calling: _ZNSt8functionIFvRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEC2IZ4mainE3$_0vvEET_ _ZNSt14_Function_baseC2Ev 
+Function: _ZNSt14_Function_base13_Base_managerIZ4mainE3$_0E21_M_not_empty_functionIS1_EEbRKT_
+Calling: _ZNSt8functionIFvRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEEC2IZ4mainE3$_0vvEET_ _ZNSt14_Function_base13_Base_managerIZ4mainE3$_0E21_M_not_empty_functionIS1_EEbRKT_ 
+Function: _ZSt4moveIRZ4mainE3$_0EONSt16remove_referenceIT_E4typeEOS3_

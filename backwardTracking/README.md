@@ -9,3 +9,9 @@ Working files,
 4. The `graph without merging` folder is creating graph with `networkx` using all the logs.
 
 5. With this file `graphViz-bt-hbw3.py` tried to make gspan-mining format type of data. But couldn't.
+
+6. **The file `graphViz-bt-hbw4.py`(copy of `..hbw2.py`) will prepare the file in the form of `graph.data` which can be used later for gspan-mining.** => saved this file
+
+7. `graphViz-bt-vgr4.py` is just to check if it is creating the file in the gspan format and working fine
+
+7. `graphViz-bt-vgr4.py` is just to check if it is creating the file in the gspan format and working fine
