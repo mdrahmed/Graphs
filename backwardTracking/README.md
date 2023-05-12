@@ -12,6 +12,5 @@ Working files,
 
 6. **The file `graphViz-bt-hbw4.py`(copy of `..hbw2.py`) will prepare the file in the form of `graph.data` which can be used later for gspan-mining.** => saved this file
 
-7. `graphViz-bt-vgr4.py` is just to check if it is creating the file in the gspan format and working fine
+7. `graphViz-bt-vgr2.py` is just to check if it is creating the file in the gspan format and working fine. It's a copy of `graphViz-bt-hbw4.py`
 
-7. `graphViz-bt-vgr4.py` is just to check if it is creating the file in the gspan format and working fine

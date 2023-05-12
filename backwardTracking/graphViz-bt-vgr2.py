@@ -20,7 +20,7 @@ def parse_input(input_str):
     callInsts = []
     false_block = None
     true_block = None
-    current_graph = graphviz.Digraph(f'hbw-graph-{i}')
+    current_graph = graphviz.Digraph(f'vgr-graph-{i}')
     graphs = []
     t = 0
 
@@ -164,7 +164,7 @@ graphs = parse_input(input_str)
 #print("nodes:",nodes,"edges: ",edges)
 print("total edges: ",edges)
 
-with open('hbw.data', 'w') as f:
+with open('vgr.data', 'w') as f:
     #f.write(f"t # 0\n")
     for i, graph in enumerate(graphs):
     
@@ -189,9 +189,9 @@ with open('hbw.data', 'w') as f:
             f.write(f"e {src} {tgt} {edge_id}\n")
             edge_id += 1 ## Not using edge this time
     
-        graph.render(f'backtrackingGraphsGenerated/graphs-{i+1}/hbw-graph-{i}.dot')
-        graph.render(f'backtrackingGraphsGenerated/graphs-{i+1}/hbw-graph-{i}.png')
-        with open(f'backtrackingGraphsGenerated/graphs-{i+1}/hbw-graph-{i}.png') as f_in:
+        graph.render(f'backtrackingGraphsGenerated-vgr/graphs-{i+1}/vgr-graph-{i}.dot')
+        graph.render(f'backtrackingGraphsGenerated-vgr/graphs-{i+1}/vgr-graph-{i}.png')
+        with open(f'backtrackingGraphsGenerated-vgr/graphs-{i+1}/vgr-graph-{i}.png') as f_in:
             dot_graph = f_in.read()
         graphviz.Source(dot_graph)
     
