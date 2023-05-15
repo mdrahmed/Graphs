@@ -12,7 +12,7 @@ def parse_input(input_str):
     global edges
     #lines = input_str.split("\n")
     i = 0
-    ranges = 1000
+    ranges = 50
     found = False
     function_call = None
     functions = []
