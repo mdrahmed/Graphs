@@ -8,18 +8,23 @@ e "B" "C" 2
 t # 2
 v "A" 1
 v "B" 2
-v "F" 6
+v "C" 3
 v "G" 7
 e "A" "B" 1
-e "B" "F" 4
-e "F" "G" 5
+e "B" "C" 2
+e "C" "G" 5
 
 t # 3
+v "A" 1
+v "B" 2
+v "C" 3
 v "H" 8
 v "I" 9
 v "J" 10
 v "K" 11
 v "L" 12
+e "A" "B" 1
+e "B" "C" 2
 e "H" "I" 6
 e "I" "J" 7
 e "J" "K" 8
