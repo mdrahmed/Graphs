@@ -1,0 +1,23 @@
+digraph {
+	"Function- _ZN3fmt2v58internal12basic_bufferIcEC2EPcjj"
+	"Function- _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_"
+	"Function- _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_" -> "Function- _ZN3fmt2v58internal12basic_bufferIcEC2EPcjj" [dir=back]
+	"Function- _ZNSaIcEC2ERKS_"
+	"Function- _ZNSaIcEC2ERKS_" -> "Function- _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_" [dir=back]
+	"Function- _ZN3fmt2v519basic_memory_bufferIcLj176ESaIcEEC2ERKS2_"
+	"Function- _ZN3fmt2v519basic_memory_bufferIcLj176ESaIcEEC2ERKS2_" -> "Function- _ZNSaIcEC2ERKS_" [dir=back]
+	"Function- _ZN9__gnu_cxx13new_allocatorIcEC2Ev"
+	"Function- _ZN9__gnu_cxx13new_allocatorIcEC2Ev" -> "Function- _ZN3fmt2v519basic_memory_bufferIcLj176ESaIcEEC2ERKS2_" [dir=back]
+	"Function- _ZNSaIcEC2Ev"
+	"Function- _ZNSaIcEC2Ev" -> "Function- _ZN9__gnu_cxx13new_allocatorIcEC2Ev" [dir=back]
+	"Function- _ZN6spdlog7details9async_msgC2EOSt10shared_ptrINS_12async_loggerEENS0_14async_msg_typeERNS0_7log_msgE"
+	"Function- _ZN6spdlog7details9async_msgC2EOSt10shared_ptrINS_12async_loggerEENS0_14async_msg_typeERNS0_7log_msgE" -> "Function- _ZNSaIcEC2Ev" [dir=back]
+	"Function- _ZSt4moveIRSt10shared_ptrIN6spdlog12async_loggerEEEONSt16remove_referenceIT_E4typeEOS6_"
+	"Function- _ZSt4moveIRSt10shared_ptrIN6spdlog12async_loggerEEEONSt16remove_referenceIT_E4typeEOS6_" -> "Function- _ZN6spdlog7details9async_msgC2EOSt10shared_ptrINS_12async_loggerEENS0_14async_msg_typeERNS0_7log_msgE" [dir=back]
+	"Function- _ZN6spdlog7details11thread_pool8post_logEOSt10shared_ptrINS_12async_loggerEERNS0_7log_msgENS_21async_overflow_policyE"
+	"Function- _ZN6spdlog7details11thread_pool8post_logEOSt10shared_ptrINS_12async_loggerEERNS0_7log_msgENS_21async_overflow_policyE" -> "Function- _ZSt4moveIRSt10shared_ptrIN6spdlog12async_loggerEEEONSt16remove_referenceIT_E4typeEOS6_" [dir=back]
+	"Function- _ZNKSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE16_M_get_use_countEv"
+	"Function- _ZNKSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE16_M_get_use_countEv" -> "Function- _ZN6spdlog7details11thread_pool8post_logEOSt10shared_ptrINS_12async_loggerEERNS0_7log_msgENS_21async_overflow_policyE" [dir=back]
+	"Function- _ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE15_M_add_ref_lockEv"
+	"Function- _ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE15_M_add_ref_lockEv" -> "Function- _ZNKSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE16_M_get_use_countEv" [dir=back]
+}

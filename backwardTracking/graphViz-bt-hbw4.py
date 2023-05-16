@@ -164,6 +164,8 @@ graphs = parse_input(input_str)
 #print("nodes:",nodes,"edges: ",edges)
 print("total edges: ",edges)
 
+node_id = 1
+edge_id = 1
 with open('hbw.data', 'w') as f:
     #f.write(f"t # 0\n")
     for i, graph in enumerate(graphs):
@@ -174,14 +176,14 @@ with open('hbw.data', 'w') as f:
         # Write the graph ID (t line)
         f.write(f"t # {i}\n")
         
-        node_id = 1
+        #node_id = 1
         #print(f"Nodes (Graph {i+1}):")
         for node in nodes:
             #print(f"Node: {node}")
             f.write(f"v {node} {node_id}\n")
             node_id += 1
         
-        edge_id = 1
+        #edge_id = 1
         #print(f"Edges (Graph {i+1}):")
         for src, tgt in edges:
             tgt = tgt.replace("[dir=back]", "")

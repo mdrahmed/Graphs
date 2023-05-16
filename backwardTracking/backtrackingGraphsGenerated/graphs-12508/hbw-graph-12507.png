@@ -1,0 +1,23 @@
+digraph {
+	"Function- _ZN3fmt2v58internal12basic_bufferIcE4dataEv"
+	"Function- _ZN3fmt2v519basic_memory_bufferIcLj176ESaIcEE10deallocateEv"
+	"Function- _ZN3fmt2v519basic_memory_bufferIcLj176ESaIcEE10deallocateEv" -> "Function- _ZN3fmt2v58internal12basic_bufferIcE4dataEv" [dir=back]
+	"Function- _ZN3fmt2v519basic_memory_bufferIcLj176ESaIcEED2Ev"
+	"Function- _ZN3fmt2v519basic_memory_bufferIcLj176ESaIcEED2Ev" -> "Function- _ZN3fmt2v519basic_memory_bufferIcLj176ESaIcEE10deallocateEv" [dir=back]
+	"Function- _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EED2Ev"
+	"Function- _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EED2Ev" -> "Function- _ZN3fmt2v519basic_memory_bufferIcLj176ESaIcEED2Ev" [dir=back]
+	"Function- _ZNSt12__shared_ptrIN6spdlog12async_loggerELN9__gnu_cxx12_Lock_policyE2EED2Ev"
+	"Function- _ZNSt12__shared_ptrIN6spdlog12async_loggerELN9__gnu_cxx12_Lock_policyE2EED2Ev" -> "Function- _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EED2Ev" [dir=back]
+	"Function- _ZN6spdlog7details9async_msgD2Ev"
+	"Function- _ZN6spdlog7details9async_msgD2Ev" -> "Function- _ZNSt12__shared_ptrIN6spdlog12async_loggerELN9__gnu_cxx12_Lock_policyE2EED2Ev" [dir=back]
+	"Function- _ZL24__gthread_cond_timedwaitP14pthread_cond_tP15pthread_mutex_tPK8timespec"
+	"Function- _ZL24__gthread_cond_timedwaitP14pthread_cond_tP15pthread_mutex_tPK8timespec" -> "Function- _ZN6spdlog7details9async_msgD2Ev" [dir=back]
+	"Function- _ZNSt5mutex13native_handleEv"
+	"Function- _ZNSt5mutex13native_handleEv" -> "Function- _ZL24__gthread_cond_timedwaitP14pthread_cond_tP15pthread_mutex_tPK8timespec" [dir=back]
+	"Function- _ZNKSt11unique_lockISt5mutexE5mutexEv"
+	"Function- _ZNKSt11unique_lockISt5mutexE5mutexEv" -> "Function- _ZNSt5mutex13native_handleEv" [dir=back]
+	"Function- _ZNKSt6chrono8durationIxSt5ratioILx1ELx1000000000EEE5countEv"
+	"Function- _ZNKSt6chrono8durationIxSt5ratioILx1ELx1000000000EEE5countEv" -> "Function- _ZNKSt11unique_lockISt5mutexE5mutexEv" [dir=back]
+	"Function- _ZNKSt6chrono8durationIxSt5ratioILx1ELx1EEE5countEv"
+	"Function- _ZNKSt6chrono8durationIxSt5ratioILx1ELx1EEE5countEv" -> "Function- _ZNKSt6chrono8durationIxSt5ratioILx1ELx1000000000EEE5countEv" [dir=back]
+}

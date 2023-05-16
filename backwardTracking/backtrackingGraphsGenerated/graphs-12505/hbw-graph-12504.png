@@ -1,0 +1,23 @@
+digraph {
+	"Function- _ZN6spdlog7details8registry3getERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE"
+	"Function- _ZN6spdlog7details8registry8instanceEv"
+	"Function- _ZN6spdlog7details8registry8instanceEv" -> "Function- _ZN6spdlog7details8registry3getERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" [dir=back]
+	"Function- _ZN6spdlog3getERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE"
+	"Function- _ZN6spdlog3getERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" -> "Function- _ZN6spdlog7details8registry8instanceEv" [dir=back]
+	"Function- _ZN9__gnu_cxx13new_allocatorIcEC2Ev"
+	"Function- _ZN9__gnu_cxx13new_allocatorIcEC2Ev" -> "Function- _ZN6spdlog3getERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" [dir=back]
+	"Function- _ZNSaIcEC2Ev"
+	"Function- _ZNSaIcEC2Ev" -> "Function- _ZN9__gnu_cxx13new_allocatorIcEC2Ev" [dir=back]
+	"Function- _ZN9__gnu_cxx13new_allocatorIcED2Ev"
+	"Function- _ZN9__gnu_cxx13new_allocatorIcED2Ev" -> "Function- _ZNSaIcEC2Ev" [dir=back]
+	"Function- _ZNSaIcED2Ev"
+	"Function- _ZNSaIcED2Ev" -> "Function- _ZN9__gnu_cxx13new_allocatorIcED2Ev" [dir=back]
+	"Function- _ZN9__gnu_cxx13new_allocatorIcED2Ev"
+	"Function- _ZN9__gnu_cxx13new_allocatorIcED2Ev" -> "Function- _ZNSaIcED2Ev" [dir=back]
+	"Function- _ZNSaIcED2Ev"
+	"Function- _ZNSaIcED2Ev" -> "Function- _ZN9__gnu_cxx13new_allocatorIcED2Ev" [dir=back]
+	"Function- _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED2Ev"
+	"Function- _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED2Ev" -> "Function- _ZNSaIcED2Ev" [dir=back]
+	"Function- _ZN9__gnu_cxxL18__exchange_and_addEPVii"
+	"Function- _ZN9__gnu_cxxL18__exchange_and_addEPVii" -> "Function- _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED2Ev" [dir=back]
+}

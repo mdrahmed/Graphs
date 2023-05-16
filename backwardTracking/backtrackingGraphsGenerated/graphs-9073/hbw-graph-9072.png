@@ -1,0 +1,23 @@
+digraph {
+	"Function- _ZN3fmt2v58internal19check_format_stringIJPKcfdES4_EENSt9enable_ifIXntsr17is_compile_stringIT0_EE5valueEvE4typeERKS6_"
+	"Function- _ZN3fmt2v59format_toIPKcJS3_fdELj500EcEENS0_14buffer_contextIT2_E4type8iteratorERNS0_19basic_memory_bufferIS5_XT1_ESaIS5_EEERKT_DpRKT0_"
+	"Function- _ZN3fmt2v59format_toIPKcJS3_fdELj500EcEENS0_14buffer_contextIT2_E4type8iteratorERNS0_19basic_memory_bufferIS5_XT1_ESaIS5_EEERKT_DpRKT0_" -> "Function- _ZN3fmt2v58internal19check_format_stringIJPKcfdES4_EENSt9enable_ifIXntsr17is_compile_stringIT0_EE5valueEvE4typeERKS6_" [dir=back]
+	"Function- _ZN9__gnu_cxx13new_allocatorIcED2Ev"
+	"Function- _ZN9__gnu_cxx13new_allocatorIcED2Ev" -> "Function- _ZN3fmt2v59format_toIPKcJS3_fdELj500EcEENS0_14buffer_contextIT2_E4type8iteratorERNS0_19basic_memory_bufferIS5_XT1_ESaIS5_EEERKT_DpRKT0_" [dir=back]
+	"Function- _ZNSaIcED2Ev"
+	"Function- _ZNSaIcED2Ev" -> "Function- _ZN9__gnu_cxx13new_allocatorIcED2Ev" [dir=back]
+	"Function- _ZN3fmt2v58internal12basic_bufferIcE3setEPcj"
+	"Function- _ZN3fmt2v58internal12basic_bufferIcE3setEPcj" -> "Function- _ZNSaIcED2Ev" [dir=back]
+	"Function- _ZN3fmt2v58internal12basic_bufferIcEC2EPcjj"
+	"Function- _ZN3fmt2v58internal12basic_bufferIcEC2EPcjj" -> "Function- _ZN3fmt2v58internal12basic_bufferIcE3setEPcj" [dir=back]
+	"Function- _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_"
+	"Function- _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_" -> "Function- _ZN3fmt2v58internal12basic_bufferIcEC2EPcjj" [dir=back]
+	"Function- _ZNSaIcEC2ERKS_"
+	"Function- _ZNSaIcEC2ERKS_" -> "Function- _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_" [dir=back]
+	"Function- _ZN3fmt2v519basic_memory_bufferIcLj500ESaIcEEC2ERKS2_"
+	"Function- _ZN3fmt2v519basic_memory_bufferIcLj500ESaIcEEC2ERKS2_" -> "Function- _ZNSaIcEC2ERKS_" [dir=back]
+	"Function- _ZN9__gnu_cxx13new_allocatorIcEC2Ev"
+	"Function- _ZN9__gnu_cxx13new_allocatorIcEC2Ev" -> "Function- _ZN3fmt2v519basic_memory_bufferIcLj500ESaIcEEC2ERKS2_" [dir=back]
+	"Calling- _ZN6spdlog6logger3logIJPKcfdEEEvNS_10source_locENS_5level10level_enumES3_DpRKT_ _ZNK6spdlog6logger10should_logENS_5level10level_enumE Function- _ZNSaIcEC2Ev"
+	"Calling- _ZN6spdlog6logger3logIJPKcfdEEEvNS_10source_locENS_5level10level_enumES3_DpRKT_ _ZNK6spdlog6logger10should_logENS_5level10level_enumE Function- _ZNSaIcEC2Ev" -> "Function- _ZN9__gnu_cxx13new_allocatorIcEC2Ev" [dir=back]
+}

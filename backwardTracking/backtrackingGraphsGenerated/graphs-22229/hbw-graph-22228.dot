@@ -1,0 +1,23 @@
+digraph {
+	"Function- _ZSt12__niter_baseIPcET_S1_"
+	"Function- _ZSt14__copy_move_a2ILb0EPcS0_ET1_T0_S2_S1_"
+	"Function- _ZSt14__copy_move_a2ILb0EPcS0_ET1_T0_S2_S1_" -> "Function- _ZSt12__niter_baseIPcET_S1_" [dir=back]
+	"Function- _ZSt12__miter_baseIPcET_S1_"
+	"Function- _ZSt12__miter_baseIPcET_S1_" -> "Function- _ZSt14__copy_move_a2ILb0EPcS0_ET1_T0_S2_S1_" [dir=back]
+	"Function- _ZSt12__miter_baseIPcET_S1_"
+	"Function- _ZSt12__miter_baseIPcET_S1_" -> "Function- _ZSt12__miter_baseIPcET_S1_" [dir=back]
+	"Function- _ZSt4copyIPcS0_ET0_T_S2_S1_"
+	"Function- _ZSt4copyIPcS0_ET0_T_S2_S1_" -> "Function- _ZSt12__miter_baseIPcET_S1_" [dir=back]
+	"Function- _ZN3fmt2v58internal8copy_strIcPcS3_EENSt9enable_ifIXntsr16needs_conversionIT0_T_EE5valueET1_E4typeES5_S5_S7_"
+	"Function- _ZN3fmt2v58internal8copy_strIcPcS3_EENSt9enable_ifIXntsr16needs_conversionIT0_T_EE5valueET1_E4typeES5_S5_S7_" -> "Function- _ZSt4copyIPcS0_ET0_T_S2_S1_" [dir=back]
+	"Function- _ZN3fmt2v58internal12basic_bufferIcE3endEv"
+	"Function- _ZN3fmt2v58internal12basic_bufferIcE3endEv" -> "Function- _ZN3fmt2v58internal8copy_strIcPcS3_EENSt9enable_ifIXntsr16needs_conversionIT0_T_EE5valueET1_E4typeES5_S5_S7_" [dir=back]
+	"Function- _ZN3fmt2v58internal12basic_bufferIcE5beginEv"
+	"Function- _ZN3fmt2v58internal12basic_bufferIcE5beginEv" -> "Function- _ZN3fmt2v58internal12basic_bufferIcE3endEv" [dir=back]
+	"Function- _ZN3fmt2v512basic_writerINS0_17back_insert_rangeINS0_8internal12basic_bufferIcEEEEE13double_writerclIPcEEvOT_"
+	"Function- _ZN3fmt2v512basic_writerINS0_17back_insert_rangeINS0_8internal12basic_bufferIcEEEEE13double_writerclIPcEEvOT_" -> "Function- _ZN3fmt2v58internal12basic_bufferIcE5beginEv" [dir=back]
+	"Function- _ZN3fmt2v58internal12make_checkedIcEEPT_S4_j"
+	"Function- _ZN3fmt2v58internal12make_checkedIcEEPT_S4_j" -> "Function- _ZN3fmt2v512basic_writerINS0_17back_insert_rangeINS0_8internal12basic_bufferIcEEEEE13double_writerclIPcEEvOT_" [dir=back]
+	"Function- _ZN3fmt2v58internal12basic_bufferIcEixEj"
+	"Function- _ZN3fmt2v58internal12basic_bufferIcEixEj" -> "Function- _ZN3fmt2v58internal12make_checkedIcEEPT_S4_j" [dir=back]
+}

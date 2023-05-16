@@ -1,0 +1,23 @@
+digraph {
+	"Function- _ZN3fmt2v58internal12basic_bufferIcE6appendIcEEvPKT_S7_"
+	"Function- _ZN3fmt2v58internal11to_unsignedIiEENSt13make_unsignedIT_E4typeES4_"
+	"Function- _ZN3fmt2v58internal11to_unsignedIiEENSt13make_unsignedIT_E4typeES4_" -> "Function- _ZN3fmt2v58internal12basic_bufferIcE6appendIcEEvPKT_S7_" [dir=back]
+	"Function- _ZNK3fmt2v510format_int4sizeEv"
+	"Function- _ZNK3fmt2v510format_int4sizeEv" -> "Function- _ZN3fmt2v58internal11to_unsignedIiEENSt13make_unsignedIT_E4typeES4_" [dir=back]
+	"Function- _ZNK3fmt2v510format_int4dataEv"
+	"Function- _ZNK3fmt2v510format_int4dataEv" -> "Function- _ZNK3fmt2v510format_int4sizeEv" [dir=back]
+	"Function- _ZNK3fmt2v510format_int4dataEv"
+	"Function- _ZNK3fmt2v510format_int4dataEv" -> "Function- _ZNK3fmt2v510format_int4dataEv" [dir=back]
+	"Function- _ZN3fmt2v510format_int14format_decimalEy"
+	"Function- _ZN3fmt2v510format_int14format_decimalEy" -> "Function- _ZNK3fmt2v510format_int4dataEv" [dir=back]
+	"Function- _ZN3fmt2v510format_int13format_signedEx"
+	"Function- _ZN3fmt2v510format_int13format_signedEx" -> "Function- _ZN3fmt2v510format_int14format_decimalEy" [dir=back]
+	"Function- _ZN3fmt2v510format_intC2Ei"
+	"Function- _ZN3fmt2v510format_intC2Ei" -> "Function- _ZN3fmt2v510format_int13format_signedEx" [dir=back]
+	"Function- _ZN6spdlog7details10fmt_helper10append_intIiLj500EEEvT_RN3fmt2v519basic_memory_bufferIcXT0_ESaIcEEE"
+	"Function- _ZN6spdlog7details10fmt_helper10append_intIiLj500EEEvT_RN3fmt2v519basic_memory_bufferIcXT0_ESaIcEEE" -> "Function- _ZN3fmt2v510format_intC2Ei" [dir=back]
+	"Function- _ZN3fmt2v517basic_string_viewIcEC2EPKcj"
+	"Function- _ZN3fmt2v517basic_string_viewIcEC2EPKcj" -> "Function- _ZN6spdlog7details10fmt_helper10append_intIiLj500EEEvT_RN3fmt2v519basic_memory_bufferIcXT0_ESaIcEEE" [dir=back]
+	"Function- _ZN6spdlog7details10scoped_padC2EjRNS0_12padding_infoERN3fmt2v519basic_memory_bufferIcLj500ESaIcEEE"
+	"Function- _ZN6spdlog7details10scoped_padC2EjRNS0_12padding_infoERN3fmt2v519basic_memory_bufferIcLj500ESaIcEEE" -> "Function- _ZN3fmt2v517basic_string_viewIcEC2EPKcj" [dir=back]
+}

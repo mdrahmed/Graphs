@@ -1,0 +1,23 @@
+digraph {
+	"Calling- _ZN6spdlog6logger3logIJbEEEvNS_10source_locENS_5level10level_enumEPKcDpRKT_ _ZNK6spdlog6logger10should_logENS_5level10level_enumE Function- _ZNSaIcEC2Ev"
+	"Function- _ZStanSt12memory_orderSt23__memory_order_modifier"
+	"Function- _ZStanSt12memory_orderSt23__memory_order_modifier" -> "Calling- _ZN6spdlog6logger3logIJbEEEvNS_10source_locENS_5level10level_enumEPKcDpRKT_ _ZNK6spdlog6logger10should_logENS_5level10level_enumE Function- _ZNSaIcEC2Ev" [dir=back]
+	"Function- _ZNKSt13__atomic_baseIiE4loadESt12memory_order"
+	"Function- _ZNKSt13__atomic_baseIiE4loadESt12memory_order" -> "Function- _ZStanSt12memory_orderSt23__memory_order_modifier" [dir=back]
+	"Function- _ZNK6spdlog6logger10should_logENS_5level10level_enumE"
+	"Function- _ZNK6spdlog6logger10should_logENS_5level10level_enumE" -> "Function- _ZNKSt13__atomic_baseIiE4loadESt12memory_order" [dir=back]
+	"Function- _ZN6spdlog6logger3logIJbEEEvNS_10source_locENS_5level10level_enumEPKcDpRKT_"
+	"Function- _ZN6spdlog6logger3logIJbEEEvNS_10source_locENS_5level10level_enumEPKcDpRKT_" -> "Function- _ZNK6spdlog6logger10should_logENS_5level10level_enumE" [dir=back]
+	"Function- _ZN6spdlog10source_locC2Ev"
+	"Function- _ZN6spdlog10source_locC2Ev" -> "Function- _ZN6spdlog6logger3logIJbEEEvNS_10source_locENS_5level10level_enumEPKcDpRKT_" [dir=back]
+	"Function- _ZN6spdlog6logger3logIJbEEEvNS_5level10level_enumEPKcDpRKT_"
+	"Function- _ZN6spdlog6logger3logIJbEEEvNS_5level10level_enumEPKcDpRKT_" -> "Function- _ZN6spdlog10source_locC2Ev" [dir=back]
+	"Function- _ZN6spdlog6logger4infoIJbEEEvPKcDpRKT_"
+	"Function- _ZN6spdlog6logger4infoIJbEEEvPKcDpRKT_" -> "Function- _ZN6spdlog6logger3logIJbEEEvNS_5level10level_enumEPKcDpRKT_" [dir=back]
+	"Function- _ZNKSt12__shared_ptrIN6spdlog6loggerELN9__gnu_cxx12_Lock_policyE2EE3getEv"
+	"Function- _ZNKSt12__shared_ptrIN6spdlog6loggerELN9__gnu_cxx12_Lock_policyE2EE3getEv" -> "Function- _ZN6spdlog6logger4infoIJbEEEvPKcDpRKT_" [dir=back]
+	"Function- _ZNKSt19__shared_ptr_accessIN6spdlog6loggerELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EE6_M_getEv"
+	"Function- _ZNKSt19__shared_ptr_accessIN6spdlog6loggerELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EE6_M_getEv" -> "Function- _ZNKSt12__shared_ptrIN6spdlog6loggerELN9__gnu_cxx12_Lock_policyE2EE3getEv" [dir=back]
+	"Function- _ZNKSt19__shared_ptr_accessIN6spdlog6loggerELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EEptEv"
+	"Function- _ZNKSt19__shared_ptr_accessIN6spdlog6loggerELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EEptEv" -> "Function- _ZNKSt19__shared_ptr_accessIN6spdlog6loggerELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EE6_M_getEv" [dir=back]
+}

@@ -6,22 +6,22 @@ e "A" "B" 1
 e "B" "C" 2
 
 t # 2
-v "D" 1
-v "E" 2
-v "F" 3
-v "G" 4
-e "D" "E" 1
-e "E" "F" 2
-e "F" "G" 3
+v "D" 4
+v "E" 5
+v "F" 6
+v "G" 7
+e "D" "E" 3
+e "E" "F" 4
+e "F" "G" 5
 
 t # 3
-v "H" 1
-v "I" 2
-v "J" 3
-v "K" 4
-v "L" 5
-e "H" "I" 1
-e "I" "J" 2
-e "J" "K" 3
-e "K" "L" 4
+v "H" 8
+v "I" 9
+v "J" 10
+v "K" 11
+v "L" 12
+e "H" "I" 6
+e "I" "J" 7
+e "J" "K" 8
+e "K" "L" 9
 

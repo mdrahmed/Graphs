@@ -1,0 +1,23 @@
+digraph {
+	"Function- _ZNKSt6vectorIPN2ft8ObserverESaIS2_EE4sizeEv"
+	"Function- _ZN2ft15SubjectObserver6NotifyEv"
+	"Function- _ZN2ft15SubjectObserver6NotifyEv" -> "Function- _ZNKSt6vectorIPN2ft8ObserverESaIS2_EE4sizeEv" [dir=back]
+	"Function- _ZN2ft19TxtHighBayWarehouse14publishStorageEv"
+	"Function- _ZN2ft19TxtHighBayWarehouse14publishStorageEv" -> "Function- _ZN2ft15SubjectObserver6NotifyEv" [dir=back]
+	"Function- _ZN9__gnu_cxx13new_allocatorIcED2Ev"
+	"Function- _ZN9__gnu_cxx13new_allocatorIcED2Ev" -> "Function- _ZN2ft19TxtHighBayWarehouse14publishStorageEv" [dir=back]
+	"Function- _ZNSaIcED2Ev"
+	"Function- _ZNSaIcED2Ev" -> "Function- _ZN9__gnu_cxx13new_allocatorIcED2Ev" [dir=back]
+	"Function- _ZN9__gnu_cxx13new_allocatorIcED2Ev"
+	"Function- _ZN9__gnu_cxx13new_allocatorIcED2Ev" -> "Function- _ZNSaIcED2Ev" [dir=back]
+	"Function- _ZNSaIcED2Ev"
+	"Function- _ZNSaIcED2Ev" -> "Function- _ZN9__gnu_cxx13new_allocatorIcED2Ev" [dir=back]
+	"Function- _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED2Ev"
+	"Function- _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED2Ev" -> "Function- _ZNSaIcED2Ev" [dir=back]
+	"Function- _ZN9__gnu_cxx13new_allocatorIcED2Ev"
+	"Function- _ZN9__gnu_cxx13new_allocatorIcED2Ev" -> "Function- _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED2Ev" [dir=back]
+	"Function- _ZNSaIcED2Ev"
+	"Function- _ZNSaIcED2Ev" -> "Function- _ZN9__gnu_cxx13new_allocatorIcED2Ev" [dir=back]
+	"Function- _ZN9__gnu_cxx13new_allocatorIcED2Ev"
+	"Function- _ZN9__gnu_cxx13new_allocatorIcED2Ev" -> "Function- _ZNSaIcED2Ev" [dir=back]
+}

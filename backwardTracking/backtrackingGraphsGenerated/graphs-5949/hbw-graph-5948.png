@@ -1,0 +1,23 @@
+digraph {
+	"Function- _ZNK9__gnu_cxx17__normal_iteratorIPSt10shared_ptrIN6spdlog5sinks4sinkEESt6vectorIS5_SaIS5_EEE4baseEv"
+	"Function- _ZN9__gnu_cxxneIPSt10shared_ptrIN6spdlog5sinks4sinkEESt6vectorIS5_SaIS5_EEEEbRKNS_17__normal_iteratorIT_T0_EESF_"
+	"Function- _ZN9__gnu_cxxneIPSt10shared_ptrIN6spdlog5sinks4sinkEESt6vectorIS5_SaIS5_EEEEbRKNS_17__normal_iteratorIT_T0_EESF_" -> "Function- _ZNK9__gnu_cxx17__normal_iteratorIPSt10shared_ptrIN6spdlog5sinks4sinkEESt6vectorIS5_SaIS5_EEE4baseEv" [dir=back]
+	"Function- _ZN9__gnu_cxx17__normal_iteratorIPSt10shared_ptrIN6spdlog5sinks4sinkEESt6vectorIS5_SaIS5_EEEppEv"
+	"Function- _ZN9__gnu_cxx17__normal_iteratorIPSt10shared_ptrIN6spdlog5sinks4sinkEESt6vectorIS5_SaIS5_EEEppEv" -> "Function- _ZN9__gnu_cxxneIPSt10shared_ptrIN6spdlog5sinks4sinkEESt6vectorIS5_SaIS5_EEEEbRKNS_17__normal_iteratorIT_T0_EESF_" [dir=back]
+	"Function- _ZL18__gthread_active_pv"
+	"Function- _ZL18__gthread_active_pv" -> "Function- _ZN9__gnu_cxx17__normal_iteratorIPSt10shared_ptrIN6spdlog5sinks4sinkEESt6vectorIS5_SaIS5_EEEppEv" [dir=back]
+	"Function- _ZL22__gthread_mutex_unlockP15pthread_mutex_t"
+	"Function- _ZL22__gthread_mutex_unlockP15pthread_mutex_t" -> "Function- _ZL18__gthread_active_pv" [dir=back]
+	"Function- _ZNSt5mutex6unlockEv"
+	"Function- _ZNSt5mutex6unlockEv" -> "Function- _ZL22__gthread_mutex_unlockP15pthread_mutex_t" [dir=back]
+	"Function- _ZNSt10lock_guardISt5mutexED2Ev"
+	"Function- _ZNSt10lock_guardISt5mutexED2Ev" -> "Function- _ZNSt5mutex6unlockEv" [dir=back]
+	"Function- _ZN9__gnu_cxx13new_allocatorIcED2Ev"
+	"Function- _ZN9__gnu_cxx13new_allocatorIcED2Ev" -> "Function- _ZNSt10lock_guardISt5mutexED2Ev" [dir=back]
+	"Function- _ZNSaIcED2Ev"
+	"Function- _ZNSaIcED2Ev" -> "Function- _ZN9__gnu_cxx13new_allocatorIcED2Ev" [dir=back]
+	"Function- _ZN3fmt2v58internal12basic_bufferIcED2Ev"
+	"Function- _ZN3fmt2v58internal12basic_bufferIcED2Ev" -> "Function- _ZNSaIcED2Ev" [dir=back]
+	"Function- _ZN3fmt2v58internal12basic_bufferIcE4dataEv"
+	"Function- _ZN3fmt2v58internal12basic_bufferIcE4dataEv" -> "Function- _ZN3fmt2v58internal12basic_bufferIcED2Ev" [dir=back]
+}

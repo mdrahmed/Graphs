@@ -1,0 +1,23 @@
+digraph {
+	"Function- _ZN3fmt2v58internal18arg_formatter_baseINS0_17back_insert_rangeINS1_12basic_bufferIcEEEEE3outEv"
+	"Function- _ZNSt11__copy_moveILb0ELb1ESt26random_access_iterator_tagE8__copy_mIcEEPT_PKS3_S6_S4_"
+	"Function- _ZNSt11__copy_moveILb0ELb1ESt26random_access_iterator_tagE8__copy_mIcEEPT_PKS3_S6_S4_" -> "Function- _ZN3fmt2v58internal18arg_formatter_baseINS0_17back_insert_rangeINS1_12basic_bufferIcEEEEE3outEv" [dir=back]
+	"Function- _ZSt13__copy_move_aILb0EPKcPcET1_T0_S4_S3_"
+	"Function- _ZSt13__copy_move_aILb0EPKcPcET1_T0_S4_S3_" -> "Function- _ZNSt11__copy_moveILb0ELb1ESt26random_access_iterator_tagE8__copy_mIcEEPT_PKS3_S6_S4_" [dir=back]
+	"Function- _ZSt12__niter_baseIPcET_S1_"
+	"Function- _ZSt12__niter_baseIPcET_S1_" -> "Function- _ZSt13__copy_move_aILb0EPKcPcET1_T0_S4_S3_" [dir=back]
+	"Function- _ZSt12__niter_baseIPKcET_S2_"
+	"Function- _ZSt12__niter_baseIPKcET_S2_" -> "Function- _ZSt12__niter_baseIPcET_S1_" [dir=back]
+	"Function- _ZSt12__niter_baseIPKcET_S2_"
+	"Function- _ZSt12__niter_baseIPKcET_S2_" -> "Function- _ZSt12__niter_baseIPKcET_S2_" [dir=back]
+	"Function- _ZSt14__copy_move_a2ILb0EPKcPcET1_T0_S4_S3_"
+	"Function- _ZSt14__copy_move_a2ILb0EPKcPcET1_T0_S4_S3_" -> "Function- _ZSt12__niter_baseIPKcET_S2_" [dir=back]
+	"Function- _ZSt12__miter_baseIPKcET_S2_"
+	"Function- _ZSt12__miter_baseIPKcET_S2_" -> "Function- _ZSt14__copy_move_a2ILb0EPKcPcET1_T0_S4_S3_" [dir=back]
+	"Function- _ZSt12__miter_baseIPKcET_S2_"
+	"Function- _ZSt12__miter_baseIPKcET_S2_" -> "Function- _ZSt12__miter_baseIPKcET_S2_" [dir=back]
+	"Function- _ZSt4copyIPKcPcET0_T_S4_S3_"
+	"Function- _ZSt4copyIPKcPcET0_T_S4_S3_" -> "Function- _ZSt12__miter_baseIPKcET_S2_" [dir=back]
+	"Function- _ZN3fmt2v58internal8copy_strIcPKcPcEENSt9enable_ifIXntsr16needs_conversionIT0_T_EE5valueET1_E4typeES7_S7_S9_"
+	"Function- _ZN3fmt2v58internal8copy_strIcPKcPcEENSt9enable_ifIXntsr16needs_conversionIT0_T_EE5valueET1_E4typeES7_S7_S9_" -> "Function- _ZSt4copyIPKcPcET0_T_S4_S3_" [dir=back]
+}

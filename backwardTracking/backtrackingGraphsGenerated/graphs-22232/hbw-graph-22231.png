@@ -1,0 +1,23 @@
+digraph {
+	"Function- _ZNK3fmt2v58internal12basic_bufferIcE8capacityEv"
+	"Function- _ZN3fmt2v58internal14sprintf_formatIdEEvT_RNS1_12basic_bufferIcEENS0_17core_format_specsE"
+	"Function- _ZN3fmt2v58internal14sprintf_formatIdEEvT_RNS1_12basic_bufferIcEENS0_17core_format_specsE" -> "Function- _ZNK3fmt2v58internal12basic_bufferIcE8capacityEv" [dir=back]
+	"Function- _ZN9__gnu_cxx13new_allocatorIcED2Ev"
+	"Function- _ZN9__gnu_cxx13new_allocatorIcED2Ev" -> "Function- _ZN3fmt2v58internal14sprintf_formatIdEEvT_RNS1_12basic_bufferIcEENS0_17core_format_specsE" [dir=back]
+	"Function- _ZNSaIcED2Ev"
+	"Function- _ZNSaIcED2Ev" -> "Function- _ZN9__gnu_cxx13new_allocatorIcED2Ev" [dir=back]
+	"Function- _ZN3fmt2v58internal12basic_bufferIcE3setEPcj"
+	"Function- _ZN3fmt2v58internal12basic_bufferIcE3setEPcj" -> "Function- _ZNSaIcED2Ev" [dir=back]
+	"Function- _ZN3fmt2v58internal12basic_bufferIcEC2EPcjj"
+	"Function- _ZN3fmt2v58internal12basic_bufferIcEC2EPcjj" -> "Function- _ZN3fmt2v58internal12basic_bufferIcE3setEPcj" [dir=back]
+	"Function- _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_"
+	"Function- _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_" -> "Function- _ZN3fmt2v58internal12basic_bufferIcEC2EPcjj" [dir=back]
+	"Function- _ZNSaIcEC2ERKS_"
+	"Function- _ZNSaIcEC2ERKS_" -> "Function- _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_" [dir=back]
+	"Function- _ZN3fmt2v519basic_memory_bufferIcLj500ESaIcEEC2ERKS2_"
+	"Function- _ZN3fmt2v519basic_memory_bufferIcLj500ESaIcEEC2ERKS2_" -> "Function- _ZNSaIcEC2ERKS_" [dir=back]
+	"Function- _ZN9__gnu_cxx13new_allocatorIcEC2Ev"
+	"Function- _ZN9__gnu_cxx13new_allocatorIcEC2Ev" -> "Function- _ZN3fmt2v519basic_memory_bufferIcLj500ESaIcEEC2ERKS2_" [dir=back]
+	"Calling- _ZN3fmt2v512basic_writerINS0_17back_insert_rangeINS0_8internal12basic_bufferIcEEEEE12write_doubleIdEEvT_RKNS0_18basic_format_specsIcEE _ZNSt14numeric_limitsIN3fmt2v58internal9dummy_intEE10isinfinityIdEEbT_ Function- _ZNSaIcEC2Ev"
+	"Calling- _ZN3fmt2v512basic_writerINS0_17back_insert_rangeINS0_8internal12basic_bufferIcEEEEE12write_doubleIdEEvT_RKNS0_18basic_format_specsIcEE _ZNSt14numeric_limitsIN3fmt2v58internal9dummy_intEE10isinfinityIdEEbT_ Function- _ZNSaIcEC2Ev" -> "Function- _ZN9__gnu_cxx13new_allocatorIcEC2Ev" [dir=back]
+}

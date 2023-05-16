@@ -1,0 +1,23 @@
+digraph {
+	"Function- _ZSt4copyIPKcPcET0_T_S4_S3_"
+	"Function- _ZNSt20__uninitialized_copyILb1EE13__uninit_copyIPKcPcEET0_T_S6_S5_"
+	"Function- _ZNSt20__uninitialized_copyILb1EE13__uninit_copyIPKcPcEET0_T_S6_S5_" -> "Function- _ZSt4copyIPKcPcET0_T_S4_S3_" [dir=back]
+	"Function- _ZSt18uninitialized_copyIPKcPcET0_T_S4_S3_"
+	"Function- _ZSt18uninitialized_copyIPKcPcET0_T_S4_S3_" -> "Function- _ZNSt20__uninitialized_copyILb1EE13__uninit_copyIPKcPcEET0_T_S6_S5_" [dir=back]
+	"Function- _ZN3fmt2v58internal12make_checkedIcEEPT_S4_j"
+	"Function- _ZN3fmt2v58internal12make_checkedIcEEPT_S4_j" -> "Function- _ZSt18uninitialized_copyIPKcPcET0_T_S4_S3_" [dir=back]
+	"Function- _ZN3fmt2v58internal12basic_bufferIcE7reserveEj"
+	"Function- _ZN3fmt2v58internal12basic_bufferIcE7reserveEj" -> "Function- _ZN3fmt2v58internal12make_checkedIcEEPT_S4_j" [dir=back]
+	"Function- _ZN3fmt2v58internal11to_unsignedIiEENSt13make_unsignedIT_E4typeES4_"
+	"Function- _ZN3fmt2v58internal11to_unsignedIiEENSt13make_unsignedIT_E4typeES4_" -> "Function- _ZN3fmt2v58internal12basic_bufferIcE7reserveEj" [dir=back]
+	"Function- _ZN3fmt2v58internal12basic_bufferIcE6appendIcEEvPKT_S7_"
+	"Function- _ZN3fmt2v58internal12basic_bufferIcE6appendIcEEvPKT_S7_" -> "Function- _ZN3fmt2v58internal11to_unsignedIiEENSt13make_unsignedIT_E4typeES4_" [dir=back]
+	"Function- _ZNK3fmt2v517basic_string_viewIcE4sizeEv"
+	"Function- _ZNK3fmt2v517basic_string_viewIcE4sizeEv" -> "Function- _ZN3fmt2v58internal12basic_bufferIcE6appendIcEEvPKT_S7_" [dir=back]
+	"Function- _ZNK3fmt2v517basic_string_viewIcE4dataEv"
+	"Function- _ZNK3fmt2v517basic_string_viewIcE4dataEv" -> "Function- _ZNK3fmt2v517basic_string_viewIcE4sizeEv" [dir=back]
+	"Function- _ZN9__gnu_cxx13new_allocatorISt23_Sp_counted_ptr_inplaceIN4mqtt7messageESaIS3_ELNS_12_Lock_policyE2EEED2Ev"
+	"Function- _ZN9__gnu_cxx13new_allocatorISt23_Sp_counted_ptr_inplaceIN4mqtt7messageESaIS3_ELNS_12_Lock_policyE2EEED2Ev" -> "Function- _ZNK3fmt2v517basic_string_viewIcE4dataEv" [dir=back]
+	"Function- _ZN9__gnu_cxx13new_allocatorISt23_Sp_counted_ptr_inplaceIN4mqtt7messageESaIS3_ELNS_12_Lock_policyE2EEE10deallocateEPS6_j"
+	"Function- _ZN9__gnu_cxx13new_allocatorISt23_Sp_counted_ptr_inplaceIN4mqtt7messageESaIS3_ELNS_12_Lock_policyE2EEE10deallocateEPS6_j" -> "Function- _ZN9__gnu_cxx13new_allocatorISt23_Sp_counted_ptr_inplaceIN4mqtt7messageESaIS3_ELNS_12_Lock_policyE2EEED2Ev" [dir=back]
+}

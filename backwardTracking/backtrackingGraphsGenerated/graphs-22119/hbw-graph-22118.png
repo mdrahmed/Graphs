@@ -1,0 +1,23 @@
+digraph {
+	"Function- _ZSt12__miter_baseIPKcET_S2_"
+	"Function- _ZSt4copyIPKcPcET0_T_S4_S3_"
+	"Function- _ZSt4copyIPKcPcET0_T_S4_S3_" -> "Function- _ZSt12__miter_baseIPKcET_S2_" [dir=back]
+	"Function- _ZSt8__copy_nIPKcjPcET1_T_T0_S3_St26random_access_iterator_tag"
+	"Function- _ZSt8__copy_nIPKcjPcET1_T_T0_S3_St26random_access_iterator_tag" -> "Function- _ZSt4copyIPKcPcET0_T_S4_S3_" [dir=back]
+	"Function- _ZSt19__iterator_categoryIPKcENSt15iterator_traitsIT_E17iterator_categoryERKS3_"
+	"Function- _ZSt19__iterator_categoryIPKcENSt15iterator_traitsIT_E17iterator_categoryERKS3_" -> "Function- _ZSt8__copy_nIPKcjPcET1_T_T0_S3_St26random_access_iterator_tag" [dir=back]
+	"Function- _ZSt6copy_nIPKcjPcET1_T_T0_S3_"
+	"Function- _ZSt6copy_nIPKcjPcET1_T_T0_S3_" -> "Function- _ZSt19__iterator_categoryIPKcENSt15iterator_traitsIT_E17iterator_categoryERKS3_" [dir=back]
+	"Function- _ZN3fmt2v58internal12make_checkedIcEEPT_S4_j"
+	"Function- _ZN3fmt2v58internal12make_checkedIcEEPT_S4_j" -> "Function- _ZSt6copy_nIPKcjPcET1_T_T0_S3_" [dir=back]
+	"Function- _ZN3fmt2v58internal12basic_bufferIcEixEj"
+	"Function- _ZN3fmt2v58internal12basic_bufferIcEixEj" -> "Function- _ZN3fmt2v58internal12make_checkedIcEEPT_S4_j" [dir=back]
+	"Function- _ZN3fmt2v58internal12basic_bufferIcE7reserveEj"
+	"Function- _ZN3fmt2v58internal12basic_bufferIcE7reserveEj" -> "Function- _ZN3fmt2v58internal12basic_bufferIcEixEj" [dir=back]
+	"Function- _ZN3fmt2v58internal12basic_bufferIcE6resizeEj"
+	"Function- _ZN3fmt2v58internal12basic_bufferIcE6resizeEj" -> "Function- _ZN3fmt2v58internal12basic_bufferIcE7reserveEj" [dir=back]
+	"Function- _ZNK3fmt2v58internal12basic_bufferIcE4sizeEv"
+	"Function- _ZNK3fmt2v58internal12basic_bufferIcE4sizeEv" -> "Function- _ZN3fmt2v58internal12basic_bufferIcE6resizeEj" [dir=back]
+	"Function- _ZZN3fmt2v58internal13get_containerINS1_12basic_bufferIcEEEERT_St20back_insert_iteratorIS5_EEN8accessorC2ES7_IS4_E"
+	"Function- _ZZN3fmt2v58internal13get_containerINS1_12basic_bufferIcEEEERT_St20back_insert_iteratorIS5_EEN8accessorC2ES7_IS4_E" -> "Function- _ZNK3fmt2v58internal12basic_bufferIcE4sizeEv" [dir=back]
+}

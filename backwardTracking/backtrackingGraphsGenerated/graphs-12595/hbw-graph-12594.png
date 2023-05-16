@@ -1,0 +1,23 @@
+digraph {
+	"Function- _ZNK3fmt2v517basic_string_viewIcE4dataEv"
+	"Function- _ZN6spdlog7details10fmt_helper18append_string_viewILj176EEEvN3fmt2v517basic_string_viewIcEERNS4_19basic_memory_bufferIcXT_ESaIcEEE"
+	"Function- _ZN6spdlog7details10fmt_helper18append_string_viewILj176EEEvN3fmt2v517basic_string_viewIcEERNS4_19basic_memory_bufferIcXT_ESaIcEEE" -> "Function- _ZNK3fmt2v517basic_string_viewIcE4dataEv" [dir=back]
+	"Function- _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EE7_M_swapERS2_"
+	"Function- _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EE7_M_swapERS2_" -> "Function- _ZN6spdlog7details10fmt_helper18append_string_viewILj176EEEvN3fmt2v517basic_string_viewIcEERNS4_19basic_memory_bufferIcXT_ESaIcEEE" [dir=back]
+	"Function- _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EEC2Ev"
+	"Function- _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EEC2Ev" -> "Function- _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EE7_M_swapERS2_" [dir=back]
+	"Function- _ZNSt12__shared_ptrIN6spdlog12async_loggerELN9__gnu_cxx12_Lock_policyE2EEC2EOS4_"
+	"Function- _ZNSt12__shared_ptrIN6spdlog12async_loggerELN9__gnu_cxx12_Lock_policyE2EEC2EOS4_" -> "Function- _ZNSt14__shared_countILN9__gnu_cxx12_Lock_policyE2EEC2Ev" [dir=back]
+	"Function- _ZSt4moveIRSt10shared_ptrIN6spdlog12async_loggerEEEONSt16remove_referenceIT_E4typeEOS6_"
+	"Function- _ZSt4moveIRSt10shared_ptrIN6spdlog12async_loggerEEEONSt16remove_referenceIT_E4typeEOS6_" -> "Function- _ZNSt12__shared_ptrIN6spdlog12async_loggerELN9__gnu_cxx12_Lock_policyE2EEC2EOS4_" [dir=back]
+	"Function- _ZNSt10shared_ptrIN6spdlog12async_loggerEEC2EOS2_"
+	"Function- _ZNSt10shared_ptrIN6spdlog12async_loggerEEC2EOS2_" -> "Function- _ZSt4moveIRSt10shared_ptrIN6spdlog12async_loggerEEEONSt16remove_referenceIT_E4typeEOS6_" [dir=back]
+	"Function- _ZSt4moveIRSt10shared_ptrIN6spdlog12async_loggerEEEONSt16remove_referenceIT_E4typeEOS6_"
+	"Function- _ZSt4moveIRSt10shared_ptrIN6spdlog12async_loggerEEEONSt16remove_referenceIT_E4typeEOS6_" -> "Function- _ZNSt10shared_ptrIN6spdlog12async_loggerEEC2EOS2_" [dir=back]
+	"Function- _ZN9__gnu_cxx13new_allocatorIcED2Ev"
+	"Function- _ZN9__gnu_cxx13new_allocatorIcED2Ev" -> "Function- _ZSt4moveIRSt10shared_ptrIN6spdlog12async_loggerEEEONSt16remove_referenceIT_E4typeEOS6_" [dir=back]
+	"Function- _ZNSaIcED2Ev"
+	"Function- _ZNSaIcED2Ev" -> "Function- _ZN9__gnu_cxx13new_allocatorIcED2Ev" [dir=back]
+	"Function- _ZN3fmt2v58internal12basic_bufferIcE3setEPcj"
+	"Function- _ZN3fmt2v58internal12basic_bufferIcE3setEPcj" -> "Function- _ZNSaIcED2Ev" [dir=back]
+}

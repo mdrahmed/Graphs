@@ -1,0 +1,23 @@
+digraph {
+	"Function- _ZNSt6chrono20__duration_cast_implINS_8durationIxSt5ratioILx1ELx1000000000EEEES2_ILx1000000ELx1EExLb0ELb1EE6__castIxS2_ILx1ELx1000EEEES4_RKNS1_IT_T0_EE"
+	"Function- _ZNSt6chrono13duration_castINS_8durationIxSt5ratioILx1ELx1000000000EEEExS2_ILx1ELx1000EEEENSt9enable_ifIXsr13__is_durationIT_EE5valueES7_E4typeERKNS1_IT0_T1_EE"
+	"Function- _ZNSt6chrono13duration_castINS_8durationIxSt5ratioILx1ELx1000000000EEEExS2_ILx1ELx1000EEEENSt9enable_ifIXsr13__is_durationIT_EE5valueES7_E4typeERKNS1_IT0_T1_EE" -> "Function- _ZNSt6chrono20__duration_cast_implINS_8durationIxSt5ratioILx1ELx1000000000EEEES2_ILx1000000ELx1EExLb0ELb1EE6__castIxS2_ILx1ELx1000EEEES4_RKNS1_IT_T0_EE" [dir=back]
+	"Function- _ZNSt18condition_variable8wait_forIxSt5ratioILx1ELx1000EEZN6spdlog7details19mpmc_blocking_queueINS4_9async_msgEE11dequeue_forERS6_NSt6chrono8durationIxS2_EEEUlvE_EEbRSt11unique_lockISt5mutexERKNSA_IT_T0_EET1_"
+	"Function- _ZNSt18condition_variable8wait_forIxSt5ratioILx1ELx1000EEZN6spdlog7details19mpmc_blocking_queueINS4_9async_msgEE11dequeue_forERS6_NSt6chrono8durationIxS2_EEEUlvE_EEbRSt11unique_lockISt5mutexERKNSA_IT_T0_EET1_" -> "Function- _ZNSt6chrono13duration_castINS_8durationIxSt5ratioILx1ELx1000000000EEEExS2_ILx1ELx1000EEEENSt9enable_ifIXsr13__is_durationIT_EE5valueES7_E4typeERKNS1_IT0_T1_EE" [dir=back]
+	"Function- _ZL18__gthread_active_pv"
+	"Function- _ZL18__gthread_active_pv" -> "Function- _ZNSt18condition_variable8wait_forIxSt5ratioILx1ELx1000EEZN6spdlog7details19mpmc_blocking_queueINS4_9async_msgEE11dequeue_forERS6_NSt6chrono8durationIxS2_EEEUlvE_EEbRSt11unique_lockISt5mutexERKNSA_IT_T0_EET1_" [dir=back]
+	"Function- _ZL22__gthread_mutex_unlockP15pthread_mutex_t"
+	"Function- _ZL22__gthread_mutex_unlockP15pthread_mutex_t" -> "Function- _ZL18__gthread_active_pv" [dir=back]
+	"Function- _ZNSt5mutex6unlockEv"
+	"Function- _ZNSt5mutex6unlockEv" -> "Function- _ZL22__gthread_mutex_unlockP15pthread_mutex_t" [dir=back]
+	"Function- _ZNSt11unique_lockISt5mutexE6unlockEv"
+	"Function- _ZNSt11unique_lockISt5mutexE6unlockEv" -> "Function- _ZNSt5mutex6unlockEv" [dir=back]
+	"Function- _ZL18__gthread_active_pv"
+	"Function- _ZL18__gthread_active_pv" -> "Function- _ZNSt11unique_lockISt5mutexE6unlockEv" [dir=back]
+	"Function- _ZL20__gthread_mutex_lockP15pthread_mutex_t"
+	"Function- _ZL20__gthread_mutex_lockP15pthread_mutex_t" -> "Function- _ZL18__gthread_active_pv" [dir=back]
+	"Function- _ZNSt5mutex4lockEv"
+	"Function- _ZNSt5mutex4lockEv" -> "Function- _ZL20__gthread_mutex_lockP15pthread_mutex_t" [dir=back]
+	"Function- _ZNSt11unique_lockISt5mutexE4lockEv"
+	"Function- _ZNSt11unique_lockISt5mutexE4lockEv" -> "Function- _ZNSt5mutex4lockEv" [dir=back]
+}

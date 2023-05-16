@@ -1,0 +1,23 @@
+digraph {
+	"Function- _ZSt7forwardIRKbEOT_RNSt16remove_referenceIS2_E4typeE"
+	"Function- _ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE"
+	"Function- _ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE" -> "Function- _ZSt7forwardIRKbEOT_RNSt16remove_referenceIS2_E4typeE" [dir=back]
+	"Function- _ZSt7forwardIN4mqtt10buffer_refIcEEEOT_RNSt16remove_referenceIS3_E4typeE"
+	"Function- _ZSt7forwardIN4mqtt10buffer_refIcEEEOT_RNSt16remove_referenceIS3_E4typeE" -> "Function- _ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE" [dir=back]
+	"Function- _ZSt7forwardIN4mqtt10buffer_refIcEEEOT_RNSt16remove_referenceIS3_E4typeE"
+	"Function- _ZSt7forwardIN4mqtt10buffer_refIcEEEOT_RNSt16remove_referenceIS3_E4typeE" -> "Function- _ZSt7forwardIN4mqtt10buffer_refIcEEEOT_RNSt16remove_referenceIS3_E4typeE" [dir=back]
+	"Function- _ZNSt10shared_ptrIN4mqtt7messageEEC2ISaIS1_EJNS0_10buffer_refIcEES6_RKiRKbEEESt19_Sp_make_shared_tagRKT_DpOT0_"
+	"Function- _ZNSt10shared_ptrIN4mqtt7messageEEC2ISaIS1_EJNS0_10buffer_refIcEES6_RKiRKbEEESt19_Sp_make_shared_tagRKT_DpOT0_" -> "Function- _ZSt7forwardIN4mqtt10buffer_refIcEEEOT_RNSt16remove_referenceIS3_E4typeE" [dir=back]
+	"Function- _ZSt7forwardIRKbEOT_RNSt16remove_referenceIS2_E4typeE"
+	"Function- _ZSt7forwardIRKbEOT_RNSt16remove_referenceIS2_E4typeE" -> "Function- _ZNSt10shared_ptrIN4mqtt7messageEEC2ISaIS1_EJNS0_10buffer_refIcEES6_RKiRKbEEESt19_Sp_make_shared_tagRKT_DpOT0_" [dir=back]
+	"Function- _ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE"
+	"Function- _ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE" -> "Function- _ZSt7forwardIRKbEOT_RNSt16remove_referenceIS2_E4typeE" [dir=back]
+	"Function- _ZSt7forwardIN4mqtt10buffer_refIcEEEOT_RNSt16remove_referenceIS3_E4typeE"
+	"Function- _ZSt7forwardIN4mqtt10buffer_refIcEEEOT_RNSt16remove_referenceIS3_E4typeE" -> "Function- _ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE" [dir=back]
+	"Function- _ZSt7forwardIN4mqtt10buffer_refIcEEEOT_RNSt16remove_referenceIS3_E4typeE"
+	"Function- _ZSt7forwardIN4mqtt10buffer_refIcEEEOT_RNSt16remove_referenceIS3_E4typeE" -> "Function- _ZSt7forwardIN4mqtt10buffer_refIcEEEOT_RNSt16remove_referenceIS3_E4typeE" [dir=back]
+	"Function- _ZSt15allocate_sharedIN4mqtt7messageESaIS1_EJNS0_10buffer_refIcEES4_RKiRKbEESt10shared_ptrIT_ERKT0_DpOT1_"
+	"Function- _ZSt15allocate_sharedIN4mqtt7messageESaIS1_EJNS0_10buffer_refIcEES4_RKiRKbEESt10shared_ptrIT_ERKT0_DpOT1_" -> "Function- _ZSt7forwardIN4mqtt10buffer_refIcEEEOT_RNSt16remove_referenceIS3_E4typeE" [dir=back]
+	"Function- _ZSt7forwardIRKbEOT_RNSt16remove_referenceIS2_E4typeE"
+	"Function- _ZSt7forwardIRKbEOT_RNSt16remove_referenceIS2_E4typeE" -> "Function- _ZSt15allocate_sharedIN4mqtt7messageESaIS1_EJNS0_10buffer_refIcEES4_RKiRKbEESt10shared_ptrIT_ERKT0_DpOT1_" [dir=back]
+}

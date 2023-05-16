@@ -1,0 +1,23 @@
+digraph {
+	"Function- _ZNSt10shared_ptrIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2EOS7_"
+	"Function- _ZN4mqtt10buffer_refIcEC2EOS1_"
+	"Function- _ZN4mqtt10buffer_refIcEC2EOS1_" -> "Function- _ZNSt10shared_ptrIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEC2EOS7_" [dir=back]
+	"Function- _ZSt7forwardIN4mqtt10buffer_refIcEEEOT_RNSt16remove_referenceIS3_E4typeE"
+	"Function- _ZSt7forwardIN4mqtt10buffer_refIcEEEOT_RNSt16remove_referenceIS3_E4typeE" -> "Function- _ZN4mqtt10buffer_refIcEC2EOS1_" [dir=back]
+	"Function- _ZN9__gnu_cxx13new_allocatorIN4mqtt7messageEE9constructIS2_JNS1_10buffer_refIcEES6_RKiRKbEEEvPT_DpOT0_"
+	"Function- _ZN9__gnu_cxx13new_allocatorIN4mqtt7messageEE9constructIS2_JNS1_10buffer_refIcEES6_RKiRKbEEEvPT_DpOT0_" -> "Function- _ZSt7forwardIN4mqtt10buffer_refIcEEEOT_RNSt16remove_referenceIS3_E4typeE" [dir=back]
+	"Function- _ZSt7forwardIRKbEOT_RNSt16remove_referenceIS2_E4typeE"
+	"Function- _ZSt7forwardIRKbEOT_RNSt16remove_referenceIS2_E4typeE" -> "Function- _ZN9__gnu_cxx13new_allocatorIN4mqtt7messageEE9constructIS2_JNS1_10buffer_refIcEES6_RKiRKbEEEvPT_DpOT0_" [dir=back]
+	"Function- _ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE"
+	"Function- _ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE" -> "Function- _ZSt7forwardIRKbEOT_RNSt16remove_referenceIS2_E4typeE" [dir=back]
+	"Function- _ZSt7forwardIN4mqtt10buffer_refIcEEEOT_RNSt16remove_referenceIS3_E4typeE"
+	"Function- _ZSt7forwardIN4mqtt10buffer_refIcEEEOT_RNSt16remove_referenceIS3_E4typeE" -> "Function- _ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE" [dir=back]
+	"Function- _ZSt7forwardIN4mqtt10buffer_refIcEEEOT_RNSt16remove_referenceIS3_E4typeE"
+	"Function- _ZSt7forwardIN4mqtt10buffer_refIcEEEOT_RNSt16remove_referenceIS3_E4typeE" -> "Function- _ZSt7forwardIN4mqtt10buffer_refIcEEEOT_RNSt16remove_referenceIS3_E4typeE" [dir=back]
+	"Function- _ZNSt16allocator_traitsISaIN4mqtt7messageEEE9constructIS1_JNS0_10buffer_refIcEES6_RKiRKbEEEvRS2_PT_DpOT0_"
+	"Function- _ZNSt16allocator_traitsISaIN4mqtt7messageEEE9constructIS1_JNS0_10buffer_refIcEES6_RKiRKbEEEvRS2_PT_DpOT0_" -> "Function- _ZSt7forwardIN4mqtt10buffer_refIcEEEOT_RNSt16remove_referenceIS3_E4typeE" [dir=back]
+	"Function- _ZSt7forwardIRKbEOT_RNSt16remove_referenceIS2_E4typeE"
+	"Function- _ZSt7forwardIRKbEOT_RNSt16remove_referenceIS2_E4typeE" -> "Function- _ZNSt16allocator_traitsISaIN4mqtt7messageEEE9constructIS1_JNS0_10buffer_refIcEES6_RKiRKbEEEvRS2_PT_DpOT0_" [dir=back]
+	"Function- _ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE"
+	"Function- _ZSt7forwardIRKiEOT_RNSt16remove_referenceIS2_E4typeE" -> "Function- _ZSt7forwardIRKbEOT_RNSt16remove_referenceIS2_E4typeE" [dir=back]
+}

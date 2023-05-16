@@ -1,0 +1,23 @@
+digraph {
+	"Function- _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_"
+	"Function- _ZNSaIcEC2ERKS_"
+	"Function- _ZNSaIcEC2ERKS_" -> "Function- _ZN9__gnu_cxx13new_allocatorIcEC2ERKS1_" [dir=back]
+	"Function- _ZN3fmt2v519basic_memory_bufferIcLj500ESaIcEEC2ERKS2_"
+	"Function- _ZN3fmt2v519basic_memory_bufferIcLj500ESaIcEEC2ERKS2_" -> "Function- _ZNSaIcEC2ERKS_" [dir=back]
+	"Function- _ZN9__gnu_cxx13new_allocatorIcEC2Ev"
+	"Function- _ZN9__gnu_cxx13new_allocatorIcEC2Ev" -> "Function- _ZN3fmt2v519basic_memory_bufferIcLj500ESaIcEEC2ERKS2_" [dir=back]
+	"Calling- _ZN6spdlog6logger3logIJPKcfdEEEvNS_10source_locENS_5level10level_enumES3_DpRKT_ _ZNK6spdlog6logger10should_logENS_5level10level_enumE Function- _ZNSaIcEC2Ev"
+	"Calling- _ZN6spdlog6logger3logIJPKcfdEEEvNS_10source_locENS_5level10level_enumES3_DpRKT_ _ZNK6spdlog6logger10should_logENS_5level10level_enumE Function- _ZNSaIcEC2Ev" -> "Function- _ZN9__gnu_cxx13new_allocatorIcEC2Ev" [dir=back]
+	"Function- _ZStanSt12memory_orderSt23__memory_order_modifier"
+	"Function- _ZStanSt12memory_orderSt23__memory_order_modifier" -> "Calling- _ZN6spdlog6logger3logIJPKcfdEEEvNS_10source_locENS_5level10level_enumES3_DpRKT_ _ZNK6spdlog6logger10should_logENS_5level10level_enumE Function- _ZNSaIcEC2Ev" [dir=back]
+	"Function- _ZNKSt13__atomic_baseIiE4loadESt12memory_order"
+	"Function- _ZNKSt13__atomic_baseIiE4loadESt12memory_order" -> "Function- _ZStanSt12memory_orderSt23__memory_order_modifier" [dir=back]
+	"Function- _ZNK6spdlog6logger10should_logENS_5level10level_enumE"
+	"Function- _ZNK6spdlog6logger10should_logENS_5level10level_enumE" -> "Function- _ZNKSt13__atomic_baseIiE4loadESt12memory_order" [dir=back]
+	"Function- _ZN6spdlog6logger3logIJPKcfdEEEvNS_10source_locENS_5level10level_enumES3_DpRKT_"
+	"Function- _ZN6spdlog6logger3logIJPKcfdEEEvNS_10source_locENS_5level10level_enumES3_DpRKT_" -> "Function- _ZNK6spdlog6logger10should_logENS_5level10level_enumE" [dir=back]
+	"Function- _ZN6spdlog10source_locC2Ev"
+	"Function- _ZN6spdlog10source_locC2Ev" -> "Function- _ZN6spdlog6logger3logIJPKcfdEEEvNS_10source_locENS_5level10level_enumES3_DpRKT_" [dir=back]
+	"Function- _ZN6spdlog6logger3logIJPKcfdEEEvNS_5level10level_enumES3_DpRKT_"
+	"Function- _ZN6spdlog6logger3logIJPKcfdEEEvNS_5level10level_enumES3_DpRKT_" -> "Function- _ZN6spdlog10source_locC2Ev" [dir=back]
+}
