@@ -1,4 +1,13 @@
+Worked files till now,
+------------------
+```
+backwardTracking/combinedGraph/graphviz-combined.py
+```
+------------------
+
+
 Working files,
+- Using the dataset either inside this folder or dataset present in `/Graphs-dataset`
 
 1. graph-hbw.py is not working as it is crossing the edge limit.
 Error:
