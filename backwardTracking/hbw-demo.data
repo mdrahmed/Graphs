@@ -1,0 +1,28 @@
+
+t # 0
+v "_ZSt4moveIRZ4mainE3$_0EONSt16remove_referenceIT_E4typeEOS3" 1
+v "_ZNSt14_Function_base13_Base_managerIZ4mainE3$_0E21_M_not_empty_functionIS1_EEbRKT_" 2
+v _ZNSt14_Function_baseC2Ev 3
+v "__cxx_global_var_init.645" 4
+v "_ZN3fmt2v58internal9get_typesINS0_20basic_format_contextISt20back_insert_iteratorINS1_12basic_bufferIcEEEcEEEEyvi4" 5
+v "_ZN3fmt2v58internal9get_typesINS0_20basic_format_contextISt20back_insert_iteratorINS1_12basic_bufferIcEEEcEEiJEEEyv3" 6
+v "GlobalVariable-%17=loadi32,i32*%16,align4" 7
+e "_ZSt4moveIRZ4mainE3$_0EONSt16remove_referenceIT_E4typeEOS3" "_ZNSt14_Function_base13_Base_managerIZ4mainE3$_0E21_M_not_empty_functionIS1_EEbRKT_" 1
+e "_ZNSt14_Function_base13_Base_managerIZ4mainE3$_0E21_M_not_empty_functionIS1_EEbRKT_" "_ZNSt14_Function_base13_Base_managerIZ4mainE3$_0E21_M_not_empty_functionIS1_EEbRKT_" 2
+e "_ZNSt14_Function_base13_Base_managerIZ4mainE3$_0E21_M_not_empty_functionIS1_EEbRKT_" _ZNSt14_Function_baseC2Ev 3
+e _ZNSt14_Function_baseC2Ev "__cxx_global_var_init.645" 4
+e "__cxx_global_var_init.645" _ZNSt14_Function_baseC2Ev 5
+e "__cxx_global_var_init.645" "_ZN3fmt2v58internal9get_typesINS0_20basic_format_contextISt20back_insert_iteratorINS1_12basic_bufferIcEEEcEEEEyvi4" 6
+e "_ZN3fmt2v58internal9get_typesINS0_20basic_format_contextISt20back_insert_iteratorINS1_12basic_bufferIcEEEcEEEEyvi4" "_ZN3fmt2v58internal9get_typesINS0_20basic_format_contextISt20back_insert_iteratorINS1_12basic_bufferIcEEEcEEEEyvi4" 7
+e "_ZN3fmt2v58internal9get_typesINS0_20basic_format_contextISt20back_insert_iteratorINS1_12basic_bufferIcEEEcEEEEyvi4" "_ZN3fmt2v58internal9get_typesINS0_20basic_format_contextISt20back_insert_iteratorINS1_12basic_bufferIcEEEcEEiJEEEyv3" 8
+e "_ZN3fmt2v58internal9get_typesINS0_20basic_format_contextISt20back_insert_iteratorINS1_12basic_bufferIcEEEcEEiJEEEyv3" "GlobalVariable-%17=loadi32,i32*%16,align4" 9
+
+t # 1
+v "GlobalVariable-%14=loadi32,i32*%13,align4" 8
+v "GlobalVariable-%17=loadi32,i32*%16,align4" 7
+v "_ZN3fmt2v516format_arg_storeINS0_20basic_format_contextISt20back_insert_iteratorINS0_8internal12basic_bufferIcEEEcEEJiEE9get_typesEv2" 9
+v "__cxx_global_var_init.631" 10
+e "GlobalVariable-%14=loadi32,i32*%13,align4" "GlobalVariable-%17=loadi32,i32*%16,align4" 10
+e "GlobalVariable-%17=loadi32,i32*%16,align4" "GlobalVariable-%14=loadi32,i32*%13,align4" 11
+e "GlobalVariable-%14=loadi32,i32*%13,align4" "_ZN3fmt2v516format_arg_storeINS0_20basic_format_contextISt20back_insert_iteratorINS0_8internal12basic_bufferIcEEEcEEJiEE9get_typesEv2" 12
+e "_ZN3fmt2v516format_arg_storeINS0_20basic_format_contextISt20back_insert_iteratorINS0_8internal12basic_bufferIcEEEcEEJiEE9get_typesEv2" "__cxx_global_var_init.631" 13
