@@ -1,0 +1,23 @@
+digraph {
+	"f 1"
+	"g 1"
+	"g 1" -> "f 1" [dir=back]
+	"c 3"
+	"c 3" -> "g 1" [dir=back]
+	"c 2"
+	"c 2" -> "c 3" [dir=back]
+	"c 1"
+	"c 1" -> "c 2" [dir=back]
+	f
+	f -> "c 1" [dir=back]
+	f
+	f -> f [dir=back]
+	f
+	f -> f [dir=back]
+	"g 1"
+	"g 1" -> f [dir=back]
+	"g 1"
+	"g 1" -> "g 1" [dir=back]
+	"g--- 1"
+	"g--- 1" -> "g 1" [dir=back]
+}

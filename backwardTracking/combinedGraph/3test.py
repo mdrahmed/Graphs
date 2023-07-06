@@ -85,6 +85,7 @@ l
 start_tracking_from = input("Enter the event name: ")
 edges = 0
 def parse_input(input_str):
+    print("hello")
     global edges
     lines = input_str.split("\n")
     i = 0
@@ -189,9 +190,12 @@ def parse_input(input_str):
 graphs = parse_input(input_str)
 print("total edges: ",edges)
 for i, graph in enumerate(graphs):
-    graph.render(f'graph/hbw-graph-{i}.dot')
-    graph.render(f'graph/hbw-graph-{i}.png')
-    with open(f'graph/hbw-graph-{i}.png') as f:
+    graph.render(f'test-graph/hbw-graph-{i}.dot')
+    graph.render(f'test-graph/hbw-graph-{i}.png')
+    with open(f'test-graph/hbw-graph-{i}.png') as f:
         dot_graph = f.read()
     graphviz.Source(dot_graph)
 
+    search_string = "f"
+    if search_string in dot_graph:
+        print(f"String found in graph {i}")

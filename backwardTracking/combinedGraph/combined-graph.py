@@ -135,9 +135,14 @@ def parse_input(input_str):
 graphs = parse_input(input_str)
 print("total edges: ",edges)
 for i, graph in enumerate(graphs):
-    graph.render(f'graph/combined-graph-{i}.dot')
-    graph.render(f'graph/combined-graph-{i}.png')
-    with open(f'graph/combined-graph-{i}.png') as f:
+    graph.render(f'hbw-graph/hbw-graph-{i}.dot')
+    graph.render(f'hbw-graph/hbw-graph-{i}.png')
+    with open(f'hbw-graph/hbw-graph-{i}.png') as f:
         dot_graph = f.read()
     graphviz.Source(dot_graph)
+
+    search_string = "Called from: _ZN2ft26TxtHighBayWarehouseStorage5fetchENS_11TxtWPType_tE _ZN2ft26TxtHighBayWarehouseStorage10isValidPosENS_11StoragePos2E callInst_values: -1"
+    if search_string in dot_graph:
+        print(f"String found in graph {i}")
+
 
