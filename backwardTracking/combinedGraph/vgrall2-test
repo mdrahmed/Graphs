@@ -1,0 +1,94 @@
+
+Mon Jul  3 13:18:44 2023
+F1 Unix: 1688411924
+FFF Function: _ZN4mqtt10buffer_refIcEC2EONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+arguments:  
+ %"class.mqtt::buffer_ref"* %this
+ %"class.mqtt::buffer_ref"* %this%"class.std::__cxx11::basic_string"* %b
+arg_values: -1289755496
+-1289755352
+publish get_topic value:  fl/vgr/do
+
+Mon Jul  3 13:18:15 2023
+F1 Unix: 1688411895
+FFF Function: _ZN4mqtt12make_messageENS_10buffer_refIcEES1_
+arguments:  
+ %"class.std::shared_ptr.76"* %agg.result
+ %"class.std::shared_ptr.76"* %agg.result%"class.mqtt::buffer_ref"* %topic
+ %"class.std::shared_ptr.76"* %agg.result%"class.mqtt::buffer_ref"* %topic%"class.mqtt::buffer_ref"* %payload
+arg_values: -1289755480
+-1289755488
+-1289755496
+
+Mon Jul  3 13:18:16 2023
+F1 Unix: 1688411896
+FFF Function: _ZN4mqtt10buffer_refIcEC2EOS1_
+arguments:  
+ %"class.mqtt::buffer_ref"* %this
+ %"class.mqtt::buffer_ref"* %this%"class.mqtt::buffer_ref"* %buf
+arg_values: -1289755564
+-1289755488
+
+Mon Jul  3 13:18:16 2023
+F1 Unix: 1688411896
+FFF Function: _ZN4mqtt10buffer_refIcEC2EOS1_
+arguments:  
+ %"class.mqtt::buffer_ref"* %this
+ %"class.mqtt::buffer_ref"* %this%"class.mqtt::buffer_ref"* %buf
+arg_values: -1289755572
+-1289755496
+
+Mon Jul  3 13:18:16 2023
+F1 Unix: 1688411896
+FFF Function: _ZN4mqtt7message6createENS_10buffer_refIcEES2_
+arguments:  
+ %"class.std::shared_ptr.76"* %agg.result
+ %"class.std::shared_ptr.76"* %agg.result%"class.mqtt::buffer_ref"* %topic
+ %"class.std::shared_ptr.76"* %agg.result%"class.mqtt::buffer_ref"* %topic%"class.mqtt::buffer_ref"* %payload
+arg_values: -1289755480
+-1289755564
+-1289755572
+
+Mon Jul  3 13:18:16 2023
+F1 Unix: 1688411896
+FFF Function: _ZN4mqtt10buffer_refIcEC2EOS1_
+arguments:  
+ %"class.mqtt::buffer_ref"* %this
+ %"class.mqtt::buffer_ref"* %this%"class.mqtt::buffer_ref"* %buf
+arg_values: -1289755668
+-1289755564
+
+Mon Jul  3 13:18:16 2023
+F1 Unix: 1688411896
+FFF Function: _ZN4mqtt10buffer_refIcEC2EOS1_
+arguments:  
+ %"class.mqtt::buffer_ref"* %this
+ %"class.mqtt::buffer_ref"* %this%"class.mqtt::buffer_ref"* %buf
+arg_values: -1289755676
+-1289755572
+
+Mon Jul  3 13:18:44 2023
+F1 Unix: 1688411924
+FFF Function: _ZNK4mqtt10buffer_refIcE5emptyEv
+arguments:  
+ %"class.mqtt::buffer_ref"* %this
+arg_values: -1289734620
+Mon Jul  3 13:18:44 2023
+CF Unix: 1688411924
+Called from: _ZNK4mqtt10buffer_refIcE5emptyEv _ZNKSt12__shared_ptrIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEELN9__gnu_cxx12_Lock_policyE2EEcvbEv callInst_values: -1
+
+Mon Jul  3 13:18:16 2023
+F1 Unix: 1688411896
+FFF Function: _ZN4mqtt7message12validate_qosEi
+arguments:  
+ i32 %qos
+arg_values: 0
+
+Mon Jul  3 13:18:15 2023
+F1 Unix: 1688411895
+FFF Function: _ZN4mqtt7message12set_retainedEb
+arguments:  
+ %"class.mqtt::message"* %this
+ %"class.mqtt::message"* %thisi1 %retained
+arg_values: -1289734660
+0

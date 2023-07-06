@@ -1,3 +1,11 @@
-Working files,
+Worked files till now,
+------------------
+```
+./combined-graph.py ##This file will draw graph with 500 edges and nodes using states, but graphs from seperate files e.g., vgr and hbw are not drawn.
+```
+------------------
 
-1. This `graphviz-combined.py` file is a copy of `graphViz-bt-hbw5.py` file. But this will find topic and when it sees one, it will start looking into another file and then create graph with that with a recursive call. After that it will come back and then use the previous file to draw the graph in the general way. But there will be an edge between the 2 files with the `topic`.
+Working files,
+- `hbwall2-test, test,  vgrall2-test` are the test dataset
+- `graph` and `stateful-graphs` contains the graphs drawn
+- `graphviz-combined.py` and `3test.py` are other python files to generate `gspan` data format file and test program respectively. 

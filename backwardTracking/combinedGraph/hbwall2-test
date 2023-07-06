@@ -1,0 +1,544 @@
+
+Mon Jul  3 13:18:38 2023
+F1 Unix: 1688411918
+FFF Function: _ZN2ft19TxtHighBayWarehouse24requestVGRfetchContainerEPNS_12TxtWorkpieceE
+arguments:  
+ %"class.ft::TxtHighBayWarehouse"* %this
+ %"class.ft::TxtHighBayWarehouse"* %this%"class.ft::TxtWorkpiece"* %wp
+arg_values: -1090522400
+2137070216
+
+Mon Jul  3 13:18:15 2023
+F1 Unix: 1688411895
+FFF Function: _ZN4mqtt7messageD2Ev
+arguments:  
+ %"class.mqtt::message"* %this
+arg_values: 2137085204
+
+Mon Jul  3 13:18:15 2023
+F1 Unix: 1688411895
+FFF Function: _ZN4mqtt10buffer_refIcED2Ev
+arguments:  
+ %"class.mqtt::buffer_ref"* %this
+arg_values: 2137085244
+
+Mon Jul  3 13:18:15 2023
+F1 Unix: 1688411895
+FFF Function: _ZN4mqtt10buffer_refIcED2Ev
+arguments:  
+ %"class.mqtt::buffer_ref"* %this
+arg_values: 2137085236
+
+Mon Jul  3 13:18:09 2023
+F1 Unix: 1688411889
+FFF Function: _ZN2ft19TxtHighBayWarehouse7fsmStepEv
+arguments:  
+ %"class.ft::TxtHighBayWarehouse"* %this
+arg_values: -1090522400
+Mon Jul  3 13:18:09 2023
+FB Unix: 1688411889
+loaded values: 1
+Mon Jul  3 13:18:09 2023
+FB Unix: 1688411889
+loaded values: 4
+Mon Jul  3 13:18:09 2023
+FB Unix: 1688411889
+loaded values: 4
+Mon Jul  3 13:18:09 2023
+FB Unix: 1688411889
+loaded values: 4
+Mon Jul  3 13:18:09 2023
+FB Unix: 1688411889
+loaded values: 1
+Mon Jul  3 13:18:09 2023
+FB Unix: 1688411889
+loaded values: 1
+Mon Jul  3 13:18:09 2023
+FB Unix: 1688411889
+loaded values: 1
+
+Mon Jul  3 13:18:09 2023
+F1 Unix: 1688411889
+FFF Function: _ZN2ft19TxtHighBayWarehouse7fsmStepEv
+arguments:  
+ %"class.ft::TxtHighBayWarehouse"* %this
+arg_values: -1090522400
+Mon Jul  3 13:18:09 2023
+FB Unix: 1688411889
+loaded values: 4
+
+Mon Jul  3 13:18:09 2023
+F1 Unix: 1688411889
+FFF Function: _ZN2ft19TxtHighBayWarehouse10printStateENS0_7State_tE
+arguments:  
+ %"class.ft::TxtHighBayWarehouse"* %this
+ %"class.ft::TxtHighBayWarehouse"* %thisi32 %state
+arg_values: -1090522400
+4
+
+Mon Jul  3 13:18:09 2023
+F1 Unix: 1688411889
+FFF Function: _ZN2ft19TxtHighBayWarehouse8toStringENS0_7State_tE
+arguments:  
+ %"class.ft::TxtHighBayWarehouse"* %this
+ %"class.ft::TxtHighBayWarehouse"* %thisi32 %state
+arg_values: -1090522400
+4
+FETCH_CONTAINER
+
+Mon Jul  3 13:17:50 2023
+F1 Unix: 1688411870
+FFF Function: _ZN2ft19TxtHighBayWarehouse14fetchContainerEv
+arguments:  
+ %"class.ft::TxtHighBayWarehouse"* %this
+arg_values: -1090522400
+
+Mon Jul  3 13:17:50 2023
+F1 Unix: 1688411870
+FFF Function: _ZN2ft18TxtSimulationModel12setActStatusEbNS_27TxtSimulationModel_status_tE
+arguments:  
+ %"class.ft::TxtSimulationModel"* %this
+ %"class.ft::TxtSimulationModel"* %thisi1 %a
+ %"class.ft::TxtSimulationModel"* %thisi1 %ai32 %s
+arg_values: -1090522400
+-1
+4
+
+Mon Jul  3 13:18:20 2023
+F1 Unix: 1688411900
+FFF Function: _ZN2ft15SubjectObserver6NotifyEv
+arguments:  
+ %"class.ft::SubjectObserver"* %this
+arg_values: -1090522400
+Mon Jul  3 13:18:20 2023
+TB Unix: 1688411900
+loaded values: -1289745592
+Mon Jul  3 13:18:20 2023
+TB Unix: 1688411900
+loaded values: 2136885428
+Mon Jul  3 13:18:20 2023
+TB Unix: 1688411900
+loaded values: 2136571452
+
+Mon Jul  3 13:18:09 2023
+F1 Unix: 1688411889
+FFF Function: _ZN2ft27TxtHighBayWarehouseObserver6UpdateEPNS_15SubjectObserverE
+arguments:  
+ %"class.ft::TxtHighBayWarehouseObserver"* %this
+ %"class.ft::TxtHighBayWarehouseObserver"* %this%"class.ft::SubjectObserver"* %theChangedSubject
+arg_values: -1289745592
+-1090522400
+
+Mon Jul  3 13:18:09 2023
+F1 Unix: 1688411889
+FFF Function: _ZN2ft18TxtSimulationModel9getStatusEv
+arguments:  
+ %"class.ft::TxtSimulationModel"* %this
+arg_values: -1090522400
+Mon Jul  3 13:18:09 2023
+TB Unix: 1688411889
+loaded values: -1090521784
+Mon Jul  3 13:18:09 2023
+FB Unix: 1688411889
+loaded values: -1090521784
+
+Mon Jul  3 13:18:09 2023
+F1 Unix: 1688411889
+FFF Function: _ZN2ft18TxtSimulationModel8isActiveEv
+arguments:  
+ %"class.ft::TxtSimulationModel"* %this
+arg_values: -1090522400
+
+Mon Jul  3 13:18:09 2023
+F1 Unix: 1688411889
+FFF Function: _ZN2ft20TxtMqttFactoryClient15publishStateHBWENS_13TxtLEDSCode_tENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEliS7_
+arguments:  
+ %"class.ft::TxtMqttFactoryClient"* %this
+ %"class.ft::TxtMqttFactoryClient"* %thisi32 %code
+ %"class.ft::TxtMqttFactoryClient"* %thisi32 %code%"class.std::__cxx11::basic_string"* %desc
+ %"class.ft::TxtMqttFactoryClient"* %thisi32 %code%"class.std::__cxx11::basic_string"* %desci32 %timeout
+ %"class.ft::TxtMqttFactoryClient"* %thisi32 %code%"class.std::__cxx11::basic_string"* %desci32 %timeouti32 %active
+ %"class.ft::TxtMqttFactoryClient"* %thisi32 %code%"class.std::__cxx11::basic_string"* %desci32 %timeouti32 %active%"class.std::__cxx11::basic_string"* %target
+arg_values: -1090521784
+2
+-1289753256
+5000
+1
+-1289753280
+
+Mon Jul  3 13:18:15 2023
+F1 Unix: 1688411895
+FFF Function: _ZN2ft20TxtMqttFactoryClient19publishStateStationENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_13TxtLEDSCode_tES6_liS6_
+arguments:  
+ %"class.ft::TxtMqttFactoryClient"* %this
+ %"class.ft::TxtMqttFactoryClient"* %this%"class.std::__cxx11::basic_string"* %station
+ %"class.ft::TxtMqttFactoryClient"* %this%"class.std::__cxx11::basic_string"* %stationi32 %code
+ %"class.ft::TxtMqttFactoryClient"* %this%"class.std::__cxx11::basic_string"* %stationi32 %code%"class.std::__cxx11::basic_string"* %desc
+ %"class.ft::TxtMqttFactoryClient"* %this%"class.std::__cxx11::basic_string"* %stationi32 %code%"class.std::__cxx11::basic_string"* %desci32 %timeout
+ %"class.ft::TxtMqttFactoryClient"* %this%"class.std::__cxx11::basic_string"* %stationi32 %code%"class.std::__cxx11::basic_string"* %desci32 %timeouti32 %active
+ %"class.ft::TxtMqttFactoryClient"* %this%"class.std::__cxx11::basic_string"* %stationi32 %code%"class.std::__cxx11::basic_string"* %desci32 %timeouti32 %active%"class.std::__cxx11::basic_string"* %target
+arg_values: -1090521784
+-1289753352
+2
+-1289753376
+5000
+1
+-1289753400
+
+Mon Jul  3 13:17:46 2023
+F1 Unix: 1688411866
+FFF Function: _ZN2ft9getnowstrEPc
+arguments:  
+ i8* %sts
+arg_values: -1289753713
+
+Mon Jul  3 13:17:46 2023
+F1 Unix: 1688411866
+FFF Function: _ZN2ft10gettimestrEliPc
+arguments:  
+ i32 %rawtime
+ i32 %rawtimei32 %ms
+ i32 %rawtimei32 %msi8* %sts
+arg_values: 946685337
+41
+-1289753713
+Mon Jul  3 13:18:15 2023
+CF Unix: 1688411895
+Called from: _ZN2ft20TxtMqttFactoryClient19publishStateStationENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_13TxtLEDSCode_tES6_liS6_ _ZN4Json5ValueD1Ev callInst_values: -1289753840
+Mon Jul  3 13:18:15 2023
+CF Unix: 1688411895
+Called from: _ZN2ft20TxtMqttFactoryClient19publishStateStationENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_13TxtLEDSCode_tES6_liS6_ _ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_ callInst_values: 0
+Mon Jul  3 13:18:15 2023
+CF Unix: 1688411895
+Called from: _ZN2ft20TxtMqttFactoryClient19publishStateStationENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_13TxtLEDSCode_tES6_liS6_ _ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_ callInst_values: -1
+
+Mon Jul  3 13:18:15 2023
+F1 Unix: 1688411895
+FFF Function: _ZN4mqtt10buffer_refIcEC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+arguments:  
+ %"class.mqtt::buffer_ref"* %this
+ %"class.mqtt::buffer_ref"* %this%"class.std::__cxx11::basic_string"* %b
+arg_values: -1289753904
+-1289753888
+
+Mon Jul  3 13:18:38 2023
+F1 Unix: 1688411918
+FFF Function: _ZN4mqtt10buffer_refIcEC2EONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+arguments:  
+ %"class.mqtt::buffer_ref"* %this
+ %"class.mqtt::buffer_ref"* %this%"class.std::__cxx11::basic_string"* %b
+arg_values: -1289753912
+-1289753936
+publish get_topic value:  f/i/state/hbw
+
+Mon Jul  3 13:18:15 2023
+F1 Unix: 1688411895
+FFF Function: _ZN4mqtt12make_messageENS_10buffer_refIcEES1_
+arguments:  
+ %"class.std::shared_ptr.76"* %agg.result
+ %"class.std::shared_ptr.76"* %agg.result%"class.mqtt::buffer_ref"* %topic
+ %"class.std::shared_ptr.76"* %agg.result%"class.mqtt::buffer_ref"* %topic%"class.mqtt::buffer_ref"* %payload
+arg_values: -1289753896
+-1289753904
+-1289753912
+
+Mon Jul  3 13:18:16 2023
+F1 Unix: 1688411896
+FFF Function: _ZN4mqtt10buffer_refIcEC2EOS1_
+arguments:  
+ %"class.mqtt::buffer_ref"* %this
+ %"class.mqtt::buffer_ref"* %this%"class.mqtt::buffer_ref"* %buf
+arg_values: -1289754020
+-1289753904
+
+Mon Jul  3 13:18:16 2023
+F1 Unix: 1688411896
+FFF Function: _ZN4mqtt10buffer_refIcEC2EOS1_
+arguments:  
+ %"class.mqtt::buffer_ref"* %this
+ %"class.mqtt::buffer_ref"* %this%"class.mqtt::buffer_ref"* %buf
+arg_values: -1289754028
+-1289753912
+
+Mon Jul  3 13:18:16 2023
+F1 Unix: 1688411896
+FFF Function: _ZN4mqtt7message6createENS_10buffer_refIcEES2_
+arguments:  
+ %"class.std::shared_ptr.76"* %agg.result
+ %"class.std::shared_ptr.76"* %agg.result%"class.mqtt::buffer_ref"* %topic
+ %"class.std::shared_ptr.76"* %agg.result%"class.mqtt::buffer_ref"* %topic%"class.mqtt::buffer_ref"* %payload
+arg_values: -1289753896
+-1289754020
+-1289754028
+
+Mon Jul  3 13:18:16 2023
+F1 Unix: 1688411896
+FFF Function: _ZN4mqtt10buffer_refIcEC2EOS1_
+arguments:  
+ %"class.mqtt::buffer_ref"* %this
+ %"class.mqtt::buffer_ref"* %this%"class.mqtt::buffer_ref"* %buf
+arg_values: -1289754124
+-1289754020
+
+Mon Jul  3 13:18:16 2023
+F1 Unix: 1688411896
+FFF Function: _ZN4mqtt10buffer_refIcEC2EOS1_
+arguments:  
+ %"class.mqtt::buffer_ref"* %this
+ %"class.mqtt::buffer_ref"* %this%"class.mqtt::buffer_ref"* %buf
+arg_values: -1289754132
+-1289754028
+
+Mon Jul  3 13:18:38 2023
+F1 Unix: 1688411918
+FFF Function: _ZNK4mqtt10buffer_refIcE5emptyEv
+arguments:  
+ %"class.mqtt::buffer_ref"* %this
+arg_values: -1289746844
+Mon Jul  3 13:18:38 2023
+CF Unix: 1688411918
+Called from: _ZNK4mqtt10buffer_refIcE5emptyEv _ZNKSt12__shared_ptrIKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEELN9__gnu_cxx12_Lock_policyE2EEcvbEv callInst_values: -1
+
+Mon Jul  3 13:18:16 2023
+F1 Unix: 1688411896
+FFF Function: _ZN4mqtt7message12validate_qosEi
+arguments:  
+ i32 %qos
+arg_values: 0
+
+Mon Jul  3 13:18:15 2023
+F1 Unix: 1688411895
+FFF Function: _ZN4mqtt7message12set_retainedEb
+arguments:  
+ %"class.mqtt::message"* %this
+ %"class.mqtt::message"* %thisi1 %retained
+arg_values: -1289746884
+0
+
+Mon Jul  3 13:18:16 2023
+F1 Unix: 1688411896
+FFF Function: _ZN4mqtt6to_intEb
+arguments:  
+ i1 %b
+arg_values: 0
+
+Mon Jul  3 13:18:15 2023
+F1 Unix: 1688411895
+FFF Function: _ZN4mqtt10buffer_refIcED2Ev
+arguments:  
+ %"class.mqtt::buffer_ref"* %this
+arg_values: -1289754132
+
+Mon Jul  3 13:18:15 2023
+F1 Unix: 1688411895
+FFF Function: _ZN4mqtt10buffer_refIcED2Ev
+arguments:  
+ %"class.mqtt::buffer_ref"* %this
+arg_values: -1289754124
+
+Mon Jul  3 13:18:15 2023
+F1 Unix: 1688411895
+FFF Function: _ZN4mqtt10buffer_refIcED2Ev
+arguments:  
+ %"class.mqtt::buffer_ref"* %this
+arg_values: -1289754028
+
+Mon Jul  3 13:18:15 2023
+F1 Unix: 1688411895
+FFF Function: _ZN4mqtt10buffer_refIcED2Ev
+arguments:  
+ %"class.mqtt::buffer_ref"* %this
+arg_values: -1289754020
+
+Mon Jul  3 13:18:15 2023
+F1 Unix: 1688411895
+FFF Function: _ZN4mqtt10buffer_refIcED2Ev
+arguments:  
+ %"class.mqtt::buffer_ref"* %this
+arg_values: -1289753912
+
+Mon Jul  3 13:18:15 2023
+F1 Unix: 1688411895
+FFF Function: _ZN4mqtt10buffer_refIcED2Ev
+arguments:  
+ %"class.mqtt::buffer_ref"* %this
+arg_values: -1289753904
+
+Mon Jul  3 13:18:15 2023
+F1 Unix: 1688411895
+FFF Function: _ZN4mqtt7message7set_qosEi
+arguments:  
+ %"class.mqtt::message"* %this
+ %"class.mqtt::message"* %thisi32 %qos
+arg_values: -1289746884
+1
+
+Mon Jul  3 13:18:16 2023
+F1 Unix: 1688411896
+FFF Function: _ZN4mqtt7message12validate_qosEi
+arguments:  
+ i32 %qos
+arg_values: 1
+
+Mon Jul  3 13:18:15 2023
+F1 Unix: 1688411895
+FFF Function: _ZN4mqtt7message12set_retainedEb
+arguments:  
+ %"class.mqtt::message"* %this
+ %"class.mqtt::message"* %thisi1 %retained
+arg_values: -1289746884
+0
+
+Mon Jul  3 13:18:16 2023
+F1 Unix: 1688411896
+FFF Function: _ZN4mqtt6to_intEb
+arguments:  
+ i1 %b
+arg_values: 0
+
+Mon Jul  3 13:18:38 2023
+F1 Unix: 1688411918
+FFF Function: _ZNK4mqtt7message9get_topicB5cxx11Ev
+arguments:  
+ %"class.mqtt::message"* %this
+arg_values: -1289746884
+
+Mon Jul  3 13:18:38 2023
+F1 Unix: 1688411918
+FFF Function: _ZNK4mqtt10buffer_refIcEcvbEv
+arguments:  
+ %"class.mqtt::buffer_ref"* %this
+arg_values: -1289746852
+Mon Jul  3 13:18:38 2023
+CF Unix: 1688411918
+Called from: _ZNK4mqtt7message9get_topicB5cxx11Ev _ZNK4mqtt10buffer_refIcEcvbEv callInst_values: -1
+
+Mon Jul  3 13:18:38 2023
+F1 Unix: 1688411918
+FFF Function: _ZNK4mqtt10buffer_refIcE3strB5cxx11Ev
+arguments:  
+ %"class.mqtt::buffer_ref"* %this
+arg_values: -1289746852
+
+Mon Jul  3 13:18:38 2023
+F1 Unix: 1688411918
+FFF Function: _ZNK4mqtt7message9get_topicB5cxx11Ev
+arguments:  
+ %"class.mqtt::message"* %this
+arg_values: -1289746884
+
+Mon Jul  3 13:18:38 2023
+F1 Unix: 1688411918
+FFF Function: _ZNK4mqtt10buffer_refIcEcvbEv
+arguments:  
+ %"class.mqtt::buffer_ref"* %this
+arg_values: -1289746852
+Mon Jul  3 13:18:38 2023
+CF Unix: 1688411918
+Called from: _ZNK4mqtt7message9get_topicB5cxx11Ev _ZNK4mqtt10buffer_refIcEcvbEv callInst_values: -1
+
+Mon Jul  3 13:18:38 2023
+F1 Unix: 1688411918
+FFF Function: _ZNK4mqtt10buffer_refIcE3strB5cxx11Ev
+arguments:  
+ %"class.mqtt::buffer_ref"* %this
+arg_values: -1289746852
+
+Mon Jul  3 13:18:16 2023
+F1 Unix: 1688411896
+FFF Function: _ZN2ft23action_listener_publish10on_successERKN4mqtt5tokenE
+arguments:  
+ %"class.ft::action_listener_publish"* %this
+ %"class.ft::action_listener_publish"* %this%"class.mqtt::token"* %tok
+arg_values: -1090521184
+-1289744960
+Mon Jul  3 13:18:16 2023
+CF Unix: 1688411896
+Called from: _ZN2ft23action_listener_publish10on_successERKN4mqtt5tokenE _ZNKSt12__shared_ptrIKN4mqtt17string_collectionELN9__gnu_cxx12_Lock_policyE2EEcvbEv callInst_values: -1
+Mon Jul  3 13:18:16 2023
+CF Unix: 1688411896
+Called from: _ZN2ft23action_listener_publish10on_successERKN4mqtt5tokenE _ZNKSt19__shared_ptr_accessIKN4mqtt17string_collectionELN9__gnu_cxx12_Lock_policyE2ELb0ELb0EEptEv callInst_values: -1289744796
+
+Mon Jul  3 13:18:16 2023
+F1 Unix: 1688411896
+FFF Function: _ZNK4mqtt17string_collection5emptyEv
+arguments:  
+ %"class.mqtt::string_collection"* %this
+arg_values: -1289744796
+Mon Jul  3 13:18:16 2023
+CF Unix: 1688411896
+Called from: _ZN2ft23action_listener_publish10on_successERKN4mqtt5tokenE _ZNK4mqtt17string_collection5emptyEv callInst_values: 0
+
+Mon Jul  3 13:18:16 2023
+F1 Unix: 1688411896
+FFF Function: _ZNK4mqtt17string_collection4sizeEv
+arguments:  
+ %"class.mqtt::string_collection"* %this
+arg_values: -1289744796
+
+Mon Jul  3 13:18:16 2023
+F1 Unix: 1688411896
+FFF Function: _ZNK4mqtt17string_collectionixB5cxx11Ej
+arguments:  
+ %"class.mqtt::string_collection"* %this
+ %"class.mqtt::string_collection"* %thisi32 %i
+arg_values: -1289744796
+0
+
+Mon Jul  3 13:18:16 2023
+F1 Unix: 1688411896
+FFF Function: _ZNK4mqtt17string_collection4sizeEv
+arguments:  
+ %"class.mqtt::string_collection"* %this
+arg_values: -1289744796
+
+Mon Jul  3 13:18:13 2023
+F1 Unix: 1688411893
+FFF Function: _ZN2ft26TxtHighBayWarehouseStorage14fetchContainerEv
+arguments:  
+ %"class.ft::TxtHighBayWarehouseStorage"* %this
+arg_values: -1090522104
+Mon Jul  3 13:18:13 2023
+TB Unix: 1688411893
+loaded values: 2137079968
+Mon Jul  3 13:18:13 2023
+TB Unix: 1688411893
+loaded values: 2137070632
+Mon Jul  3 13:18:13 2023
+TB Unix: 1688411893
+loaded values: 0
+[i][j]: 00
+Mon Jul  3 13:18:13 2023
+FB Unix: 1688411893
+loaded values: 0
+Mon Jul  3 13:18:13 2023
+FB Unix: 1688411893
+loaded values: 0
+
+Mon Jul  3 13:18:13 2023
+F1 Unix: 1688411893
+FFF Function: _ZN2ft26TxtHighBayWarehouseStorage10isValidPosENS_11StoragePos2E
+arguments:  
+ %"class.ft::TxtHighBayWarehouseStorage"* %this
+ %"class.ft::TxtHighBayWarehouseStorage"* %this[2 x i32] %p.coerce
+arg_values: -1090522104
+-1289751472
+Mon Jul  3 13:18:13 2023
+CF Unix: 1688411893
+Called from: _ZN2ft26TxtHighBayWarehouseStorage14fetchContainerEv _ZN2ft26TxtHighBayWarehouseStorage10isValidPosENS_11StoragePos2E callInst_values: -1
+Mon Jul  3 13:18:13 2023
+TB Unix: 1688411893
+loaded values: 0
+Mon Jul  3 13:18:13 2023
+TB Unix: 1688411893
+loaded values: 0
+Mon Jul  3 13:18:13 2023
+TB Unix: 1688411893
+loaded values: 2136885560
+Mon Jul  3 13:18:13 2023
+TB Unix: 1688411893
+loaded values: 2136710696
+
+Mon Jul  3 13:18:20 2023
+F1 Unix: 1688411900
+FFF Function: _ZN2ft15SubjectObserver6NotifyEv
