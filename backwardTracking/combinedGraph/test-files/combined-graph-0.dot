@@ -1,0 +1,67 @@
+digraph "graph-0" {
+	"loaded_values h2"
+	"Called h2"
+	"Called h2" -> "loaded_values h2" [dir=back]
+	"Function h3
+arg_values
+"
+	"Function h3
+arg_values
+" -> "Called h2" [dir=back]
+	"Called h5"
+	"Called h5" -> "Function h3
+arg_values
+" [dir=back]
+	"loaded_values h9"
+	"loaded_values h9" -> "Called h5" [dir=back]
+	"message_arrived get_topic value-  vgr1"
+	"message_arrived get_topic value-  vgr1" -> "loaded_values h9" [dir=back]
+	"loaded_values h8"
+	"loaded_values h8" -> "message_arrived get_topic value-  vgr1" [dir=back]
+	"Called h4"
+	"Called h4" -> "loaded_values h8" [dir=back]
+	"Function h2
+arg_values
+"
+	"Function h2
+arg_values
+" -> "Called h4" [dir=back]
+	"message_arrived get_topic value-  vgr2"
+	"message_arrived get_topic value-  vgr2" -> "Function h2
+arg_values
+" [dir=back]
+	"Called h3"
+	"Called h3" -> "message_arrived get_topic value-  vgr2" [dir=back]
+	"Called h1"
+	"Called h1" -> "Called h3" [dir=back]
+	"loaded_values h1"
+	"loaded_values h1" -> "Called h1" [dir=back]
+	"Function h1
+arg_values
+"
+	"Function h1
+arg_values
+" -> "loaded_values h1" [dir=back]
+	"publish get_topic value-  vgr1"
+	"message_arrived get_topic value-  vgr1" -> "publish get_topic value-  vgr1"
+	"Function v2
+arg_values
+"
+	"Function v2
+arg_values
+" -> "publish get_topic value-  vgr1" [dir=back]
+	"publish get_topic value-  vgr3"
+	"publish get_topic value-  vgr3" -> "Function v2
+arg_values
+" [dir=back]
+	"loaded_values v1"
+	"loaded_values v1" -> "publish get_topic value-  vgr3" [dir=back]
+	"Called v1"
+	"Called v1" -> "loaded_values v1" [dir=back]
+	"Function v1
+arg_values
+"
+	"Function v1
+arg_values
+" -> "Called v1" [dir=back]
+}

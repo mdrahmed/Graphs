@@ -1,4 +1,6 @@
 import graphviz
+import pydot
+import pygraphviz as pgv
 
 # working with the txt file
 input_str = """
@@ -192,10 +194,15 @@ print("total edges: ",edges)
 for i, graph in enumerate(graphs):
     graph.render(f'test-graph/hbw-graph-{i}.dot')
     graph.render(f'test-graph/hbw-graph-{i}.png')
-    with open(f'test-graph/hbw-graph-{i}.png') as f:
-        dot_graph = f.read()
-    graphviz.Source(dot_graph)
+    #with open(f'test-graph/hbw-graph-{i}.png') as f:
+    #    dot_graph = f.read()
+    #graphviz.Source(dot_graph)
+    dot_graph = pgv.AGraph(f'test-graph/hbw-graph-{i}.dot')
 
     search_string = "f"
-    if search_string in dot_graph:
-        print(f"String found in graph {i}")
+    for node in dot_graph.nodes():
+        if search_string in node.get_name():
+            print(f"String found in graph {i}: {node}")
+            break
+    #if search_string in dot_graph:
+    #    print(f"String found in graph {i}")

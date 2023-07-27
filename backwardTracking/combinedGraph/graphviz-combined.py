@@ -12,7 +12,7 @@ with open('../../vgr-graph.txt', 'r') as f:
     vgr_str = f.read()
 
 start_tracking_from = input("Enter the event name: ")
-#start_tracking_from = "Calling" 
+#start_tracking_from = "Calling"
 edges = 0
 def parse_input(input_str, topic):
     global edges

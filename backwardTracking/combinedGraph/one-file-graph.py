@@ -1,4 +1,5 @@
 import graphviz
+import pygraphviz as pgv
 
 # working with the txt file
 # with open('test', 'r') as f:
@@ -137,7 +138,16 @@ print("total edges: ",edges)
 for i, graph in enumerate(graphs):
     graph.render(f'hbw-graph/hbw-graph-{i}.dot')
     graph.render(f'hbw-graph/hbw-graph-{i}.png')
-    with open(f'hbw-graph/hbw-graph-{i}.png') as f:
-        dot_graph = f.read()
-    graphviz.Source(dot_graph)
+    #with open(f'hbw-graph/hbw-graph-{i}.png') as f:
+    #    dot_graph = f.read()
+    #graphviz.Source(dot_graph)
+    
+    dot_graph = pgv.AGraph(f'hbw-graph/hbw-graph-{i}.dot')
+    search_str = "isValidPos"
+    for node in dot_graph.nodes():
+        if search_str in node.get_name():
+            print(f"String found in graph {i}: {node}")
+            break
+        
+
 
