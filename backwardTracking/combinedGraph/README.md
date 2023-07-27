@@ -4,27 +4,27 @@ Worked files till now,
 ```
 ./combined-graph-v3.py ##This file is a copy of ./combined-graph-v2.py, I used this to draw the motivation part of the paper. 
 ```
-The motivation part will show following,
-To storage initially,
-0 0 0
-0 0 0
-0 0 0
+The motivation part will show following,<br/>
+To storage initially,<br/>
+0 0 0<br/>
+0 0 0<br/>
+0 0 0<br/>
 
-Storing 1 workpiece at (0,2),
-1 0 0
-0 0 0
-0 0 0
+Storing 1 workpiece at (0,2),<br/>
+1 0 0<br/>
+0 0 0<br/>
+0 0 0<br/>
 
-Delievering 1 workpiece from (1,0) - [COLLISION-THE CONTAINER IS EMPTY, NOTHING IS DELIVERED],
-1 0 0
-0 0 0
-0 0 0
+Delievering 1 workpiece from (1,0) - [COLLISION-THE CONTAINER AT PLACE (1,0) IS EMPTY, NOTHING IS DELIVERED],<br/>
+1 0 0<br/>
+0 0 0<br/>
+0 0 0<br/>
 
-The table index is following,
-j\i 2 1 0
-0   - - -
-1   - - -
-2   - - -
+The table index is following,<br/>
+j\i 2 1 0<br/>
+0   - - -<br/>
+1   - - -<br/>
+2   - - -<br/>
 
 The graph should show function calls with table and wp position, call instructions but not global variables. This file `./combined-graph-v3.py` is working fine with all the corner cases. If it finds a `message_arrived get_topic` and finds similar `publish get_topic` then it will **link these two nodes with same states.** This is shown in `motivation-part-graphs-test`. All the original graphs are present in `motivation-part-graphs` folder.
 
