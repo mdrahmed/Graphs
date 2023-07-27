@@ -21,7 +21,7 @@ Delievering 1 workpiece from (1,0) - [COLLISION-THE CONTAINER AT PLACE (1,0) IS 
 0 0 0<br/>
 
 The table index is following,<br/>
-j\i 2 1 0<br/>
+i\j 2 1 0<br/>
 0   - - -<br/>
 1   - - -<br/>
 2   - - -<br/>
