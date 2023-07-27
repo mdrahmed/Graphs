@@ -22,9 +22,9 @@ Delievering 1 workpiece from (1,0) - [COLLISION-THE CONTAINER AT PLACE (1,0) IS 
 
 The table index is following,<br/>
 i\j 2 1 0<br/>
-0   - - -<br/>
-1   - - -<br/>
-2   - - -<br/>
+0 nbsp;nbsp; - - -<br/>
+1 nbsp;nbsp; - - -<br/>
+2 nbsp;nbsp; - - -<br/>
 
 The graph should show function calls with table and wp position, call instructions but not global variables. This file `./combined-graph-v3.py` is working fine with all the corner cases. If it finds a `message_arrived get_topic` and finds similar `publish get_topic` then it will **link these two nodes with same states.** This is shown in `motivation-part-graphs-test`. All the original graphs are present in `motivation-part-graphs` folder.
 
