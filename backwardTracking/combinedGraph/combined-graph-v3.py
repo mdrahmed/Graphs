@@ -7,6 +7,7 @@ from termcolor import colored
 # with open('test', 'r') as f:
 # Path: CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good
 # with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/motivation-log-test', 'r') as f:
+# with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/motivation-log-v3-delivery', 'r') as f:
 with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/motivation-log-v2', 'r') as f:
     input_str = f.read()
 
@@ -31,6 +32,7 @@ def parse_input(input_str):
     current_graph = graphviz.Digraph(f'graph-{i}')
     graphs = []
     stateful = False
+    separate_file = False
     global_states = 0
     function_states = 0
     callInst_states = 0
@@ -53,11 +55,14 @@ def parse_input(input_str):
             # break
         if "#vgr" in line:
             # print("#vgr found",line)
-            if topics["message_arrived"]:
+            # if topics["message_arrived"]:
                 # print("file break found",line, "topics[message_arrived]:",topics["message_arrived"])
-                start_tracking_from = "topic"
-                # print(type(start_tracking_from))
-                found = False
+            start_tracking_from = "get_topic"
+            # print(type(start_tracking_from))
+            found = False
+            separate_file = True
+            # msg_topic_states = 0
+            # pub_topic_states = 0
 
         if start_tracking_from in line:
             found = True
@@ -214,37 +219,88 @@ def parse_input(input_str):
             # topic_states += 1
             # topic_line += " - state {}".format(topic_states)
 
-            if topic_func == "message_arrived":
-                msg_topic_states += 1
-                topic_line += " - state {}".format(msg_topic_states)
-                # print("msg_topic_states",topic_line.split()[3])
+            # if topic_func == "message_arrived":
+            #     msg_topic_states += 1
+            #     topic_line += " - state {}".format(msg_topic_states)
+            #     print("msg_topic_states", topic_line)
+            # elif topic_func == "publish":
+            #     pub_topic_states += 1
+            #     topic_line += " - state {}".format(pub_topic_states)
+            #     print("pub_topic_states", topic_line)
 
             similar_topic = False
             if topic_func == "publish":
-                # print("topic:",topic_line,topics["message_arrived"])
-                for topic in topics["message_arrived"]:
-                    if topic.split()[3] == topic_line.split()[-1]:
-                        similar_topic = True
-                        pub_state = topic.split()[-1]
-                        topic_line += " - state {}".format(pub_state)
-                        # print("pub_state",topic_line.split()[3])
-                        break
-                if not similar_topic:
-                    pub_topic_states += 1
-                    topic_line += " - state {}".format(pub_topic_states)
-                    # print("pub_topic_states",topic_line.split()[3])
-            # else:
+                pub_topic_states += 1
+                topic_line += " - state {}".format(pub_topic_states)
+                print("topic:",topic_line, "topics msg:",topics["message_arrived"])
+                if 'f/i' in topic_line or 'f/o' in topic_line:
+                    current_graph.node("Server", style='filled', fillcolor='green')
+                    current_graph.edge(topic_line, "Server", dir="back")
+                else:
+                    current_graph.node(topic_line)
+                    topics[topic_func].append(topic_line)
+                    for topic in topics["message_arrived"]:
+                        if topic.split()[3] == topic_line.split()[3] and separate_file:
+                            similar_topic = True
+                            # pub_state = topic.split()[-1]
+                            # topic_line += " - state {}".format(pub_state)
+                            current_graph.edge(topic, topic_line)
+                            topics["message_arrived"].remove(topic)
+                            print("pub_state",topic_line.split()[3])
+                            break
+                # if not similar_topic and len(topics["message_arrived"]) > 0:
+                #     pub_topic_states += 1
+                #     topic_line += " - state {}".format(pub_topic_states)
+                #     print("pub_topic_states",topic_line)
+            elif topic_func == "message_arrived":
+                msg_topic_states += 1
+                topic_line += " - state {}".format(msg_topic_states)
+                if 'f/i' in topic_line or 'f/o' in topic_line:
+                    current_graph.node("Server", style='filled', fillcolor='green')
+                    current_graph.edge("Server", topic_line, dir="back")
+                else:
+                    current_graph.node(topic_line)
+                    print("topic_line:",topic_line, "topics pub:",topics["publish"])
+                    topics[topic_func].append(topic_line)
+                    print("topics msg:", topics["message_arrived"])
+                    for topic in topics["publish"]:
+                        print("topic:",topic.split()[3], "topic_line.split()[3]",topic_line.split()[3])
+                        if topic.split()[3] == topic_line.split()[3] and separate_file:
+                            similar_topic = True
+                            # msg_state = topic.split()[-1]
+                            # topic_line += " - state {}".format(msg_state)
+                            current_graph.edge(topic, topic_line)
+                            topics["publish"].remove(topic)
+                            print("msg_state",topic_line.split()[3])
+                            break
+                # if not similar_topic and len(topics["publish"]) > 0:
+                #     msg_topic_states += 1
+                #     topic_line += " - state {}".format(msg_topic_states)
+                #     print("msg_topic_states",topic_line)
+
+            # elif topic_func == "message_arrived":
             #     msg_topic_states += 1
             #     topic_line += " - state {}".format(msg_topic_states)
-            #     print(topic_line.split()[3])
+            #     print("topic:",topic_line, "topics pub:", topics["publish"], topic_line.split()[3])
+            #     for topic in topics["publish"]:
+            #         if topic.split()[3] == topic_line.split()[3]:
+            #             similar_topic = True
+            #             msg_state = topic.split()[-1]
+            #             topic_line += " - state {}".format(msg_state)
+            #             print("msg_state",topic_line.split()[3])
+            #             break
+            #     if not similar_topic and len(topics["publish"]) > 0:
+            #         msg_topic_states += 1
+            #         topic_line += " - state {}".format(msg_topic_states)
+            #         print("msg_topic_states",topic_line)
+            #     topics[topic_func].append(topic_line)
+            #     print("topics msg:", topics["message_arrived"])
 
-            topics[topic_func].append(topic_line)
-            current_graph.node(topic_line)
+            # topics[topic_func].append(topic_line)
+            # current_graph.node(topic_line)
 
             if similar_topic:
-                current_graph.edge(topic, topic_line)
-                topics["message_arrived"].remove(topic)
-                topics["publish"].pop()
+                # similar_topic = False
                 globals = []
                 functions = []
 
@@ -265,10 +321,11 @@ def parse_input(input_str):
                 current_graph.edge(topic_line, callInsts[-1], dir="back")
                 i += 1
                 edges += 1
-            elif len(topics_current) > 0:
+            elif len(topics_current) > 0 and not similar_topic:
                 #current_graph.edge(topics_current[-1], topics[topic_func])
                 current_graph.edge(topic_line, topics_current[-1], dir="back")
                 topics_current = []
+                similar_topic = False
                 i += 1
                 edges += 1
             

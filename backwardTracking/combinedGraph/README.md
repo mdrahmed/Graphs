@@ -28,6 +28,18 @@ i\j 2 1 0<br/>
 
 The graph should show function calls with table and wp position, call instructions but not global variables. This file `./combined-graph-v3.py` is working fine with all the corner cases. If it finds a `message_arrived get_topic` and finds similar `publish get_topic` then it will **link these two nodes with same states.** This is shown in `motivation-part-graphs-test`. All the original graphs are present in `motivation-part-graphs` folder.
 
+Dataset: The combined dataset used here is following,
+The dataset `motivation-log-v2` is updated as following,
+- Added delivery and store node: Each and every communication is done with mqtt. During the delivery after the hbw grabs the workpiece, it will send a mqtt message to vgr with topic fl/hbw/ack. So, for the delivery node I added that publish function. Similarly, after the hbw stores a workpiece it will send the same mqtt message to vgr. So, for store node I added that same publish function. [Things to consider: This msg will not trigger vgr to move. Also, this msg is not sent to the server/dashboard. This is like a two-way handshake to establish the communication. The vgr will not send any request in the middle, it will send message after it receives that topic fl/hbw/ack, which is acknowledging the task is done.]
+- Initial storage: Table in the initial form is removed from the graph. The table or storage contains no workpieces at the beginning - Table - 0 0 0 0 0 0 0 0 0
+- Extended the vgr: At the beginning the vgr is receiving mqtt message with topic f/o/order from server/dashboard. I added this part. Also, after it receives the message, it sends another mqtt message with topic f/i/order, I have shown this part in the graph too.
+- Added message-arrived, publish and the functions changing the value of global variables: I added the most important functions which will show the exact work. Like after vgr sends mqtt message f/i/order to server. Then it sends mqtt message to hbw with topic fl/vgr/do, now that is received by the hbw and it calls the function requestVGRfetchContainer which will change the global variable reqVGRfetchContainer, which will trigger the hbw fetchContainer and this will call hbw storage fetchContainer, then it will check the isValidPos. [NOT SHOWN IN GRAPH: After all this, it will send the message with topic /fl/hbw/ack. After this is received by the vgr, the vgr will send same topic fl/vgr/do to hbw and hbw will do store workpiece in hbw storage and then send the msg fl/hbw/ack again. I didn't show this part in graph because the graph was already too complex and as we have the table showing the updated storage.] Similarly while delivering the workpiece, the hbw is calling requestVGRfetch and it is changing the variable reqVGRfetch, which is calling hbw fetch, hbw storage fetch and, isValidPos simultaneously. [NOT SHOWN IN GRAPH: After this it is storing the empty container with storeContainer function call.]
+```
+~/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/motivation-log-v2 # This is both delivery and store => updated with the guidelines
+~/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/motivation-log-v3-delivery # This is the delivery part of hbw and vgr
+```
+
+
 ```
 ./combined-graph.py ##This file will draw graph with 500 edges and nodes using states, but graphs from seperate files e.g., vgr and hbw are not drawn.
 ```
