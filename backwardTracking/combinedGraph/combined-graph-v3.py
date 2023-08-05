@@ -8,7 +8,7 @@ from termcolor import colored
 # Path: CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good
 # with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/motivation-log-test', 'r') as f:
 # with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/motivation-log-v3-delivery', 'r') as f:
-with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/motivation-log-v2', 'r') as f:
+with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/motivation-log-v3', 'r') as f:
     input_str = f.read()
 
 start_tracking_from = input("Enter the event name: ")
@@ -38,6 +38,9 @@ def parse_input(input_str):
     callInst_states = 0
     msg_topic_states = 0
     pub_topic_states = 0
+    prev_posi = -1
+    prev_posj = -1
+    # print("starting prev_posi",prev_posi,"prev_posj",prev_posj)
 
     # for line in reversed(lines):
     for idx, line in enumerate(reversed(lines)):
@@ -114,29 +117,38 @@ def parse_input(input_str):
                 # print(next_line)
                 function_name += next_line + '\n'
                 if "Position" in next_line:
-                    posi = int(next_line.split()[-1])
-                    posj = int(next_line.split()[-2])
-                    print(posi,posj)
-                elif "Table" in next_line:
-                    table = next_line.split()
-                    print(table)
-                    # Find the index where 'Table-' appears in the list
-                    table_index = table.index('Table-')
-                    # Create a 3x3 list starting from the element after 'Table-'
-                    table_list = [table[table_index+1 : table_index+4],
-                                table[table_index+4 : table_index+7],
-                                table[table_index+7 : table_index+10]]
-                    if posj == 2:
-                        posj = 0
-                    elif posj == 0:
-                        posj = 2
-                    print(table_list,function_name)
-                    if table_list[posi][posj] == '0' and "TxtHighBayWarehouseStorage5fetch" in function_name:
+                    posi = int(next_line.split()[-2])
+                    posj = int(next_line.split()[-1])
+                    print("next_line",next_line,"posi",posi,"posj",posj)
+                    # if posi == prev_posi and posj == prev_posj:
+                    if prev_posi == -1 and prev_posj == -1:
+                        # As the file is traversed backwards, the collision will be detected after the collision happens, so considering the
+                        # 1st function node as the collision node
                         print(colored("Collision detected", "red"))
                         collision = True
-                    elif table_list[posi][posj] == '1' and "TxtHighBayWarehouseStorage14fetchContainer" in function_name:
-                        print(colored("Collision detected", "red"))
-                        collision = True
+                    print("prev_posi",prev_posi,"prev_posj",prev_posj)
+                    prev_posi = posi
+                    prev_posj = posj
+                # elif "Table" in next_line:
+                #     table = next_line.split()
+                #     print(table)
+                #     # Find the index where 'Table-' appears in the list
+                #     table_index = table.index('Table-')
+                #     # Create a 3x3 list starting from the element after 'Table-'
+                #     table_list = [table[table_index+1 : table_index+4],
+                #                 table[table_index+4 : table_index+7],
+                #                 table[table_index+7 : table_index+10]]
+                #     if posj == 2:
+                #         posj = 0
+                #     elif posj == 0:
+                #         posj = 2
+                #     print(table_list,function_name)
+                #     if table_list[posi][posj] == '0' and "TxtHighBayWarehouseStorage5fetch" in function_name:
+                #         print(colored("Collision detected", "red"))
+                #         collision = True
+                #     elif table_list[posi][posj] == '1' and "TxtHighBayWarehouseStorage14fetchContainer" in function_name:
+                #         print(colored("Collision detected", "red"))
+                #         collision = True
 
                 if "arg_values" in next_line:
                     break
@@ -144,6 +156,7 @@ def parse_input(input_str):
             function_name += " - state {}".format(function_states)
             if collision:
                 current_graph.node(function_name, style='filled', fillcolor='red')
+                collision = False
             else:
                 current_graph.node(function_name)
             if len(topics_current) > 0:
@@ -212,27 +225,13 @@ def parse_input(input_str):
         elif "get_topic" in line and found:
             topic_line = line.replace(":","-")
             topic_func = line.split()[0]
-            # if topic_func not in topics:
-            #     topics[topic_func] = []
-            # topic = "topic- "+line.split()[-1]
-            # topics[topic_func].append(line.split()[-1])
-            # topic_states += 1
-            # topic_line += " - state {}".format(topic_states)
-
-            # if topic_func == "message_arrived":
-            #     msg_topic_states += 1
-            #     topic_line += " - state {}".format(msg_topic_states)
-            #     print("msg_topic_states", topic_line)
-            # elif topic_func == "publish":
-            #     pub_topic_states += 1
-            #     topic_line += " - state {}".format(pub_topic_states)
-            #     print("pub_topic_states", topic_line)
+            
 
             similar_topic = False
             if topic_func == "publish":
                 pub_topic_states += 1
                 topic_line += " - state {}".format(pub_topic_states)
-                print("topic:",topic_line, "topics msg:",topics["message_arrived"])
+                # print("topic:",topic_line, "topics msg:",topics["message_arrived"])
                 if 'f/i' in topic_line or 'f/o' in topic_line:
                     current_graph.node("Server", style='filled', fillcolor='green')
                     current_graph.edge(topic_line, "Server", dir="back")
@@ -246,7 +245,7 @@ def parse_input(input_str):
                             # topic_line += " - state {}".format(pub_state)
                             current_graph.edge(topic, topic_line)
                             topics["message_arrived"].remove(topic)
-                            print("pub_state",topic_line.split()[3])
+                            # print("pub_state",topic_line.split()[3])
                             break
                 # if not similar_topic and len(topics["message_arrived"]) > 0:
                 #     pub_topic_states += 1
@@ -260,44 +259,20 @@ def parse_input(input_str):
                     current_graph.edge("Server", topic_line, dir="back")
                 else:
                     current_graph.node(topic_line)
-                    print("topic_line:",topic_line, "topics pub:",topics["publish"])
+                    # print("topic_line:",topic_line, "topics pub:",topics["publish"])
                     topics[topic_func].append(topic_line)
-                    print("topics msg:", topics["message_arrived"])
+                    # print("topics msg:", topics["message_arrived"])
                     for topic in topics["publish"]:
-                        print("topic:",topic.split()[3], "topic_line.split()[3]",topic_line.split()[3])
+                        # print("topic:",topic.split()[3], "topic_line.split()[3]",topic_line.split()[3])
                         if topic.split()[3] == topic_line.split()[3] and separate_file:
                             similar_topic = True
                             # msg_state = topic.split()[-1]
                             # topic_line += " - state {}".format(msg_state)
                             current_graph.edge(topic, topic_line)
                             topics["publish"].remove(topic)
-                            print("msg_state",topic_line.split()[3])
+                            # print("msg_state",topic_line.split()[3])
                             break
-                # if not similar_topic and len(topics["publish"]) > 0:
-                #     msg_topic_states += 1
-                #     topic_line += " - state {}".format(msg_topic_states)
-                #     print("msg_topic_states",topic_line)
-
-            # elif topic_func == "message_arrived":
-            #     msg_topic_states += 1
-            #     topic_line += " - state {}".format(msg_topic_states)
-            #     print("topic:",topic_line, "topics pub:", topics["publish"], topic_line.split()[3])
-            #     for topic in topics["publish"]:
-            #         if topic.split()[3] == topic_line.split()[3]:
-            #             similar_topic = True
-            #             msg_state = topic.split()[-1]
-            #             topic_line += " - state {}".format(msg_state)
-            #             print("msg_state",topic_line.split()[3])
-            #             break
-            #     if not similar_topic and len(topics["publish"]) > 0:
-            #         msg_topic_states += 1
-            #         topic_line += " - state {}".format(msg_topic_states)
-            #         print("msg_topic_states",topic_line)
-            #     topics[topic_func].append(topic_line)
-            #     print("topics msg:", topics["message_arrived"])
-
-            # topics[topic_func].append(topic_line)
-            # current_graph.node(topic_line)
+               
 
             if similar_topic:
                 # similar_topic = False

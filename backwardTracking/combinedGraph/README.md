@@ -36,7 +36,7 @@ The dataset `motivation-log-v2` is updated as following,
 - Added message-arrived, publish and the functions changing the value of global variables: I added the most important functions which will show the exact work. Like after vgr sends mqtt message f/i/order to server. Then it sends mqtt message to hbw with topic fl/vgr/do, now that is received by the hbw and it calls the function requestVGRfetchContainer which will change the global variable reqVGRfetchContainer, which will trigger the hbw fetchContainer and this will call hbw storage fetchContainer, then it will check the isValidPos. [NOT SHOWN IN GRAPH: After all this, it will send the message with topic /fl/hbw/ack. After this is received by the vgr, the vgr will send same topic fl/vgr/do to hbw and hbw will do store workpiece in hbw storage and then send the msg fl/hbw/ack again. I didn't show this part in graph because the graph was already too complex and as we have the table showing the updated storage.] Similarly while delivering the workpiece, the hbw is calling requestVGRfetch and it is changing the variable reqVGRfetch, which is calling hbw fetch, hbw storage fetch and, isValidPos simultaneously. [NOT SHOWN IN GRAPH: After this it is storing the empty container with storeContainer function call.]
 ```
 ~/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/motivation-log-v2 # This is both delivery and store => updated with the guidelines
-~/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/motivation-log-v3-delivery # This is the delivery part of hbw and vgr
+~/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/motivation-log-v2-delivery # This is the delivery part of hbw and vgr
 ```
 
 
