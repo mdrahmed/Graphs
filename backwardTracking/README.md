@@ -1,3 +1,10 @@
+Worked files till now,
+------------------
+```
+combinedGraph/combined-graph.py ##This file will draw graph with 500 edges and nodes using states, but graphs from seperate files e.g., vgr and hbw are not drawn.
+```
+------------------
+
 Working files,
 
 1. `3test.py` is creating graph for a certain range (1k edges) working fine to find graphs in backward direction.
