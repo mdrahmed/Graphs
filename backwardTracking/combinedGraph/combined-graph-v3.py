@@ -7,8 +7,11 @@ from termcolor import colored
 # with open('test', 'r') as f:
 # Path: CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good
 # with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/motivation-log-test', 'r') as f:
-# with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/motivation-log-v3-delivery', 'r') as f:
-with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/motivation-log-v3', 'r') as f:
+## delivery-underflow
+with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/delivery-underflow/motivation-log-v2-delivery', 'r') as f: ##Storing 1 workpiece
+# with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/delivery-underflow/motivation-log-v3', 'r') as f: ##Storing 9 workpiece
+## store-overflow
+# with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/store-overflow/motivation-log-v2-store', 'r') as f:
     input_str = f.read()
 
 start_tracking_from = input("Enter the event name: ")
@@ -64,6 +67,9 @@ def parse_input(input_str):
             # print(type(start_tracking_from))
             found = False
             separate_file = True
+            functions = []
+            globals = []
+            callInsts = []
             # msg_topic_states = 0
             # pub_topic_states = 0
 
@@ -119,14 +125,14 @@ def parse_input(input_str):
                 if "Position" in next_line:
                     posi = int(next_line.split()[-2])
                     posj = int(next_line.split()[-1])
-                    print("next_line",next_line,"posi",posi,"posj",posj)
+                    # print("next_line",next_line,"posi",posi,"posj",posj)
                     # if posi == prev_posi and posj == prev_posj:
                     if prev_posi == -1 and prev_posj == -1:
                         # As the file is traversed backwards, the collision will be detected after the collision happens, so considering the
                         # 1st function node as the collision node
                         print(colored("Collision detected", "red"))
                         collision = True
-                    print("prev_posi",prev_posi,"prev_posj",prev_posj)
+                    # print("prev_posi",prev_posi,"prev_posj",prev_posj)
                     prev_posi = posi
                     prev_posj = posj
                 # elif "Table" in next_line:
@@ -159,8 +165,10 @@ def parse_input(input_str):
                 collision = False
             else:
                 current_graph.node(function_name)
+            # print("topics_current inside function:",topics_current)
             if len(topics_current) > 0:
                 #current_graph.edge(topics_current[-1], topics[topic_func])
+                # print("topics_current inside function if:",topics_current)
                 current_graph.edge(function_name, topics_current[-1], dir="back")
                 topics_current = []
                 i += 1
@@ -209,24 +217,23 @@ def parse_input(input_str):
                 functions = []
                 i += 1
                 edges += 1
+            elif len(topics_current) > 0:
+                #current_graph.edge(topics_current[-1], topics[topic_func])
+                current_graph.edge(callInst, topics_current[-1], dir="back")
+                topics_current = []
+                i += 1
+                edges += 1
             elif len(callInsts) > 0:
                 #current_graph.edge(callInsts[-1], callInst)
                 current_graph.edge(callInst, callInsts[-1], dir="back")
                 i += 1
                 edges += 1
-            # elif len(topics_current) > 0:
-            #     #current_graph.edge(topics_current[-1], topics[topic_func])
-            #     current_graph.edge(callInst, topics_current[-1], dir="back")
-            #     topics_current = []
-            #     i += 1
-            #     edges += 1
             callInsts.append(callInst)
 
         elif "get_topic" in line and found:
             topic_line = line.replace(":","-")
             topic_func = line.split()[0]
             
-
             similar_topic = False
             if topic_func == "publish":
                 pub_topic_states += 1
@@ -272,13 +279,14 @@ def parse_input(input_str):
                             topics["publish"].remove(topic)
                             # print("msg_state",topic_line.split()[3])
                             break
-               
-
-            if similar_topic:
-                # similar_topic = False
-                globals = []
-                functions = []
-
+                        
+            # This part is for the case when I need to draw the graph without complete vgr edges
+            # if similar_topic:
+            #     # similar_topic = False
+            #     globals = []
+            #     functions = []
+            # print("topic_line after similar if:",topic_line)
+            # print("functions after similar if:",functions)
             if len(globals) > 0:
                 #current_graph.edge(globals[-1], topics[topic_func])
                 current_graph.edge(topic_line, globals[-1], dir="back")
@@ -294,6 +302,7 @@ def parse_input(input_str):
             elif len(callInsts) > 0:
                 #current_graph.edge(callInsts[-1], topics[topic_func])
                 current_graph.edge(topic_line, callInsts[-1], dir="back")
+                callInsts = []
                 i += 1
                 edges += 1
             elif len(topics_current) > 0 and not similar_topic:
@@ -303,9 +312,9 @@ def parse_input(input_str):
                 similar_topic = False
                 i += 1
                 edges += 1
-            
             # current_graph.node(topic)
             topics_current.append(topic_line)
+            # print("topics_current inside get_topic:",topics_current)  
 
     if(i < ranges):
         graphs.append(current_graph)

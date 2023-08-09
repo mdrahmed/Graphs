@@ -26,7 +26,42 @@ i\j 2 1 0<br/>
 1 &nbsp; - - -<br/>
 2 &nbsp; - - -<br/>
 
-The graph should show function calls with table and wp position, call instructions but not global variables. This file `./combined-graph-v3.py` is working fine with all the corner cases. If it finds a `message_arrived get_topic` and finds similar `publish get_topic` then it will **link these two nodes with same states.** This is shown in `motivation-part-graphs-test`. All the original graphs are present in `motivation-part-graphs` folder.
+The graph should show function calls with table and wp position, call instructions but not global variables. This file `./combined-graph-v3.py` is working fine with all the corner cases. If it finds a `message_arrived get_topic` and finds similar `publish get_topic` then it will **link these two nodes with same states.** This is shown in `motivation-part-graphs-test`. All the original graphs are present in `motivation-delivery-underflow/motivation-part-graphs` folder.
+
+**While drawing the graphs, it depends on from where I am starting.**
+#### Attack 1. Delivery-underflow
+##### With complete hbw & vgr edges
+```
+motivation-part-graphs-with-complete-edges/motivation-delivery-underflow/motivation-part-graphs-v2-1wp 
+# input: hbw/ack, dataset: motivation-log-v2-delivery
+# This folder contains a complete stateful graph after storing 1 workpiece a 0,0 and then ordering 1 workpiece from 0,1 to show the attack 
+motivation-part-graphs-with-complete-edges/motivation-delivery-underflow/motivation-part-graphs-v3-9wp 
+# this folder contains a complete stateful graph after storing 9 workpieces in the HBW and then ordering 1 wp from 0,1 and again ordering from 0,1 to show the attack
+#input: topic, dataset: motivation-log-v3
+motivation-part-graphs-with-complete-edges/motivation-delivery-underflow/motivation-part-graphs 
+# This folder has graph same as motivation-part-graphs-v2-1wp but it is starting from the storeContainer, which is storing the empty container back to the storage.
+# input: storeContainer, dataset: motivation-log-v2-delivery
+```
+##### Without complete vgr edges
+```
+motivation-part-graphs-without-complete-edges/motivation-delivery-underflow/motivation-part-graphs-v2-1wp 
+# This folder contains a complete stateful graph after storing 1 workpiece a 0,0 and then ordering 1 workpiece from 0,1 to show the attack
+# input: hbw/ack
+motivation-part-graphs-without-complete-edges/motivation-delivery-underflow/motivation-part-graphs-v3-9wp 
+# this folder contains a complete stateful graph after storing 9 workpieces in the HBW and then ordering 1 wp from 0,1 and again ordering from 0,1 to show the attack
+#input: topic
+motivation-part-graphs-without-complete-edges/motivation-delivery-underflow/motivation-part-graphs 
+# This folder has graph same as motivation-part-graphs-v2-1wp but it is starting from the storeContainer, which is storing the empty container back to the storage.
+# input: storeContainer
+```
+
+#### Attack 2. Store-overflow/Store-collision
+```
+motivation-store-overflow/motivation-part-graphs-with-complete-edges/ 
+# This folder contains a complete graph with complete `hbw` and `vgr` edges.
+motivation-store-overflow/motivation-part-graphs-without-complete-edges/ 
+# This folder contains graph without complete `vgr` edges.
+```
 
 Dataset: The combined dataset used here is following,
 The dataset `motivation-log-v2` is updated as following,
