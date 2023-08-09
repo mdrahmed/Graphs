@@ -8,10 +8,10 @@ from termcolor import colored
 # Path: CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good
 # with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/motivation-log-test', 'r') as f:
 ## delivery-underflow
-with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/delivery-underflow/motivation-log-v2-delivery', 'r') as f: ##Storing 1 workpiece
+# with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/delivery-underflow/motivation-log-v2-delivery', 'r') as f: ##Storing 1 workpiece
 # with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/delivery-underflow/motivation-log-v3', 'r') as f: ##Storing 9 workpiece
 ## store-overflow
-# with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/store-overflow/motivation-log-v2-store', 'r') as f:
+with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/store-overflow/motivation-log-v2-store', 'r') as f:
     input_str = f.read()
 
 start_tracking_from = input("Enter the event name: ")
