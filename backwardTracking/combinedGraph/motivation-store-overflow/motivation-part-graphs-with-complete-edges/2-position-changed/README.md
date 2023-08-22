@@ -1,6 +1,8 @@
 I have stored 7 workpieces and changed 2 position,
-
+```
     6th position (1,2) from 1 to 0.
     9th position (2,2) from 0 to 1.
-
+```
 Now, the graph is shown.
+
+In here, I have changed 2 position value, this cannot be detected if we keep track of all the stored values e.g., only the number.
