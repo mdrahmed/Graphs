@@ -1,6 +1,6 @@
 Worked files till now,
 ------------------
-1. All logs are combined to create a simple file,
+1. All logs are combined to create a simple file, while executing give the input properly.
 ```
 ./combined-graph-v3.py ##This file is a copy of ./combined-graph-v2.py, I used this to draw the motivation part of the paper. 
 ```

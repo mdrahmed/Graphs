@@ -1,0 +1,759 @@
+# STORECOMMUNICATION FOR 1WP
+Wed Jul  5 15:38:32 2023
+F1 Unix: 1688593112
+Function: _ZN2ft20TxtMqttFactoryClient13publishVGR_DoENS_14TxtVgrDoCode_tEPNS_12TxtWorkpieceEl
+arguments:   , %"class.ft::TxtMqttFactoryClient"* %this , %"class.ft::TxtMqttFactoryClient"* %thisi32 %code , %"class.ft::TxtMqttFactoryClient"* %thisi32 %code%"class.ft::TxtWorkpiece"* %wp
+arg_values: -1090521784 ,3 ,-1090522096 ,5000
+TxtMqttFactoryClient::publishVGR_Do called.
+# The publishVGR_Do is the function that is publishing the topic and the buffer function below is created by the IR, that's why ignoring this rewritting the function names.
+
+Wed Jul  5 15:39:06 2023
+F1 Unix: 1688593146
+F: _ZN4mqtt10buffer_refIcEC2EONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+arguments:   , %"class.mqtt::buffer_ref"* %this
+arg_values: -1289755496 ,-1289755352
+publish get_topic value:  fl/vgr/do
+
+Wed Jul  5 15:39:06 2023
+F1 Unix: 1688593146
+FFF Function: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE
+arguments:   , %class.callback* %this
+arg_values: -1090522788 ,-1279275668
+Wed Jul  5 15:39:06 2023
+CF Unix: 1688593146
+Called from: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv callInst_values: 2137177532
+message_arrived get_topic value:  fl/hbw/ack
+#STORE COMMUNICATION ENDS
+
+# STORECOMMUNICATION FOR 2WP
+Wed Jul  5 15:38:32 2023
+F1 Unix: 1688593112
+Function: _ZN2ft20TxtMqttFactoryClient13publishVGR_DoENS_14TxtVgrDoCode_tEPNS_12TxtWorkpieceEl
+arguments:   , %"class.ft::TxtMqttFactoryClient"* %this , %"class.ft::TxtMqttFactoryClient"* %thisi32 %code , %"class.ft::TxtMqttFactoryClient"* %thisi32 %code%"class.ft::TxtWorkpiece"* %wp
+arg_values: -1090521784 ,3 ,-1090522096 ,5000
+TxtMqttFactoryClient::publishVGR_Do called.
+# The publishVGR_Do is the function that is publishing the topic and the buffer function below is created by the IR, that's why ignoring this rewritting the function names.
+
+Wed Jul  5 15:39:06 2023
+F1 Unix: 1688593146
+F: _ZN4mqtt10buffer_refIcEC2EONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+arguments:   , %"class.mqtt::buffer_ref"* %this
+arg_values: -1289755496 ,-1289755352
+publish get_topic value:  fl/vgr/do
+
+Wed Jul  5 15:39:06 2023
+F1 Unix: 1688593146
+FFF Function: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE
+arguments:   , %class.callback* %this
+arg_values: -1090522788 ,-1279275668
+Wed Jul  5 15:39:06 2023
+CF Unix: 1688593146
+Called from: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv callInst_values: 2137177532
+message_arrived get_topic value:  fl/hbw/ack
+#STORE COMMUNICATION ENDS
+
+# STORECOMMUNICATION FOR 3WP
+Wed Jul  5 15:38:32 2023
+F1 Unix: 1688593112
+Function: _ZN2ft20TxtMqttFactoryClient13publishVGR_DoENS_14TxtVgrDoCode_tEPNS_12TxtWorkpieceEl
+arguments:   , %"class.ft::TxtMqttFactoryClient"* %this , %"class.ft::TxtMqttFactoryClient"* %thisi32 %code , %"class.ft::TxtMqttFactoryClient"* %thisi32 %code%"class.ft::TxtWorkpiece"* %wp
+arg_values: -1090521784 ,3 ,-1090522096 ,5000
+TxtMqttFactoryClient::publishVGR_Do called.
+# The publishVGR_Do is the function that is publishing the topic and the buffer function below is created by the IR, that's why ignoring this rewritting the function names.
+
+Wed Jul  5 15:39:06 2023
+F1 Unix: 1688593146
+F: _ZN4mqtt10buffer_refIcEC2EONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+arguments:   , %"class.mqtt::buffer_ref"* %this
+arg_values: -1289755496 ,-1289755352
+publish get_topic value:  fl/vgr/do
+
+Wed Jul  5 15:39:06 2023
+F1 Unix: 1688593146
+FFF Function: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE
+arguments:   , %class.callback* %this
+arg_values: -1090522788 ,-1279275668
+Wed Jul  5 15:39:06 2023
+CF Unix: 1688593146
+Called from: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv callInst_values: 2137177532
+message_arrived get_topic value:  fl/hbw/ack
+#STORE COMMUNICATION ENDS
+
+# STORECOMMUNICATION FOR 4WP
+Wed Jul  5 15:38:32 2023
+F1 Unix: 1688593112
+Function: _ZN2ft20TxtMqttFactoryClient13publishVGR_DoENS_14TxtVgrDoCode_tEPNS_12TxtWorkpieceEl
+arguments:   , %"class.ft::TxtMqttFactoryClient"* %this , %"class.ft::TxtMqttFactoryClient"* %thisi32 %code , %"class.ft::TxtMqttFactoryClient"* %thisi32 %code%"class.ft::TxtWorkpiece"* %wp
+arg_values: -1090521784 ,3 ,-1090522096 ,5000
+TxtMqttFactoryClient::publishVGR_Do called.
+# The publishVGR_Do is the function that is publishing the topic and the buffer function below is created by the IR, that's why ignoring this rewritting the function names.
+
+Wed Jul  5 15:39:06 2023
+F1 Unix: 1688593146
+F: _ZN4mqtt10buffer_refIcEC2EONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+arguments:   , %"class.mqtt::buffer_ref"* %this
+arg_values: -1289755496 ,-1289755352
+publish get_topic value:  fl/vgr/do
+
+Wed Jul  5 15:39:06 2023
+F1 Unix: 1688593146
+FFF Function: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE
+arguments:   , %class.callback* %this
+arg_values: -1090522788 ,-1279275668
+Wed Jul  5 15:39:06 2023
+CF Unix: 1688593146
+Called from: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv callInst_values: 2137177532
+message_arrived get_topic value:  fl/hbw/ack
+#STORE COMMUNICATION ENDS
+
+# STORECOMMUNICATION FOR 5WP
+Wed Jul  5 15:38:32 2023
+F1 Unix: 1688593112
+Function: _ZN2ft20TxtMqttFactoryClient13publishVGR_DoENS_14TxtVgrDoCode_tEPNS_12TxtWorkpieceEl
+arguments:   , %"class.ft::TxtMqttFactoryClient"* %this , %"class.ft::TxtMqttFactoryClient"* %thisi32 %code , %"class.ft::TxtMqttFactoryClient"* %thisi32 %code%"class.ft::TxtWorkpiece"* %wp
+arg_values: -1090521784 ,3 ,-1090522096 ,5000
+TxtMqttFactoryClient::publishVGR_Do called.
+# The publishVGR_Do is the function that is publishing the topic and the buffer function below is created by the IR, that's why ignoring this rewritting the function names.
+
+Wed Jul  5 15:39:06 2023
+F1 Unix: 1688593146
+F: _ZN4mqtt10buffer_refIcEC2EONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+arguments:   , %"class.mqtt::buffer_ref"* %this
+arg_values: -1289755496 ,-1289755352
+publish get_topic value:  fl/vgr/do
+
+Wed Jul  5 15:39:06 2023
+F1 Unix: 1688593146
+FFF Function: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE
+arguments:   , %class.callback* %this
+arg_values: -1090522788 ,-1279275668
+Wed Jul  5 15:39:06 2023
+CF Unix: 1688593146
+Called from: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv callInst_values: 2137177532
+message_arrived get_topic value:  fl/hbw/ack
+#STORE COMMUNICATION ENDS
+
+# STORECOMMUNICATION FOR 6WP
+Wed Jul  5 15:38:32 2023
+F1 Unix: 1688593112
+Function: _ZN2ft20TxtMqttFactoryClient13publishVGR_DoENS_14TxtVgrDoCode_tEPNS_12TxtWorkpieceEl
+arguments:   , %"class.ft::TxtMqttFactoryClient"* %this , %"class.ft::TxtMqttFactoryClient"* %thisi32 %code , %"class.ft::TxtMqttFactoryClient"* %thisi32 %code%"class.ft::TxtWorkpiece"* %wp
+arg_values: -1090521784 ,3 ,-1090522096 ,5000
+TxtMqttFactoryClient::publishVGR_Do called.
+# The publishVGR_Do is the function that is publishing the topic and the buffer function below is created by the IR, that's why ignoring this rewritting the function names.
+
+Wed Jul  5 15:39:06 2023
+F1 Unix: 1688593146
+F: _ZN4mqtt10buffer_refIcEC2EONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+arguments:   , %"class.mqtt::buffer_ref"* %this
+arg_values: -1289755496 ,-1289755352
+publish get_topic value:  fl/vgr/do
+
+Wed Jul  5 15:39:06 2023
+F1 Unix: 1688593146
+FFF Function: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE
+arguments:   , %class.callback* %this
+arg_values: -1090522788 ,-1279275668
+Wed Jul  5 15:39:06 2023
+CF Unix: 1688593146
+Called from: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv callInst_values: 2137177532
+message_arrived get_topic value:  fl/hbw/ack
+#STORE COMMUNICATION ENDS
+
+# STORECOMMUNICATION FOR 7WP
+Wed Jul  5 15:38:32 2023
+F1 Unix: 1688593112
+Function: _ZN2ft20TxtMqttFactoryClient13publishVGR_DoENS_14TxtVgrDoCode_tEPNS_12TxtWorkpieceEl
+arguments:   , %"class.ft::TxtMqttFactoryClient"* %this , %"class.ft::TxtMqttFactoryClient"* %thisi32 %code , %"class.ft::TxtMqttFactoryClient"* %thisi32 %code%"class.ft::TxtWorkpiece"* %wp
+arg_values: -1090521784 ,3 ,-1090522096 ,5000
+TxtMqttFactoryClient::publishVGR_Do called.
+# The publishVGR_Do is the function that is publishing the topic and the buffer function below is created by the IR, that's why ignoring this rewritting the function names.
+
+Wed Jul  5 15:39:06 2023
+F1 Unix: 1688593146
+F: _ZN4mqtt10buffer_refIcEC2EONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+arguments:   , %"class.mqtt::buffer_ref"* %this
+arg_values: -1289755496 ,-1289755352
+publish get_topic value:  fl/vgr/do
+
+Wed Jul  5 15:39:06 2023
+F1 Unix: 1688593146
+FFF Function: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE
+arguments:   , %class.callback* %this
+arg_values: -1090522788 ,-1279275668
+Wed Jul  5 15:39:06 2023
+CF Unix: 1688593146
+Called from: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv callInst_values: 2137177532
+message_arrived get_topic value:  fl/hbw/ack
+#STORE COMMUNICATION ENDS
+
+
+
+# STORECOMMUNICATION FOR 8WP - COLLISION AT THE SAME PLACE OF 6TH WP
+Wed Jul  5 15:38:32 2023
+F1 Unix: 1688593112
+Function: _ZN2ft20TxtMqttFactoryClient13publishVGR_DoENS_14TxtVgrDoCode_tEPNS_12TxtWorkpieceEl
+arguments:   , %"class.ft::TxtMqttFactoryClient"* %this , %"class.ft::TxtMqttFactoryClient"* %thisi32 %code , %"class.ft::TxtMqttFactoryClient"* %thisi32 %code%"class.ft::TxtWorkpiece"* %wp
+arg_values: -1090521784 ,3 ,-1090522096 ,5000
+TxtMqttFactoryClient::publishVGR_Do called.
+# The publishVGR_Do is the function that is publishing the topic and the buffer function below is created by the IR, that's why ignoring this rewritting the function names.
+
+Wed Jul  5 15:39:06 2023
+F1 Unix: 1688593146
+F: _ZN4mqtt10buffer_refIcEC2EONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+arguments:   , %"class.mqtt::buffer_ref"* %this
+arg_values: -1289755496 ,-1289755352
+publish get_topic value:  fl/vgr/do
+
+Wed Jul  5 15:39:06 2023
+F1 Unix: 1688593146
+FFF Function: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE
+arguments:   , %class.callback* %this
+arg_values: -1090522788 ,-1279275668
+Wed Jul  5 15:39:06 2023
+CF Unix: 1688593146
+Called from: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv callInst_values: 2137177532
+message_arrived get_topic value:  fl/hbw/ack
+#STORE COMMUNICATION ENDS
+
+#vgr file
+
+
+
+
+
+
+#initially
+Table: 0 0 0 0 0 0 0 0 0
+
+# STORE 00 - 1wp
+Wed Jul  5 15:39:00 2023
+F1 Unix: 1688593140
+FFF Function: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE
+arguments:   , %class.callback* %this
+arg_values: -1090522412 ,-1279275668
+
+Wed Jul  5 15:39:00 2023
+CF Unix: 1688593140
+Called from: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv callInst_values: 2137080548
+message_arrived get_topic value:  fl/vgr/do
+
+# 676689
+Wed Jul  5 15:39:00 2023
+F1 Unix: 1688593140
+FFF Function: _ZN2ft19TxtHighBayWarehouse24requestVGRfetchContainerEPNS_12TxtWorkpieceE
+arguments:   , %"class.ft::TxtHighBayWarehouse"* %this
+arg_values: -1090522400 ,2137081336
+
+# 676760
+FETCH_CONTAINER
+
+Wed Jul  5 15:38:06 2023
+F1 Unix: 1688593086
+FFF Function: _ZN2ft19TxtHighBayWarehouse14fetchContainerEv
+arguments:  
+arg_values: -1090522400
+
+# 677089
+Wed Jul  5 15:38:30 2023
+F1 Unix: 1688593110
+FFF Function: _ZN2ft26TxtHighBayWarehouseStorage14fetchContainerEv
+Position: 0 0
+Table: 1 0 0 0 0 0 0 0 0
+arguments:  
+arg_values: -1090522104
+Wed Jul  5 15:38:30 2023
+TB Unix: 1688593110
+loaded values: 0
+[i][j]: 02
+Wed Jul  5 15:38:30 2023
+FB Unix: 1688593110
+loaded values: 0
+Wed Jul  5 15:38:30 2023
+FB Unix: 1688593110
+loaded values: 2
+
+Wed Jul  5 15:38:30 2023
+F1 Unix: 1688593110
+FFF Function: _ZN2ft26TxtHighBayWarehouseStorage10isValidPosENS_11StoragePos2E
+arguments:   , %"class.ft::TxtHighBayWarehouseStorage"* %this
+arg_values: -1090522104 ,-1289751472
+Wed Jul  5 15:38:30 2023
+CF Unix: 1688593110
+Called from: _ZN2ft26TxtHighBayWarehouseStorage14fetchContainerEv _ZN2ft26TxtHighBayWarehouseStorage10isValidPosENS_11StoragePos2E callInst_values: -1
+
+Wed Jul  5 15:39:00 2023
+F1 Unix: 1688593140
+FFF Function: _ZN4mqtt10buffer_refIcEC2EONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+arguments:   , %"class.mqtt::buffer_ref"* %this
+arg_values: -1289753624 ,-1289753480
+publish get_topic value:  fl/hbw/ack
+# STORE ENDS
+
+
+
+# STORE 01 - 2wp
+Wed Jul  5 15:39:00 2023
+F1 Unix: 1688593140
+FFF Function: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE
+arguments:   , %class.callback* %this
+arg_values: -1090522412 ,-1279275668
+
+Wed Jul  5 15:39:00 2023
+CF Unix: 1688593140
+Called from: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv callInst_values: 2137080548
+message_arrived get_topic value:  fl/vgr/do
+
+# 676689
+Wed Jul  5 15:39:00 2023
+F1 Unix: 1688593140
+FFF Function: _ZN2ft19TxtHighBayWarehouse24requestVGRfetchContainerEPNS_12TxtWorkpieceE
+arguments:   , %"class.ft::TxtHighBayWarehouse"* %this
+arg_values: -1090522400 ,2137081336
+
+# 676760
+FETCH_CONTAINER
+
+Wed Jul  5 15:38:06 2023
+F1 Unix: 1688593086
+FFF Function: _ZN2ft19TxtHighBayWarehouse14fetchContainerEv
+arguments:  
+arg_values: -1090522400
+
+# 677089
+Wed Jul  5 15:38:30 2023
+F1 Unix: 1688593110
+FFF Function: _ZN2ft26TxtHighBayWarehouseStorage14fetchContainerEv
+Position: 0 1
+Table: 1 1 0 0 0 0 0 0 0
+arguments:  
+arg_values: -1090522104
+Wed Jul  5 15:38:30 2023
+TB Unix: 1688593110
+loaded values: 0
+[i][j]: 01
+Wed Jul  5 15:38:30 2023
+FB Unix: 1688593110
+loaded values: 0
+Wed Jul  5 15:38:30 2023
+FB Unix: 1688593110
+loaded values: 2
+
+Wed Jul  5 15:38:30 2023
+F1 Unix: 1688593110
+FFF Function: _ZN2ft26TxtHighBayWarehouseStorage10isValidPosENS_11StoragePos2E
+arguments:   , %"class.ft::TxtHighBayWarehouseStorage"* %this
+arg_values: -1090522104 ,-1289751472
+Wed Jul  5 15:38:30 2023
+CF Unix: 1688593110
+Called from: _ZN2ft26TxtHighBayWarehouseStorage14fetchContainerEv _ZN2ft26TxtHighBayWarehouseStorage10isValidPosENS_11StoragePos2E callInst_values: -1
+
+Wed Jul  5 15:39:00 2023
+F1 Unix: 1688593140
+FFF Function: _ZN4mqtt10buffer_refIcEC2EONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+arguments:   , %"class.mqtt::buffer_ref"* %this
+arg_values: -1289753624 ,-1289753480
+publish get_topic value:  fl/hbw/ack
+# STORE ENDS
+
+
+
+# STORE 02 - 3wp
+Wed Jul  5 15:39:00 2023
+F1 Unix: 1688593140
+FFF Function: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE
+arguments:   , %class.callback* %this
+arg_values: -1090522412 ,-1279275668
+
+Wed Jul  5 15:39:00 2023
+CF Unix: 1688593140
+Called from: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv callInst_values: 2137080548
+message_arrived get_topic value:  fl/vgr/do
+
+# 676689
+Wed Jul  5 15:39:00 2023
+F1 Unix: 1688593140
+FFF Function: _ZN2ft19TxtHighBayWarehouse24requestVGRfetchContainerEPNS_12TxtWorkpieceE
+arguments:   , %"class.ft::TxtHighBayWarehouse"* %this
+arg_values: -1090522400 ,2137081336
+
+# 676760
+FETCH_CONTAINER
+
+Wed Jul  5 15:38:06 2023
+F1 Unix: 1688593086
+FFF Function: _ZN2ft19TxtHighBayWarehouse14fetchContainerEv
+arguments:  
+arg_values: -1090522400
+
+# 677089
+Wed Jul  5 15:38:30 2023
+F1 Unix: 1688593110
+FFF Function: _ZN2ft26TxtHighBayWarehouseStorage14fetchContainerEv
+Position: 0 2
+Table: 1 1 1 0 0 0 0 0 0
+arguments:  
+arg_values: -1090522104
+Wed Jul  5 15:38:30 2023
+TB Unix: 1688593110
+loaded values: 0
+[i][j]: 00
+Wed Jul  5 15:38:30 2023
+FB Unix: 1688593110
+loaded values: 0
+Wed Jul  5 15:38:30 2023
+FB Unix: 1688593110
+loaded values: 2
+
+Wed Jul  5 15:38:30 2023
+F1 Unix: 1688593110
+FFF Function: _ZN2ft26TxtHighBayWarehouseStorage10isValidPosENS_11StoragePos2E
+arguments:   , %"class.ft::TxtHighBayWarehouseStorage"* %this
+arg_values: -1090522104 ,-1289751472
+Wed Jul  5 15:38:30 2023
+CF Unix: 1688593110
+Called from: _ZN2ft26TxtHighBayWarehouseStorage14fetchContainerEv _ZN2ft26TxtHighBayWarehouseStorage10isValidPosENS_11StoragePos2E callInst_values: -1
+
+Wed Jul  5 15:39:00 2023
+F1 Unix: 1688593140
+FFF Function: _ZN4mqtt10buffer_refIcEC2EONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+arguments:   , %"class.mqtt::buffer_ref"* %this
+arg_values: -1289753624 ,-1289753480
+publish get_topic value:  fl/hbw/ack
+# STORE ENDS
+
+
+
+# STORE 10 - 4wp
+Wed Jul  5 15:39:00 2023
+F1 Unix: 1688593140
+FFF Function: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE
+arguments:   , %class.callback* %this
+arg_values: -1090522412 ,-1279275668
+
+Wed Jul  5 15:39:00 2023
+CF Unix: 1688593140
+Called from: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv callInst_values: 2137080548
+message_arrived get_topic value:  fl/vgr/do
+
+# 676689
+Wed Jul  5 15:39:00 2023
+F1 Unix: 1688593140
+FFF Function: _ZN2ft19TxtHighBayWarehouse24requestVGRfetchContainerEPNS_12TxtWorkpieceE
+arguments:   , %"class.ft::TxtHighBayWarehouse"* %this
+arg_values: -1090522400 ,2137081336
+
+# 676760
+FETCH_CONTAINER
+
+Wed Jul  5 15:38:06 2023
+F1 Unix: 1688593086
+FFF Function: _ZN2ft19TxtHighBayWarehouse14fetchContainerEv
+arguments:  
+arg_values: -1090522400
+
+# 677089
+Wed Jul  5 15:38:30 2023
+F1 Unix: 1688593110
+FFF Function: _ZN2ft26TxtHighBayWarehouseStorage14fetchContainerEv
+Position: 1 0
+Table: 1 1 1 1 0 0 0 0 0
+arguments:  
+arg_values: -1090522104
+Wed Jul  5 15:38:30 2023
+TB Unix: 1688593110
+loaded values: 0
+[i][j]: 12
+Wed Jul  5 15:38:30 2023
+FB Unix: 1688593110
+loaded values: 0
+Wed Jul  5 15:38:30 2023
+FB Unix: 1688593110
+loaded values: 2
+
+Wed Jul  5 15:38:30 2023
+F1 Unix: 1688593110
+FFF Function: _ZN2ft26TxtHighBayWarehouseStorage10isValidPosENS_11StoragePos2E
+arguments:   , %"class.ft::TxtHighBayWarehouseStorage"* %this
+arg_values: -1090522104 ,-1289751472
+Wed Jul  5 15:38:30 2023
+CF Unix: 1688593110
+Called from: _ZN2ft26TxtHighBayWarehouseStorage14fetchContainerEv _ZN2ft26TxtHighBayWarehouseStorage10isValidPosENS_11StoragePos2E callInst_values: -1
+
+Wed Jul  5 15:39:00 2023
+F1 Unix: 1688593140
+FFF Function: _ZN4mqtt10buffer_refIcEC2EONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+arguments:   , %"class.mqtt::buffer_ref"* %this
+arg_values: -1289753624 ,-1289753480
+publish get_topic value:  fl/hbw/ack
+# STORE ENDS
+
+
+
+# STORE 11 - 5wp
+Wed Jul  5 15:39:00 2023
+F1 Unix: 1688593140
+FFF Function: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE
+arguments:   , %class.callback* %this
+arg_values: -1090522412 ,-1279275668
+
+Wed Jul  5 15:39:00 2023
+CF Unix: 1688593140
+Called from: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv callInst_values: 2137080548
+message_arrived get_topic value:  fl/vgr/do
+
+# 676689
+Wed Jul  5 15:39:00 2023
+F1 Unix: 1688593140
+FFF Function: _ZN2ft19TxtHighBayWarehouse24requestVGRfetchContainerEPNS_12TxtWorkpieceE
+arguments:   , %"class.ft::TxtHighBayWarehouse"* %this
+arg_values: -1090522400 ,2137081336
+
+# 676760
+FETCH_CONTAINER
+
+Wed Jul  5 15:38:06 2023
+F1 Unix: 1688593086
+FFF Function: _ZN2ft19TxtHighBayWarehouse14fetchContainerEv
+arguments:  
+arg_values: -1090522400
+
+# 677089
+Wed Jul  5 15:38:30 2023
+F1 Unix: 1688593110
+FFF Function: _ZN2ft26TxtHighBayWarehouseStorage14fetchContainerEv
+Position: 1 1
+Table: 1 1 1 1 1 0 0 0 0
+arguments:  
+arg_values: -1090522104
+Wed Jul  5 15:38:30 2023
+TB Unix: 1688593110
+loaded values: 0
+[i][j]: 11
+Wed Jul  5 15:38:30 2023
+FB Unix: 1688593110
+loaded values: 0
+Wed Jul  5 15:38:30 2023
+FB Unix: 1688593110
+loaded values: 2
+
+Wed Jul  5 15:38:30 2023
+F1 Unix: 1688593110
+FFF Function: _ZN2ft26TxtHighBayWarehouseStorage10isValidPosENS_11StoragePos2E
+arguments:   , %"class.ft::TxtHighBayWarehouseStorage"* %this
+arg_values: -1090522104 ,-1289751472
+Wed Jul  5 15:38:30 2023
+CF Unix: 1688593110
+Called from: _ZN2ft26TxtHighBayWarehouseStorage14fetchContainerEv _ZN2ft26TxtHighBayWarehouseStorage10isValidPosENS_11StoragePos2E callInst_values: -1
+
+Wed Jul  5 15:39:00 2023
+F1 Unix: 1688593140
+FFF Function: _ZN4mqtt10buffer_refIcEC2EONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+arguments:   , %"class.mqtt::buffer_ref"* %this
+arg_values: -1289753624 ,-1289753480
+publish get_topic value:  fl/hbw/ack
+# STORE ENDS
+
+
+
+# STORE 12 - 6p
+Wed Jul  5 15:39:00 2023
+F1 Unix: 1688593140
+FFF Function: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE
+arguments:   , %class.callback* %this
+arg_values: -1090522412 ,-1279275668
+
+Wed Jul  5 15:39:00 2023
+CF Unix: 1688593140
+Called from: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv callInst_values: 2137080548
+message_arrived get_topic value:  fl/vgr/do
+
+# 676689
+Wed Jul  5 15:39:00 2023
+F1 Unix: 1688593140
+FFF Function: _ZN2ft19TxtHighBayWarehouse24requestVGRfetchContainerEPNS_12TxtWorkpieceE
+arguments:   , %"class.ft::TxtHighBayWarehouse"* %this
+arg_values: -1090522400 ,2137081336
+
+# 676760
+FETCH_CONTAINER
+
+Wed Jul  5 15:38:06 2023
+F1 Unix: 1688593086
+FFF Function: _ZN2ft19TxtHighBayWarehouse14fetchContainerEv
+arguments:  
+arg_values: -1090522400
+
+# 677089
+Wed Jul  5 15:38:30 2023
+F1 Unix: 1688593110
+FFF Function: _ZN2ft26TxtHighBayWarehouseStorage14fetchContainerEv
+Position: 1 2
+Table: 1 1 1 1 1 1 0 0 0
+arguments:  
+arg_values: -1090522104
+Wed Jul  5 15:38:30 2023
+TB Unix: 1688593110
+loaded values: 0
+[i][j]: 10
+Wed Jul  5 15:38:30 2023
+FB Unix: 1688593110
+loaded values: 0
+Wed Jul  5 15:38:30 2023
+FB Unix: 1688593110
+loaded values: 2
+
+Wed Jul  5 15:38:30 2023
+F1 Unix: 1688593110
+FFF Function: _ZN2ft26TxtHighBayWarehouseStorage10isValidPosENS_11StoragePos2E
+arguments:   , %"class.ft::TxtHighBayWarehouseStorage"* %this
+arg_values: -1090522104 ,-1289751472
+Wed Jul  5 15:38:30 2023
+CF Unix: 1688593110
+Called from: _ZN2ft26TxtHighBayWarehouseStorage14fetchContainerEv _ZN2ft26TxtHighBayWarehouseStorage10isValidPosENS_11StoragePos2E callInst_values: -1
+
+Wed Jul  5 15:39:00 2023
+F1 Unix: 1688593140
+FFF Function: _ZN4mqtt10buffer_refIcEC2EONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+arguments:   , %"class.mqtt::buffer_ref"* %this
+arg_values: -1289753624 ,-1289753480
+publish get_topic value:  fl/hbw/ack
+# STORE ENDS
+
+
+
+# STORE 20 - 7p
+Wed Jul  5 15:39:00 2023
+F1 Unix: 1688593140
+FFF Function: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE
+arguments:   , %class.callback* %this
+arg_values: -1090522412 ,-1279275668
+
+Wed Jul  5 15:39:00 2023
+CF Unix: 1688593140
+Called from: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv callInst_values: 2137080548
+message_arrived get_topic value:  fl/vgr/do
+
+# 676689
+Wed Jul  5 15:39:00 2023
+F1 Unix: 1688593140
+FFF Function: _ZN2ft19TxtHighBayWarehouse24requestVGRfetchContainerEPNS_12TxtWorkpieceE
+arguments:   , %"class.ft::TxtHighBayWarehouse"* %this
+arg_values: -1090522400 ,2137081336
+
+# 676760
+FETCH_CONTAINER
+
+Wed Jul  5 15:38:06 2023
+F1 Unix: 1688593086
+FFF Function: _ZN2ft19TxtHighBayWarehouse14fetchContainerEv
+arguments:  
+arg_values: -1090522400
+
+# 677089
+Wed Jul  5 15:38:30 2023
+F1 Unix: 1688593110
+FFF Function: _ZN2ft26TxtHighBayWarehouseStorage14fetchContainerEv
+Position: 2 0
+Table: 1 1 1 1 1 1 1 0 0
+arguments:  
+arg_values: -1090522104
+Wed Jul  5 15:38:30 2023
+TB Unix: 1688593110
+loaded values: 0
+[i][j]: 22
+Wed Jul  5 15:38:30 2023
+FB Unix: 1688593110
+loaded values: 0
+Wed Jul  5 15:38:30 2023
+FB Unix: 1688593110
+loaded values: 2
+
+Wed Jul  5 15:38:30 2023
+F1 Unix: 1688593110
+FFF Function: _ZN2ft26TxtHighBayWarehouseStorage10isValidPosENS_11StoragePos2E
+arguments:   , %"class.ft::TxtHighBayWarehouseStorage"* %this
+arg_values: -1090522104 ,-1289751472
+Wed Jul  5 15:38:30 2023
+CF Unix: 1688593110
+Called from: _ZN2ft26TxtHighBayWarehouseStorage14fetchContainerEv _ZN2ft26TxtHighBayWarehouseStorage10isValidPosENS_11StoragePos2E callInst_values: -1
+
+Wed Jul  5 15:39:00 2023
+F1 Unix: 1688593140
+FFF Function: _ZN4mqtt10buffer_refIcEC2EONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+arguments:   , %"class.mqtt::buffer_ref"* %this
+arg_values: -1289753624 ,-1289753480
+publish get_topic value:  fl/hbw/ack
+# STORE ENDS
+
+
+# COLLISION PART/OVERFLOW - ADVERSARY MAKE THE VALUE OF POSITION (1,2) EMPTY, HE CAN DO IT IN 2 DIFFERENT WAYS
+# 1. ONLY CHANGED THE POSITION(1,2) - changed 1 to 0. THIS CAN BE DETECTED BY KEEPING THE COUNT OF THE WORKPIECES.
+# 2. CHANGED THE POSITION(1,2) VALUE(changed 1 to 0) AND AGAIN CHANGED ANOTHER EMPTY POSITION e.g., 9th position (2,2) TO FULL OR 1. WHICH CANNOT BE DETECTED WITH THE COUNT
+
+# STORE 12 - STORING MORE THAN 1 AT THE SAME PLACE
+Wed Jul  5 15:39:00 2023
+F1 Unix: 1688593140
+FFF Function: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE
+arguments:   , %class.callback* %this
+arg_values: -1090522412 ,-1279275668
+
+Wed Jul  5 15:39:00 2023
+CF Unix: 1688593140
+Called from: _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv callInst_values: 2137080548
+message_arrived get_topic value:  fl/vgr/do
+
+# 676689
+Wed Jul  5 15:39:00 2023
+F1 Unix: 1688593140
+FFF Function: _ZN2ft19TxtHighBayWarehouse24requestVGRfetchContainerEPNS_12TxtWorkpieceE
+arguments:   , %"class.ft::TxtHighBayWarehouse"* %this
+arg_values: -1090522400 ,2137081336
+
+# 676760
+FETCH_CONTAINER
+
+Wed Jul  5 15:38:06 2023
+F1 Unix: 1688593086
+FFF Function: _ZN2ft19TxtHighBayWarehouse14fetchContainerEv
+arguments:  
+arg_values: -1090522400
+
+# 677089
+Wed Jul  5 15:38:30 2023
+F1 Unix: 1688593110
+FFF Function: _ZN2ft26TxtHighBayWarehouseStorage14fetchContainerEv
+Position: 1 2
+Table: 1 1 1 1 1 1 1 0 1
+arguments:  
+arg_values: -1090522104
+Wed Jul  5 15:38:30 2023
+TB Unix: 1688593110
+loaded values: 0
+[i][j]: 10
+Wed Jul  5 15:38:30 2023
+FB Unix: 1688593110
+loaded values: 0
+Wed Jul  5 15:38:30 2023
+FB Unix: 1688593110
+loaded values: 2
+
+Wed Jul  5 15:38:30 2023
+F1 Unix: 1688593110
+FFF Function: _ZN2ft26TxtHighBayWarehouseStorage10isValidPosENS_11StoragePos2E
+arguments:   , %"class.ft::TxtHighBayWarehouseStorage"* %this
+arg_values: -1090522104 ,-1289751472
+Wed Jul  5 15:38:30 2023
+CF Unix: 1688593110
+Called from: _ZN2ft26TxtHighBayWarehouseStorage14fetchContainerEv _ZN2ft26TxtHighBayWarehouseStorage10isValidPosENS_11StoragePos2E callInst_values: -1
+
+Wed Jul  5 15:39:00 2023
+F1 Unix: 1688593140
+FFF Function: _ZN4mqtt10buffer_refIcEC2EONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+arguments:   , %"class.mqtt::buffer_ref"* %this
+arg_values: -1289753624 ,-1289753480
+publish get_topic value:  fl/hbw/ack
+# STORE ENDS
+
+#hbw file
+

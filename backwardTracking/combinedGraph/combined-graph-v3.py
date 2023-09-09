@@ -8,11 +8,16 @@ from termcolor import colored
 # Path: CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good
 # with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/motivation-log-test', 'r') as f:
 ## delivery-underflow
-# with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/delivery-underflow/motivation-log-v2-delivery', 'r') as f: ##Storing 1 workpiece
-# with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/delivery-underflow/motivation-log-v3', 'r') as f: ##Storing 9 workpiece
-## store-overflow
-with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/store-overflow/motivation-log-v2-store', 'r') as f:
+#with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/delivery-underflow/motivation-log-v2-delivery', 'r') as f: ##Storing 1 workpiece --Input: `hbw/ack`
+#with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/delivery-underflow/motivation-log-v3', 'r') as f: ##Storing 9 workpiece
+# store-overflow
+#with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/store-overflow/motivation-log-v2-store', 'r') as f: ##look at the folder, it has descriptive names
+#    input_str = f.read()
+
+## delivery-underflow with readable function calls.
+with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/delivery-underflow/delivery-underflow-1wp.md', 'r') as f: ##Storing 1 workpiece with much more refined function calls --Input: `hbw/ack`
     input_str = f.read()
+
 
 start_tracking_from = input("Enter the event name: ")
 # print("type of start_tracking_from:",type(start_tracking_from))
@@ -166,6 +171,14 @@ def parse_input(input_str):
             else:
                 current_graph.node(function_name)
             # print("topics_current inside function:",topics_current)
+            
+            ## to pickup
+            if "requestVGRfetchContainer" in line: 
+                fetchContainer = function_name
+            elif "TxtDeliveryPickupStation6is_DIN" in line:
+                current_graph.node("VGR Sensor", style='filled', fillcolor='cornflowerblue')
+                current_graph.edge("VGR Sensor", function_name, dir="back")
+
             if len(topics_current) > 0:
                 #current_graph.edge(topics_current[-1], topics[topic_func])
                 # print("topics_current inside function if:",topics_current)
@@ -199,6 +212,8 @@ def parse_input(input_str):
             callInst_states += 1
             callInst += " - state {}".format(callInst_states)
             current_graph.node(callInst)
+            if "PickupStation" in line:
+                current_graph.edge(fetchContainer, callInst)
             if len(topics_current) > 0:
                 #current_graph.edge(topics_current[-1], topics[topic_func])
                 current_graph.edge(callInst, topics_current[-1], dir="back")
