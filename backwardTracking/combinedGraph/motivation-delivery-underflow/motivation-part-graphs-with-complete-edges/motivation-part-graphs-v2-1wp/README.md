@@ -6,7 +6,8 @@ TOPIC_INPUT_STATE_ORDER  "f/i/order"
 TOPIC_OUTPUT_ORDER       "f/o/order"
 TOPIC_LOCAL_VGR_DO       "fl/vgr/do"
 ```
-The `delivery-underflow-1wp` file contains readable function names.
+The `delivery-underflow-1wp.dot` graph contains readable function names.
+In `delivery-underflow-1wp-v2.dot` graph has sensor name from delivery pickup station.
 
 Input: `hbw/ack`, dataset: `motivation-log-v2-delivery`
 Dataset: 

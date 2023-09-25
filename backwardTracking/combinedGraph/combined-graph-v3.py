@@ -176,8 +176,9 @@ def parse_input(input_str):
             if "requestVGRfetchContainer" in line: 
                 fetchContainer = function_name
             elif "TxtDeliveryPickupStation6is_DIN" in line:
-                current_graph.node("VGR Sensor", style='filled', fillcolor='cornflowerblue')
-                current_graph.edge("VGR Sensor", function_name, dir="back")
+                sensor_name = "u16LastStateDIN,reqUpdateDIN => sensor"
+                current_graph.node(sensor_name, style='filled', fillcolor='cornflowerblue')
+                current_graph.edge(sensor_name, function_name, dir="back")
 
             if len(topics_current) > 0:
                 #current_graph.edge(topics_current[-1], topics[topic_func])
