@@ -16,7 +16,7 @@ import os
 #    input_str = f.read()
 
 ## delivery-underflow with readable function calls.
-with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/vgrall3', 'r') as f: 
+with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/hbwall3', 'r') as f: 
     input_str = f.read()
 
 
@@ -395,7 +395,7 @@ def get_nodes_and_edges(graph):
 ## Create the 'data' folder if it doesn't exist
 if not os.path.exists('data-gspan'):
     os.makedirs('data-gspan')
-original_file = 'data-gspan/vgr.data'
+original_file = 'data-gspan/hbw.data'
 existing_file = 'data-gspan/existing_edges.data'
 existing_file_id = len(graphs)
 combined_file = 'data-gspan/combined_file.data'

@@ -124,6 +124,143 @@ Working files,
 - `graphviz-combined.py` and `3test.py` are other python files to generate `gspan` data format file and test program respectively. 
 - `isValidPos-graphs` contains the graph with string `isValidPos`
 
+## Find most important functions in the dot files
+To find most important functions in the dot files, do following,
+```
+grep -r -E "fetch|store|saveStorageState|loadStorageState" *.dot
+```
+It will show the output like following,
+```
+
+# CONTROLLER STOPPED WHILE DOING THIS
+combined-graph-5.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage5fetchENS_11TxtWPType_tE
+combined-graph-5.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage5fetchENS_11TxtWPType_tE
+combined-graph-5.dot:" -> "FFF Function- _ZN2ft26TxtHighBayWarehouseStorage5fetchENS_11TxtWPType_tE
+combined-graph-5.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse5fetchENS_11TxtWPType_tE
+combined-graph-5.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse5fetchENS_11TxtWPType_tE
+combined-graph-5.dot:" -> "FFF Function- _ZN2ft19TxtHighBayWarehouse5fetchENS_11TxtWPType_tE
+combined-graph-5.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse15requestVGRfetchEPNS_12TxtWorkpieceE
+combined-graph-5.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse15requestVGRfetchEPNS_12TxtWorkpieceE
+combined-graph-5.dot:" -> "FFF Function- _ZN2ft19TxtHighBayWarehouse15requestVGRfetchEPNS_12TxtWorkpieceE
+
+
+1st WORKPIECE IS DELIVERED FROM 42-27
+combined-graph-27.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage16saveStorageStateEv
+combined-graph-27.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage16saveStorageStateEv
+combined-graph-27.dot:" -> "FFF Function- _ZN2ft26TxtHighBayWarehouseStorage16saveStorageStateEv
+combined-graph-31.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage14storeContainerEv
+combined-graph-31.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage14storeContainerEv
+combined-graph-31.dot:" -> "FFF Function- _ZN2ft26TxtHighBayWarehouseStorage14storeContainerEv
+combined-graph-32.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse14storeContainerEv
+combined-graph-32.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse14storeContainerEv
+combined-graph-32.dot:" -> "FFF Function- _ZN2ft19TxtHighBayWarehouse14storeContainerEv
+combined-graph-32.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse24requestVGRstoreContainerEPNS_12TxtWorkpieceE
+combined-graph-32.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse24requestVGRstoreContainerEPNS_12TxtWorkpieceE
+combined-graph-32.dot:" -> "FFF Function- _ZN2ft19TxtHighBayWarehouse24requestVGRstoreContainerEPNS_12TxtWorkpieceE
+combined-graph-35.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage16saveStorageStateEv
+combined-graph-35.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage16saveStorageStateEv
+combined-graph-35.dot:" -> "FFF Function- _ZN2ft26TxtHighBayWarehouseStorage16saveStorageStateEv
+combined-graph-41.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage5fetchENS_11TxtWPType_tE
+combined-graph-41.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage5fetchENS_11TxtWPType_tE
+combined-graph-41.dot:" -> "FFF Function- _ZN2ft26TxtHighBayWarehouseStorage5fetchENS_11TxtWPType_tE
+combined-graph-42.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse5fetchENS_11TxtWPType_tE
+combined-graph-42.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse5fetchENS_11TxtWPType_tE
+combined-graph-42.dot:" -> "FFF Function- _ZN2ft19TxtHighBayWarehouse5fetchENS_11TxtWPType_tE
+combined-graph-42.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse15requestVGRfetchEPNS_12TxtWorkpieceE
+combined-graph-42.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse15requestVGRfetchEPNS_12TxtWorkpieceE
+combined-graph-42.dot:" -> "FFF Function- _ZN2ft19TxtHighBayWarehouse15requestVGRfetchEPNS_12TxtWorkpieceE
+
+
+2nd WORKPIECE DELIVERED TILL GRAPH 84-68
+combined-graph-68.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage16saveStorageStateEv
+combined-graph-68.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage16saveStorageStateEv
+combined-graph-68.dot:" -> "FFF Function- _ZN2ft26TxtHighBayWarehouseStorage16saveStorageStateEv
+combined-graph-72.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage14storeContainerEv
+combined-graph-72.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage14storeContainerEv
+combined-graph-72.dot:" -> "FFF Function- _ZN2ft26TxtHighBayWarehouseStorage14storeContainerEv
+combined-graph-72.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse14storeContainerEv
+combined-graph-72.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse14storeContainerEv
+combined-graph-72.dot:" -> "FFF Function- _ZN2ft19TxtHighBayWarehouse14storeContainerEv
+combined-graph-72.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse24requestVGRstoreContainerEPNS_12TxtWorkpieceE
+combined-graph-72.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse24requestVGRstoreContainerEPNS_12TxtWorkpieceE
+combined-graph-72.dot:" -> "FFF Function- _ZN2ft19TxtHighBayWarehouse24requestVGRstoreContainerEPNS_12TxtWorkpieceE
+combined-graph-76.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage16saveStorageStateEv
+combined-graph-76.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage16saveStorageStateEv
+combined-graph-76.dot:" -> "FFF Function- _ZN2ft26TxtHighBayWarehouseStorage16saveStorageStateEv
+combined-graph-83.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage5fetchENS_11TxtWPType_tE
+combined-graph-83.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage5fetchENS_11TxtWPType_tE
+combined-graph-83.dot:" -> "FFF Function- _ZN2ft26TxtHighBayWarehouseStorage5fetchENS_11TxtWPType_tE
+combined-graph-83.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse5fetchENS_11TxtWPType_tE
+combined-graph-83.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse5fetchENS_11TxtWPType_tE
+combined-graph-83.dot:" -> "FFF Function- _ZN2ft19TxtHighBayWarehouse5fetchENS_11TxtWPType_tE
+combined-graph-84.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse15requestVGRfetchEPNS_12TxtWorkpieceE
+combined-graph-84.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse15requestVGRfetchEPNS_12TxtWorkpieceE
+combined-graph-84.dot:" -> "FFF Function- _ZN2ft19TxtHighBayWarehouse15requestVGRfetchEPNS_12TxtWorkpieceE
+
+
+1st WORKPIECE STORED TILL GRAPH 103-92
+combined-graph-92.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage16saveStorageStateEv
+combined-graph-92.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage16saveStorageStateEv
+combined-graph-92.dot:" -> "FFF Function- _ZN2ft26TxtHighBayWarehouseStorage16saveStorageStateEv
+combined-graph-97.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage5storeENS_12TxtWorkpieceE 1911427
+combined-graph-97.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage5storeENS_12TxtWorkpieceE
+combined-graph-97.dot:" -> "FFF Function- _ZN2ft26TxtHighBayWarehouseStorage5storeENS_12TxtWorkpieceE
+combined-graph-97.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse5storeENS_12TxtWorkpieceE
+combined-graph-97.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse5storeENS_12TxtWorkpieceE
+combined-graph-97.dot:" -> "FFF Function- _ZN2ft19TxtHighBayWarehouse5storeENS_12TxtWorkpieceE
+combined-graph-97.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse15requestVGRstoreEPNS_12TxtWorkpieceE
+combined-graph-97.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse15requestVGRstoreEPNS_12TxtWorkpieceE
+combined-graph-97.dot:" -> "FFF Function- _ZN2ft19TxtHighBayWarehouse15requestVGRstoreEPNS_12TxtWorkpieceE
+combined-graph-102.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage14fetchContainerEv
+combined-graph-102.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage14fetchContainerEv
+combined-graph-102.dot:" -> "FFF Function- _ZN2ft26TxtHighBayWarehouseStorage14fetchContainerEv
+combined-graph-103.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse14fetchContainerEv
+combined-graph-103.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse14fetchContainerEv
+combined-graph-103.dot:" -> "FFF Function- _ZN2ft19TxtHighBayWarehouse14fetchContainerEv
+combined-graph-103.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse24requestVGRfetchContainerEPNS_12TxtWorkpieceE
+combined-graph-103.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse24requestVGRfetchContainerEPNS_12TxtWorkpieceE
+combined-graph-103.dot:" -> "FFF Function- _ZN2ft19TxtHighBayWarehouse24requestVGRfetchContainerEPNS_12TxtWorkpieceE
+
+
+3rd WORKPIECE DELIVERED FROM 147-130
+combined-graph-130.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage16saveStorageStateEv
+combined-graph-130.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage16saveStorageStateEv
+combined-graph-130.dot:" -> "FFF Function- _ZN2ft26TxtHighBayWarehouseStorage16saveStorageStateEv
+combined-graph-134.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage14storeContainerEv
+combined-graph-134.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage14storeContainerEv
+combined-graph-134.dot:" -> "FFF Function- _ZN2ft26TxtHighBayWarehouseStorage14storeContainerEv
+combined-graph-134.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse14storeContainerEv
+combined-graph-134.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse14storeContainerEv
+combined-graph-134.dot:" -> "FFF Function- _ZN2ft19TxtHighBayWarehouse14storeContainerEv
+combined-graph-134.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse24requestVGRstoreContainerEPNS_12TxtWorkpieceE
+combined-graph-134.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse24requestVGRstoreContainerEPNS_12TxtWorkpieceE
+combined-graph-134.dot:" -> "FFF Function- _ZN2ft19TxtHighBayWarehouse24requestVGRstoreContainerEPNS_12TxtWorkpieceE
+combined-graph-137.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage16saveStorageStateEv
+combined-graph-137.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage16saveStorageStateEv
+combined-graph-137.dot:" -> "FFF Function- _ZN2ft26TxtHighBayWarehouseStorage16saveStorageStateEv
+combined-graph-143.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage5fetchENS_11TxtWPType_tE
+combined-graph-143.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage5fetchENS_11TxtWPType_tE
+combined-graph-143.dot:" -> "FFF Function- _ZN2ft26TxtHighBayWarehouseStorage5fetchENS_11TxtWPType_tE
+combined-graph-143.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse5fetchENS_11TxtWPType_tE
+combined-graph-143.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse5fetchENS_11TxtWPType_tE
+combined-graph-143.dot:" -> "FFF Function- _ZN2ft19TxtHighBayWarehouse5fetchENS_11TxtWPType_tE
+combined-graph-143.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse15requestVGRfetchEPNS_12TxtWorkpieceE
+combined-graph-143.dot:	"FFF Function- _ZN2ft19TxtHighBayWarehouse15requestVGRfetchEPNS_12TxtWorkpieceE
+combined-graph-143.dot:" -> "FFF Function- _ZN2ft19TxtHighBayWarehouse15requestVGRfetchEPNS_12TxtWorkpieceE
+combined-graph-147.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage16loadStorageStateEv
+combined-graph-147.dot:	"FFF Function- _ZN2ft26TxtHighBayWarehouseStorage16loadStorageStateEv
+combined-graph-147.dot:" -> "FFF Function- _ZN2ft26TxtHighBayWarehouseStorage16loadStorageStateEv
+
+
+VGR part
+combined-graph-152.dot:	"FFF Function- _ZN2ft21TxtVacuumGripperRobot17requestHBWfetchedEPNS_12TxtWorkpieceE
+combined-graph-152.dot:	"FFF Function- _ZN2ft21TxtVacuumGripperRobot17requestHBWfetchedEPNS_12TxtWorkpieceE
+combined-graph-152.dot:" -> "FFF Function- _ZN2ft21TxtVacuumGripperRobot17requestHBWfetchedEPNS_12TxtWorkpieceE
+combined-graph-224.dot:	"FFF Function- _ZN2ft21TxtVacuumGripperRobot17requestHBWfetchedEPNS_12TxtWorkpieceE
+combined-graph-224.dot:	"FFF Function- _ZN2ft21TxtVacuumGripperRobot17requestHBWfetchedEPNS_12TxtWorkpieceE
+combined-graph-224.dot:" -> "FFF Function- _ZN2ft21TxtVacuumGripperRobot17requestHBWfetchedEPNS_12TxtWorkpieceE
+```
+
 
 ## Generate gspan subgraphs
 The gspan data format has been created with this following python file,
@@ -144,3 +281,23 @@ KeyError: '"publishget_topicvalue-f/i/order-state4"'
 
 **After changing the file. I am getting subgraphs present in the `Graphs/pics` dir.** Now, the `gpsanDataFormat.py` is updated with only functions. And the gspan-subgraphs will be found in the `gspan-subgraphs` folder.
 ![gspan-graphs](pics/gpsan-subg-vgr.png)
+
+
+### gspan commands
+Run following commands for vgr/hbw data files and be careful with using `-s <number>` which is size in the command. If it's a small number like 10 or 50. It will look for subgraphs. But if the size is bigger than it will look for bigger subgraphs.
+```
+python3 -m gspan_mining -s 10 -d True -p True data-gspan/hbw.data
+```
+```
+$python3 -m gspan_mining -s 10 -d True -p True data-gspan/vgr.data
+```
+
+Make sure you have the `vgr.data` or `hbw.data` file present, which is generated after running the following program on the log file,
+```
+$python3 gspanDataFormat.py 
+Enter the event name: hbw/ack
+total edges:  56184
+existing_file contents are written.
+existing_file has been combined to the data-gspan/hbw.data.
+```
+
