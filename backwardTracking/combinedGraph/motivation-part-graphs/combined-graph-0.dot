@@ -32,6 +32,21 @@ arg_values- -1090522104 ,-1289751472
 arguments-   , %\"class.ft--TxtHighBayWarehouseStorage\"* %this
 arg_values- -1090522104 ,-1289751472
  - state 3" -> "Called from- TxtHighBayWarehouseStorage5fetch TxtHighBayWarehouseStorage10isValidPos callInst_values- -1 - state 1" [dir=back]
+	"loaded values- 0 - state 1"
+	"loaded values- 0 - state 1" -> "Function- TxtHighBayWarehouseStorage10isValidPos 57241
+arguments-   , %\"class.ft--TxtHighBayWarehouseStorage\"* %this
+arg_values- -1090522104 ,-1289751472
+ - state 3" [dir=back]
+	"loaded values- 1 - state 2"
+	"loaded values- 1 - state 2" -> "loaded values- 0 - state 1" [dir=back]
+	"loaded values- 1 - state 3"
+	"loaded values- 1 - state 3" -> "loaded values- 1 - state 2" [dir=back]
+	"loaded values- 2137079968 - state 4"
+	"loaded values- 2137079968 - state 4" -> "loaded values- 1 - state 3" [dir=back]
+	"loaded values- 1 - state 5"
+	"loaded values- 1 - state 5" -> "loaded values- 2137079968 - state 4" [dir=back]
+	"loaded values- 2137079968 - state 6"
+	"loaded values- 2137079968 - state 6" -> "loaded values- 1 - state 5" [dir=back]
 	"Function- TxtHighBayWarehouseStorage5fetch
 Position- 1 0
 Table- 1 0 0 0 0 0 0 0 0
@@ -43,10 +58,7 @@ Position- 1 0
 Table- 1 0 0 0 0 0 0 0 0
 arguments-   , %\"class.ft--TxtHighBayWarehouseStorage\"* %this
 arg_values- -1090522104 ,1
- - state 4" -> "Function- TxtHighBayWarehouseStorage10isValidPos 57241
-arguments-   , %\"class.ft--TxtHighBayWarehouseStorage\"* %this
-arg_values- -1090522104 ,-1289751472
- - state 3" [dir=back]
+ - state 4" -> "loaded values- 2137079968 - state 6" [dir=back]
 	"Function- TxtHighBayWarehouse5fetch
 arguments-   , %\"class.ft--TxtHighBayWarehouse\"* %this
 arg_values- -1090522400 ,1
@@ -129,6 +141,15 @@ arg_values- -1090522104 ,-1289751472
 arguments-   , %\"class.ft--TxtHighBayWarehouseStorage\"* %this
 arg_values- -1090522104 ,-1289751472
  - state 10" -> "Called from- TxtHighBayWarehouseStorage14fetchContainer TxtHighBayWarehouseStorage10isValidPos callInst_values- -1 - state 5" [dir=back]
+	"loaded values- 2 - state 7"
+	"loaded values- 2 - state 7" -> "Function- TxtHighBayWarehouseStorage10isValidPos
+arguments-   , %\"class.ft--TxtHighBayWarehouseStorage\"* %this
+arg_values- -1090522104 ,-1289751472
+ - state 10" [dir=back]
+	"loaded values- 0 - state 8"
+	"loaded values- 0 - state 8" -> "loaded values- 2 - state 7" [dir=back]
+	"loaded values- 0 - state 9"
+	"loaded values- 0 - state 9" -> "loaded values- 0 - state 8" [dir=back]
 	"Function- TxtHighBayWarehouseStorage14fetchContainer
 Position- 0 0
 Table- 1 0 0 0 0 0 0 0 0
@@ -140,10 +161,7 @@ Position- 0 0
 Table- 1 0 0 0 0 0 0 0 0
 arguments-  
 arg_values- -1090522104
- - state 11" -> "Function- TxtHighBayWarehouseStorage10isValidPos
-arguments-   , %\"class.ft--TxtHighBayWarehouseStorage\"* %this
-arg_values- -1090522104 ,-1289751472
- - state 10" [dir=back]
+ - state 11" -> "loaded values- 0 - state 9" [dir=back]
 	"Function- TxtHighBayWarehouse14fetchContainer
 arguments-  
 arg_values- -1090522400
@@ -263,6 +281,8 @@ arg_values- -1090522400 ,2137081336
 arguments-   , %\"class.ft--TxtMqttFactoryClient\"* %this , %\"class.ft--TxtMqttFactoryClient\"* %thisi32 %code , %\"class.ft--TxtMqttFactoryClient\"* %thisi32 %code%\"class.ft--TxtWorkpiece\"* %wp
 arg_values- -1090521784 ,3 ,-1090522096 ,5000
  - state 19" [dir=back]
+	"loaded values- 1"
+	"loaded values- 1" -> "Called from- _ZN2ft32TxtDeliveryPickupStationObserver6UpdateEPNS_15SubjectObserverE _ZN2ft24TxtDeliveryPickupStation6is_DINEv callInst_values- -1 - state 9" [dir=back]
 	"FFF Function- _ZN2ft24TxtDeliveryPickupStation6is_DINEv
 arguments-  
 arg_values- -1090522376
@@ -275,5 +295,5 @@ arg_values- -1090522376
 	"FFF Function- _ZN2ft24TxtDeliveryPickupStation6is_DINEv
 arguments-  
 arg_values- -1090522376
- - state 20" -> "Called from- _ZN2ft32TxtDeliveryPickupStationObserver6UpdateEPNS_15SubjectObserverE _ZN2ft24TxtDeliveryPickupStation6is_DINEv callInst_values- -1 - state 9" [dir=back]
+ - state 20" -> "loaded values- 1" [dir=back]
 }

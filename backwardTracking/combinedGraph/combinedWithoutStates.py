@@ -4,7 +4,7 @@ import graphviz
 # with open('test', 'r') as f:
 # Path: CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good
 #with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/hbwall3', 'r') as f:
-with open('/home/hacker/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/combined_vgr_hbw.txt', 'r') as f: ## vgr and hbw has been combined into a single file. Vgr content is above hbw content.
+with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/combined_vgr_hbw.txt', 'r') as f: ## vgr and hbw has been combined into a single file. Vgr content is above hbw content.
     input_str = f.read()
 
 start_tracking_from = input("Enter the event name: ")
@@ -143,8 +143,8 @@ for i, graph in enumerate(graphs):
     #    dot_graph = f.read()
     #graphviz.Source(dot_graph)
 
-    #search_string = "Called from: _ZN2ft26TxtHighBayWarehouseStorage5fetchENS_11TxtWPType_tE _ZN2ft26TxtHighBayWarehouseStorage10isValidPosENS_11StoragePos2E callInst_values: -1"
-    #if search_string in dot_graph:
-    #    print(f"String found in graph {i}")
+    search_string = "_ZN2ft26TxtHighBayWarehouseStorage5fetchENS_11TxtWPType_tE"
+    if search_string in dot_graph:
+        print(f"String found in graph {i}")
 
 

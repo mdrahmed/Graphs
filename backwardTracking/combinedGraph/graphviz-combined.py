@@ -313,6 +313,7 @@ with open(original_file, 'w') as f:
         #    dot_graph = f_in.read()
         #graphviz.Source(dot_graph)
 
+## THIS FOLLOWING PART WILL GENERATE GRAPH
 for i, graph in enumerate(graphs):
     graph.render(f'backtrackingGraphsGenerated/graphs-{i+1}/hbw-graph-{i}.dot')
     graph.render(f'backtrackingGraphsGenerated/graphs-{i+1}/hbw-graph-{i}.png')
@@ -335,7 +336,14 @@ for i, graph in enumerate(graphs):
 
 
 ## Only appending to original data
-with open(existing_file, 'r') as f_source:
-    existing_contents = f_source.read()
-with open(original_file, 'a') as f_combined:
-    f_combined.write(existing_contents)
+if os.path.exists(existing_file):
+    with open(existing_file, 'r') as f_source:
+        existing_contents = f_source.read()
+else:
+    print(f"existing_file not found inside data/")
+
+if os.path.exists(original_file) and os.path.exists(existing_file):
+    with open(original_file, 'a') as f_combined:
+        f_combined.write(existing_contents)
+else:
+    print(f"Can't append existing_file to original_file.\nBecause existing_file was not created yet, check inside data/")

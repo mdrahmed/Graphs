@@ -81,40 +81,40 @@ def parse_input(input_str):
         if start_tracking_from in line:
             found = True
         
-        # if "loaded" in line and found:
-        #     #if line.split()[-1] == '1':
-        #     global_var = line.replace(":","-")
-        #     if len(functions) > 0 and "isValidPos" in functions[-1]:
-        #         stateful = True
-        #     if stateful: 
-        #         global_states += 1
-        #         global_var += " - state {}".format(global_states)
-        #     current_graph.node(global_var)
-        #     if len(topics_current) > 0:
-        #         #current_graph.edge(topics_current[-1], topics[topic_func])
-        #         current_graph.edge(global_var, topics_current[-1], dir="back")
-        #         topics_current = []
-        #         i += 1
-        #         edges += 1
-        #     elif len(functions) > 0:
-        #         #current_graph.edge(functions[-1], global_var)
-        #         current_graph.edge(global_var, functions[-1], dir="back")
-        #         functions = []
-        #         i += 1
-        #         edges += 1
-        #     elif len(callInsts) > 0:
-        #         #current_graph.edge(callInsts[-1], global_var)
-        #         current_graph.edge(global_var, callInsts[-1], dir="back")
-        #         callInsts = []
-        #         i += 1
-        #         edges += 1
-        #     elif len(globals) > 0:
-        #         #current_graph.edge(globals[-1], global_var)
-        #         current_graph.edge(global_var, globals[-1], dir="back")
-        #         i += 1
-        #         edges += 1
-        #     # print(global_var)
-        #     globals.append(global_var)
+        if "loaded" in line and found:
+            #if line.split()[-1] == '1':
+            global_var = line.replace(":","-")
+            if len(functions) > 0 and "isValidPos" in functions[-1]:
+                stateful = True
+            if stateful: 
+                global_states += 1
+                global_var += " - state {}".format(global_states)
+            current_graph.node(global_var)
+            if len(topics_current) > 0:
+                #current_graph.edge(topics_current[-1], topics[topic_func])
+                current_graph.edge(global_var, topics_current[-1], dir="back")
+                topics_current = []
+                i += 1
+                edges += 1
+            elif len(functions) > 0:
+                #current_graph.edge(functions[-1], global_var)
+                current_graph.edge(global_var, functions[-1], dir="back")
+                functions = []
+                i += 1
+                edges += 1
+            elif len(callInsts) > 0:
+                #current_graph.edge(callInsts[-1], global_var)
+                current_graph.edge(global_var, callInsts[-1], dir="back")
+                callInsts = []
+                i += 1
+                edges += 1
+            elif len(globals) > 0:
+                #current_graph.edge(globals[-1], global_var)
+                current_graph.edge(global_var, globals[-1], dir="back")
+                i += 1
+                edges += 1
+            # print(global_var)
+            globals.append(global_var)
 
         if "Function" in line and found:
             collision = False
@@ -140,26 +140,26 @@ def parse_input(input_str):
                     # print("prev_posi",prev_posi,"prev_posj",prev_posj)
                     prev_posi = posi
                     prev_posj = posj
-                # elif "Table" in next_line:
-                #     table = next_line.split()
-                #     print(table)
-                #     # Find the index where 'Table-' appears in the list
-                #     table_index = table.index('Table-')
-                #     # Create a 3x3 list starting from the element after 'Table-'
-                #     table_list = [table[table_index+1 : table_index+4],
-                #                 table[table_index+4 : table_index+7],
-                #                 table[table_index+7 : table_index+10]]
-                #     if posj == 2:
-                #         posj = 0
-                #     elif posj == 0:
-                #         posj = 2
-                #     print(table_list,function_name)
-                #     if table_list[posi][posj] == '0' and "TxtHighBayWarehouseStorage5fetch" in function_name:
-                #         print(colored("Collision detected", "red"))
-                #         collision = True
-                #     elif table_list[posi][posj] == '1' and "TxtHighBayWarehouseStorage14fetchContainer" in function_name:
-                #         print(colored("Collision detected", "red"))
-                #         collision = True
+                elif "Table" in next_line:
+                    table = next_line.split()
+                    print(table)
+                    # Find the index where 'Table-' appears in the list
+                    table_index = table.index('Table-')
+                    # Create a 3x3 list starting from the element after 'Table-'
+                    table_list = [table[table_index+1 : table_index+4],
+                                table[table_index+4 : table_index+7],
+                                table[table_index+7 : table_index+10]]
+                    if posj == 2:
+                        posj = 0
+                    elif posj == 0:
+                        posj = 2
+                    print(table_list,function_name)
+                    if table_list[posi][posj] == '0' and "TxtHighBayWarehouseStorage5fetch" in function_name:
+                        print(colored("Collision detected", "red"))
+                        collision = True
+                    elif table_list[posi][posj] == '1' and "TxtHighBayWarehouseStorage14fetchContainer" in function_name:
+                        print(colored("Collision detected", "red"))
+                        collision = True
 
                 if "arg_values" in next_line:
                     break

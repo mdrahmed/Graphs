@@ -1,8 +1,12 @@
 Worked files till now,
 ------------------
-1. All logs are combined to create a simple file, while executing give the input properly.
+1. All logs are combined to create a simple file, while executing give the input properly - see below for inputs.
 ```
 ./combined-graph-v3.py ##This file is a copy of ./combined-graph-v2.py, I used this to draw the motivation part of the paper. 
+```
+Sometimes, I will need to work with only functions, so, created a separate file for that,
+```
+./combinedOnlyFunc.py ## This file is a copy of ./combined-graph-v3.py but commented out everything excepts functions.
 ```
 The motivation part will show following,<br/>
 To storage initially,<br/>
@@ -119,3 +123,24 @@ Working files,
 - `graph` and `stateful-graphs` contains the graphs drawn
 - `graphviz-combined.py` and `3test.py` are other python files to generate `gspan` data format file and test program respectively. 
 - `isValidPos-graphs` contains the graph with string `isValidPos`
+
+
+## Generate gspan subgraphs
+The gspan data format has been created with this following python file,
+```
+gspanDataFormat.py # copy of ./combinedOnlyFunc.py
+```
+This `combinedOnlyFunc.py` file is different from the `gpsanDataFormat.py`. Because I was getting following keyErrors and that's why I needed to change the file.
+```
+Index was out of range because the data file was created with function names, arguments and it's values putting all in a new line.
+...
+KeyError: '"message_arrivedget_topicvalue-f/o/order-state4"'
+...
+KeyError: '"u16LastStateDIN,reqUpdateDIN=>sensor"'
+..
+KeyError: '"publishget_topicvalue-f/i/order-state4"'
+```
+![gpsan-error](pics/gspan-error.png)
+
+**After changing the file. I am getting subgraphs present in the `Graphs/pics` dir.** Now, the `gpsanDataFormat.py` is updated with only functions. And the gspan-subgraphs will be found in the `gspan-subgraphs` folder.
+![gspan-graphs](pics/gpsan-subg-vgr.png)
