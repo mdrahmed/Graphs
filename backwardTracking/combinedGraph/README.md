@@ -301,3 +301,15 @@ existing_file contents are written.
 existing_file has been combined to the data-gspan/hbw.data.
 ```
 
+### Analyzing gSpan subgraphs
+At first, I put all the subgraphs into the `out` file,
+```
+python3 -m gspan_mining -s 30 -d True data-gspan/hbw.data >out
+```
+Then I checked the `hbw.data` file and collected the node of `fetch`,`store`, `fetchContainer`, `storeContainer`. All of those node ids were present in between 60-150. 
+![important-nodes](pics/important-nodes.png)
+
+That's why, I collected the nodes in the range of 60-150 `cat out | grep -E "([6-9][0-9]$|1[0-4][0-9]|150$)" | grep "v"`.
+![nodes](pics/nodes.png)
+
+

@@ -143,8 +143,8 @@ for i, graph in enumerate(graphs):
     #    dot_graph = f.read()
     #graphviz.Source(dot_graph)
 
-    search_string = "_ZN2ft26TxtHighBayWarehouseStorage5fetchENS_11TxtWPType_tE"
-    if search_string in dot_graph:
-        print(f"String found in graph {i}")
+    #search_string = "_ZN2ft26TxtHighBayWarehouseStorage5fetchENS_11TxtWPType_tE"
+    #if search_string in dot_graph:
+    #    print(f"String found in graph {i}")
 
 

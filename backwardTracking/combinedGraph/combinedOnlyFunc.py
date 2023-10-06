@@ -15,7 +15,7 @@ from termcolor import colored
 #    input_str = f.read()
 
 ## delivery-underflow with readable function calls.
-with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/delivery-underflow/delivery-underflow-1wp.md', 'r') as f: ##Storing 1 workpiece with much more refined function calls --Input: `hbw/ack`
+with open('/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/combined_vgr_hbw.txt', 'r') as f: ##Storing 1 workpiece with much more refined function calls --Input: `hbw/ack`
     input_str = f.read()
 
 
@@ -346,7 +346,7 @@ graphs = parse_input(input_str)
     
 print("total edges: ",edges)
 for i, graph in enumerate(graphs):
-    graph.render(f'motivation-part-graphs/combined-graph-{i}.dot')
+    graph.render(f'all-graphs/combined-graph-{i}.dot')
     # graph.render(f'hbw-graph/hbw-graph-{i}.png')
     # with open(f'hbw-graph/hbw-graph-{i}.png') as f:
     #     dot_graph = f.read()

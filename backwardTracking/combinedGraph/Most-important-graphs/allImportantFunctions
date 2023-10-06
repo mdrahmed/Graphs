@@ -1,3 +1,24 @@
+I have used this python file `combinedWithoutStates.py` to generate those graphs and graphs are present at this folder `Graphs/backwardTracking/combinedGraph/combinedGraphWithoutStates`.
+A backup is present here `~/combinedGraphWithoutStates`
+
+The flow for delivery should be,
+```
+storeContainer
+requestVGRstoreContainer
+fetch
+requestVGRfetch
+```
+
+The flow for storing should be,
+```
+store
+requestVGRstore
+fetchContainer
+requestVGRstoreContainer
+```
+
+Following is the most important functions with the graph numbers,
+```
 └──╼ $grep -r -E "fetch|store|saveStorageState|loadStorageState" *.dot
 
 # CONTROLLER STOPPED WHILE DOING THIS
@@ -128,3 +149,34 @@ combined-graph-152.dot:" -> "FFF Function- _ZN2ft21TxtVacuumGripperRobot17reques
 combined-graph-224.dot:	"FFF Function- _ZN2ft21TxtVacuumGripperRobot17requestHBWfetchedEPNS_12TxtWorkpieceE
 combined-graph-224.dot:	"FFF Function- _ZN2ft21TxtVacuumGripperRobot17requestHBWfetchedEPNS_12TxtWorkpieceE
 combined-graph-224.dot:" -> "FFF Function- _ZN2ft21TxtVacuumGripperRobot17requestHBWfetchedEPNS_12TxtWorkpieceE
+```
+
+
+Similar graphs
+```
+From 1st, 2nd, and 34d WORKPIECE DELIVERED
+combined-graph-31.dot
+combined-graph-70.dot
+combined-graph-132.dot
+
+
+combined-graph-33.dot
+combined-graph-34.dot
+combined-graph-74.dot
+combined-graph-75.dot
+combined-graph-135.dot
+combined-graph-136.dot
+
+
+
+combined-graph-36.dot
+combined-graph-78.dot
+
+combined-graph-40.dot
+combined-graph-80.dot
+
+combined-graph-81.dot
+combined-graph-139.dot
+combined-graph-142.dot
+```
+
