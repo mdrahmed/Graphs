@@ -7,7 +7,7 @@ do
     do
         for TOPK in 1000 500 200;
         do
-            python frequentPattern.py \
+            python frequentPattern3.py \
             --fname $FNAME \
             --seq_len $SEQ_LEN \
             --topk $TOPK \

@@ -9,5 +9,8 @@ After this it will create the `output.txt` and thats a list, so, run `updateTrac
 python3 updateTraces.py
 ```
 
-## shell.sh
-The `shell.sh` file is running the `find_and_remove.py` file with different `seq_len` and `topk`. So, getting this data inside the `meta` directory.
+## findRemove.sh
+The `findRemove.sh` file is running the `find_and_remove.py` file with different `seq_len` and `topk`. So, getting this data inside the `meta` directory.
+
+## original.sh
+The `original.sh` will get the original format of the data.
