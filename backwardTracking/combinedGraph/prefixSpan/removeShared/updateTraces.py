@@ -1,4 +1,3 @@
-import sys
 import os
 import argparse
 
@@ -33,5 +32,5 @@ with open(os.path.join(output_file_path), 'w') as output_file:
         cleaned_function_name = function_name.replace('\'', '').replace('FFF ', '')
         output_file.write(cleaned_function_name + '\n')
 
-print("Function names extracted and written to 'new_output.txt'.")
+print("Function names extracted and written to files inside the ./originalFormat'.")
 

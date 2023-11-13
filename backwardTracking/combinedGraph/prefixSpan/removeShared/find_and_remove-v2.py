@@ -160,9 +160,12 @@ if __name__ == "__main__":
     function_calls = function_calls_dict[args.fname_to_remove][0]
     print(f"length before filtering -> {len(function_calls)}")
 
-    #for k, v in shared_pattern_dict.items():
-    #    print(f"current target pattern -> {k}")
-    #    function_calls = remove_pattern_greedy(k, function_calls)
+    for k, v in shared_pattern_dict.items():
+        print(f"current target pattern -> {k}")
+        function_calls = remove_pattern_greedy(k, function_calls)
+        
+    for k in {your_interested_patterns}:
+        remove_pattern_greedy(k, [vgl])
 
     print(f"length after filtering -> {len(function_calls)}")
 

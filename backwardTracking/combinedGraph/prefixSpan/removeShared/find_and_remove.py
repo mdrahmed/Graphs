@@ -127,7 +127,7 @@ def remove_pattern_greedy(pattern, function_calls):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--input_dir", type=str, default="/home/raihan/graphsAnalysis/10.2.everything-logged-with-good/OnlyFunctionNames/")
+    parser.add_argument("--input_dir", type=str, default="/home/raihan/CPS-VVI-LOGS-DATA/All-new-logs/10.2.everything-logged-with-good/OnlyFunctionNames/")
     parser.add_argument("--fnames", type=str, default="hbwall3", help="input arbitrary number of filenames, separate by -")
     parser.add_argument("--fname_to_remove", type=str, required=True)
     parser.add_argument("--split_mode", type=str, choices=["overlapping", "nonoverlapping"], default="nonoverlapping")

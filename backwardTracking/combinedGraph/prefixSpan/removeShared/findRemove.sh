@@ -2,7 +2,7 @@ MIN_LEN=5
 MAX_LEN=15
 
 FNAME="hbwall3 vgrall3"
-SEQ_LEN="256 512"
+SEQ_LEN="256 512 1024"
 TOPK="1000 2000 5000"
 
 # "python3 find_and_remove.py --fnames hbwall3-vgrall3 --split_mode overlapping --seq_len 512 --topk 2000 --fname_to_remove hbwall3 --common_threshold 0.1"
