@@ -1,5 +1,7 @@
 ## Working files
 
+### Check data-mining_results.md file for every steps
+
 `2plag.py` will find the plagiarism between two/multiple files.
 `removeCommons.py` will remove the common patterns between the files. Details following,
 ```
@@ -86,3 +88,8 @@ rg -l "buffer_ref" | xargs rg -l "make_message" | xargs rg -l "message6create" |
 `xargs` will take the output and use it as input for the second. `-l` option will display only the names of the file. 
 
 After running this command, the 1st graph in the output should contain the pattern. Like i found following graph `hbw-graph-232.dot` 
+
+
+## Noises removed
+`hbwall3.txt` file total functions initially: 74011
+After removing noise `f1.txt`/`updatedHBW-shared.txt` file has total functions: 73514

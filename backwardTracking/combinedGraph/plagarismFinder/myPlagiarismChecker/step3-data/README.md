@@ -16,11 +16,10 @@ python frequentPattern2.py --fname variantPatternsRetrieved.txt --min_len 5 --st
 python findUniqueVariantPatterns.py --json_dir meta --json_file variantPatternsRetrieved.txt_1000_256_5_10_100.json 
 ```
 
-
 ## script run.sh
 
 The script `run.sh` will simply follow all the steps and extract the updated traces inside the `uniqueTraces` folder. 
-Currently, the minimum trace file is `./uniqueTraces/uniqueVariantTraces_1000_256_2_10_100: 848`
+Currently, the minimum trace files are `./uniqueTraces/uniqueVariantTraces_1000_256_1_10_100: 848` and `./uniqueTraces/uniqueVariantTraces_1000_256_2_10_100: 848`
 Execute this command `sh run.sh`
 
 ![minimum-traces](pics/minimum-traces.png)
