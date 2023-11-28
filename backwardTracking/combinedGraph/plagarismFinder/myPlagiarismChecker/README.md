@@ -13,11 +13,9 @@ remove_common_lines('output', 'f1.txt', 'f2.txt')
 
 ![patternsRemoved](pics/patternsRemoved.png)
 
-References:
-
-Repo used: [Python-Plagiarism-Checker](https://github.com/KalyanMurapaka45/Python-Plagiarism-Checker/tree/main)
-
-Also checked but didn't work: [turnitin](https://github.com/SegYT/turnitinFree/blob/main/turnitin.py)
+References:</br>
+Repo used: [Python-Plagiarism-Checker](https://github.com/KalyanMurapaka45/Python-Plagiarism-Checker/tree/main)</br>
+Also checked [turnitin](https://github.com/SegYT/turnitinFree/blob/main/turnitin.py) but didn't work
 
 
 ### Longest common pattern found
