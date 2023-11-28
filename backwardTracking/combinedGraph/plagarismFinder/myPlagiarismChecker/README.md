@@ -1,8 +1,8 @@
 ## Working files
 
 ### Check data-mining_results.md file for every steps
-
-`2plag.py` will find the plagiarism between two/multiple files.
+Repo used: [Python-Plagiarism-Checker](https://github.com/KalyanMurapaka45/Python-Plagiarism-Checker/tree/main)
+`2plag.py` will find the plagiarism between two/multiple files. 
 `removeCommons.py` will remove the common patterns between the files. Details following,
 ```
 # It will take this input
@@ -12,6 +12,11 @@ remove_common_lines('output', 'f1.txt', 'f2.txt')
  - `commons.sh` :- Then this file will first run 2 files to convert the data by removing `FFF Function:`. After that it will run the `removeCommons.py` file to remove the common patterns between those files. 
 
 ![patternsRemoved](pics/patternsRemoved.png)
+
+References:
+Repo used: [Python-Plagiarism-Checker](https://github.com/KalyanMurapaka45/Python-Plagiarism-Checker/tree/main)
+Also checked but didn't work: [turnitin](https://github.com/SegYT/turnitinFree/blob/main/turnitin.py)
+
 
 ### Longest common pattern found
 Pattern no: 827210

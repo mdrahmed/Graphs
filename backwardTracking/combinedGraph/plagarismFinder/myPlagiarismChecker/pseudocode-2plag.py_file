@@ -1,0 +1,37 @@
+1. Import required libraries
+   - os
+   - TfidfVectorizer from sklearn.feature_extraction.text
+   - cosine_similarity from sklearn.metrics.pairwise
+
+2. Get a list of text files in the current directory with a '.txt' extension
+   - sample_files = [doc for doc in os.listdir() if doc.endswith('.txt')]
+
+3. Read the contents of each text file into a list
+   - sample_contents = [open(File).read() for File in sample_files]
+
+4. Initialize a TfidfVectorizer
+   - vectorizer = TfidfVectorizer()
+
+5. Transform the sample contents into vectors using TfidfVectorizer
+   - vectors = vectorizer.fit_transform(sample_contents)
+
+6. Create a list of tuples containing filenames and their corresponding vectors
+   - s_vectors = list(zip(sample_files, vectors))
+
+7. Define a function check_plagiarism():
+   7.1 Initialize an empty set 'results'
+   7.2 Iterate through each sample file and its vector in s_vectors:
+       7.2.1 Create a copy of s_vectors excluding the current sample
+       7.2.2 Iterate through each remaining sample file and its vector:
+           7.2.2.1 Calculate the cosine similarity between text_vector_a and text_vector_b
+           7.2.2.2 If sim_score is greater than 0.7/0.2 (threshold):
+               7.2.2.3 Find the common text between the two samples
+               7.2.2.4 Add the tuple (sample_a, sample_b, sim_score, common_text) to 'results'
+   7.3 Return 'results'
+
+8. Iterate through the results returned by check_plagiarism():
+   8.1 Print the similarity between sample_a and sample_b along with the similarity score
+   8.2 Print the common text(it is not text file so, it prints 1st line of common text of traces) between the two samples 
+
+9. End
+
