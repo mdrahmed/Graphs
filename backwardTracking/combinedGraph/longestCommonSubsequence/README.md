@@ -13,5 +13,7 @@
     File: `idf.py`
         Run: `./run.sh` - It will use the `../step2/patterns` file and remove based on the frequency defined in `run.sh`. It will store the function frequency in `frequent_traces_removed` and the updated traces will be written inside `idf_traces`. The unwanted text `patterns, Pattern` will be removed from the file by `removeUnwantedText` and it will save files inside `updated_idf_traces`
 
+**The `find_patterns.py` is the updated version of the `similarity_multiple.py` file**
+
 ## Old
 `lcs.py` will find all common subsequence has length greater than 1.

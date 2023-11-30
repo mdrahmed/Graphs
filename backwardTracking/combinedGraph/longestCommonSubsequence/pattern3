@@ -1,18 +1,18 @@
-Block 1: 
+Pattern 1
 _GLOBAL__sub_I_main.cpp
 _GLOBAL__sub_I_Utils.cpp
 
-Block 2: 
+Pattern 2
 _GLOBAL__sub_I_TxtSimulationModel.cpp
 
-Block 3: 
+Pattern 3
 _GLOBAL__sub_I_TxtMqttFactoryClient.cpp
 _GLOBAL__sub_I_Observer.cpp
 
-Block 4: 
+Pattern 4
 _GLOBAL__sub_I_TxtCalibData.cpp
 
-Block 5: 
+Pattern 5
 main
 _ZN4mqtt10buffer_refIcEC2EONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
 _ZN4mqttlsIcEERSoS1_RKNS_10buffer_refIT_EE
@@ -41,7 +41,7 @@ _ZN4mqtt10buffer_refIcED2Ev
 _ZN4mqtt10buffer_refIcED2Ev
 _ZN2ft11TxtTransferC2EP8shm_if_s
 
-Block 6: 
+Pattern 6
 _ZN2ft18TxtSimulationModelC2EPNS_11TxtTransferEPNS_20TxtMqttFactoryClientE
 _ZN2ft15SubjectObserverC2Ev
 _ZN2ft8TxtSoundC2EPNS_11TxtTransferE
@@ -58,34 +58,34 @@ _ZN2ft8toStringENS_16TxtAxis_status_tE
 _ZN2ft15SubjectObserverC2Ev
 _ZN2ft7TxtAxis12configInputsEh
 
-Block 7: 
+Pattern 7
 _ZN2ft7TxtAxisC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPNS_11TxtTransferEhh
 _ZN2ft7TxtAxis9setStatusENS_16TxtAxis_status_tE
 _ZN2ft8toStringENS_16TxtAxis_status_tE
 
-Block 8: 
+Pattern 8
 _ZN2ft7TxtAxis12configInputsEh
 
-Block 9: 
+Pattern 9
 _ZN2ft15SubjectObserverC2Ev
 
-Block 10: 
+Pattern 10
 _ZN2ft12TxtCalibDataC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
 
-Block 11: 
+Pattern 11
 _ZN2ft16TxtJoysticksDataC2Ev
 
-Block 12: 
+Pattern 12
 _ZN2ft12TxtCalibData18existCalibFilenameEv
 
-Block 13: 
+Pattern 13
 _ZN2ft8TxtSound6enableEb
 
-Block 14: 
+Pattern 14
 _ZN4mqtt8callbackC2Ev
 _ZN2ft20TxtMqttFactoryClient12set_callbackERN4mqtt8callbackE
 
-Block 15: 
+Pattern 15
 _ZN2ft20TxtMqttFactoryClient7connectEl
 _ZNK4mqtt10buffer_refIcE5emptyEv
 _ZNK4mqtt10buffer_refIcE5emptyEv
@@ -97,13 +97,13 @@ _ZN4mqtt12will_optionsD2Ev
 _ZN4mqtt10buffer_refIcED2Ev
 _ZN4mqtt10buffer_refIcED2Ev
 
-Block 16: 
+Pattern 16
 _ZN2ft20TxtMqttFactoryClient12is_connectedEv
 _ZNK4mqtt12async_client12is_connectedEv
 _ZN8callback9connectedERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
 _ZN2ft20TxtMqttFactoryClient13start_consumeEl
 
-Block 17: 
+Pattern 17
 _ZN2ft20TxtMqttFactoryClient8subTopicERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEl
 _ZN2ft20TxtMqttFactoryClient8subTopicERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEl
 _ZN2ft20TxtMqttFactoryClient8subTopicERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEl
@@ -113,7 +113,7 @@ _ZN2ft20TxtMqttFactoryClient23publishStationBroadcastENSt7__cxx1112basic_stringI
 _ZN2ft15gettimestampstrExPc
 _ZN2ft6getMACB5cxx11EPKc
 
-Block 18: 
+Pattern 18
 _ZN2ft25action_listener_subscribe10on_successERKN4mqtt5tokenE
 _ZNK4mqtt17string_collection5emptyEv
 _ZNK4mqtt17string_collection4sizeEv
@@ -125,7 +125,7 @@ _ZNK4mqtt17string_collection4sizeEv
 _ZNK4mqtt17string_collectionixB5cxx11Ej
 _ZNK4mqtt17string_collection4sizeEv
 
-Block 19: 
+Pattern 19
 _ZN4mqtt10buffer_refIcEC2EONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
 _ZN4mqtt12make_messageENS_10buffer_refIcEES1_
 _ZN4mqtt10buffer_refIcEC2EOS1_
@@ -154,19 +154,19 @@ _ZNK4mqtt7message9get_topicB5cxx11Ev
 _ZNK4mqtt10buffer_refIcEcvbEv
 _ZNK4mqtt10buffer_refIcE3strB5cxx11Ev
 
-Block 20: 
+Pattern 20
 _ZN2ft23action_listener_publish10on_successERKN4mqtt5tokenE
 _ZNK4mqtt17string_collection5emptyEv
 _ZNK4mqtt17string_collection4sizeEv
 _ZNK4mqtt17string_collectionixB5cxx11Ej
 _ZNK4mqtt17string_collection4sizeEv
 
-Block 21: 
+Pattern 21
 _ZN2ft20TxtMqttFactoryClient19publishStateStationENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_13TxtLEDSCode_tES6_liS6_
 _ZN2ft9getnowstrEPc
 _ZN2ft10gettimestrEliPc
 
-Block 22: 
+Pattern 22
 _ZN4mqtt10buffer_refIcEC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
 _ZN4mqtt10buffer_refIcEC2EONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
 _ZN4mqtt12make_messageENS_10buffer_refIcEES1_
@@ -205,12 +205,12 @@ _ZN4mqtt7messageD2Ev
 _ZN4mqtt10buffer_refIcED2Ev
 _ZN4mqtt10buffer_refIcED2Ev
 
-Block 23: 
+Pattern 23
 _ZN2ft7TxtAxis11setMotorOffEv
 _ZN2ft7TxtAxis9setStatusENS_16TxtAxis_status_tE
 _ZN2ft8toStringENS_16TxtAxis_status_tE
 
-Block 24: 
+Pattern 24
 _ZN2ft17TxtAxis1RefSwitch13moveRefThreadEv
 _ZN2ft17TxtAxis1RefSwitch13moveRefThreadEv
 _ZN2ft17TxtAxis1RefSwitch7moveRefEv
@@ -234,7 +234,7 @@ _ZN2ft8toStringENS_16TxtAxis_status_tE
 _ZN2ft7TxtAxis15isSwitchPressedEh
 _ZN2ft7TxtAxis11setMotorOffEv
 
-Block 25: 
+Pattern 25
 _ZN2ft17TxtAxis1RefSwitch12resetCounterEv
 _ZN2ft7TxtAxis9setStatusENS_16TxtAxis_status_tE
 _ZN2ft8toStringENS_16TxtAxis_status_tE
@@ -242,11 +242,11 @@ _ZN2ft15SubjectObserver6NotifyEv
 _ZN2ft18TxtSimulationModel12setActStatusEbNS_27TxtSimulationModel_status_tE
 _ZN2ft15SubjectObserver6NotifyEv
 
-Block 26: 
+Pattern 26
 _ZN2ft18TxtSimulationModel9getStatusEv
 _ZN2ft18TxtSimulationModel8isActiveEv
 
-Block 27: 
+Pattern 27
 _ZN2ft20TxtMqttFactoryClient19publishStateStationENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_13TxtLEDSCode_tES6_liS6_
 _ZN2ft9getnowstrEPc
 _ZN2ft10gettimestrEliPc
@@ -288,25 +288,25 @@ _ZN4mqtt7messageD2Ev
 _ZN4mqtt10buffer_refIcED2Ev
 _ZN4mqtt10buffer_refIcED2Ev
 
-Block 28: 
+Pattern 28
 _ZN2ft7TxtAxis8setSpeedEs
 _ZN2ft7TxtAxis8setSpeedEs
 _ZN2ft7TxtAxis8setSpeedEs
 
-Block 29: 
+Pattern 29
 _ZN2ft18TxtSimulationModel12setActStatusEbNS_27TxtSimulationModel_status_tE
 _ZN2ft15SubjectObserver6NotifyEv
 
-Block 30: 
+Pattern 30
 _ZN2ft18TxtSimulationModel9getStatusEv
 _ZN2ft18TxtSimulationModel8isActiveEv
 
-Block 31: 
+Pattern 31
 _ZN2ft20TxtMqttFactoryClient19publishStateStationENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_13TxtLEDSCode_tES6_liS6_
 _ZN2ft9getnowstrEPc
 _ZN2ft10gettimestrEliPc
 
-Block 32: 
+Pattern 32
 _ZN4mqtt10buffer_refIcEC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
 _ZN4mqtt10buffer_refIcEC2EONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
 _ZN4mqtt12make_messageENS_10buffer_refIcEES1_
@@ -345,15 +345,15 @@ _ZN4mqtt7messageD2Ev
 _ZN4mqtt10buffer_refIcED2Ev
 _ZN4mqtt10buffer_refIcED2Ev
 
-Block 33: 
+Pattern 33
 _ZN2ft7TxtAxis11setMotorOffEv
 _ZN2ft7TxtAxis9setStatusENS_16TxtAxis_status_tE
 _ZN2ft8toStringENS_16TxtAxis_status_tE
 
-Block 34: 
+Pattern 34
 _ZN2ft17TxtAxis1RefSwitch13moveRefThreadEv
 
-Block 35: 
+Pattern 35
 _ZN2ft17TxtAxis1RefSwitch13moveRefThreadEv
 _ZN2ft17TxtAxis1RefSwitch7moveRefEv
 _ZN2ft17TxtAxis1RefSwitch12resetCounterEv
@@ -382,11 +382,11 @@ _ZN2ft15SubjectObserver6NotifyEv
 _ZN2ft18TxtSimulationModel12setActStatusEbNS_27TxtSimulationModel_status_tE
 _ZN2ft15SubjectObserver6NotifyEv
 
-Block 36: 
+Pattern 36
 _ZN2ft18TxtSimulationModel9getStatusEv
 _ZN2ft18TxtSimulationModel8isActiveEv
 
-Block 37: 
+Pattern 37
 _ZN2ft20TxtMqttFactoryClient19publishStateStationENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_13TxtLEDSCode_tES6_liS6_
 _ZN2ft9getnowstrEPc
 _ZN2ft10gettimestrEliPc
@@ -428,14 +428,14 @@ _ZN4mqtt7messageD2Ev
 _ZN4mqtt10buffer_refIcED2Ev
 _ZN4mqtt10buffer_refIcED2Ev
 
-Block 38: 
+Pattern 38
 _ZN2ft15SubjectObserver6NotifyEv
 
-Block 39: 
+Pattern 39
 _ZN2ft18TxtSimulationModel9getStatusEv
 _ZN2ft18TxtSimulationModel8isActiveEv
 
-Block 40: 
+Pattern 40
 _ZN2ft20TxtMqttFactoryClient19publishStateStationENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_13TxtLEDSCode_tES6_liS6_
 _ZN2ft9getnowstrEPc
 _ZN2ft10gettimestrEliPc
@@ -477,14 +477,14 @@ _ZN4mqtt7messageD2Ev
 _ZN4mqtt10buffer_refIcED2Ev
 _ZN4mqtt10buffer_refIcED2Ev
 
-Block 41: 
+Pattern 41
 _ZN2ft15SubjectObserver6NotifyEv
 
-Block 42: 
+Pattern 42
 _ZN2ft9getnowstrEPc
 _ZN2ft10gettimestrEliPc
 
-Block 43: 
+Pattern 43
 _ZN4mqtt10buffer_refIcEC2EONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
 _ZN4mqtt12make_messageENS_10buffer_refIcEES1_
 _ZN4mqtt10buffer_refIcEC2EOS1_
@@ -513,7 +513,7 @@ _ZNK4mqtt7message9get_topicB5cxx11Ev
 _ZNK4mqtt10buffer_refIcEcvbEv
 _ZNK4mqtt10buffer_refIcE3strB5cxx11Ev
 
-Block 44: 
+Pattern 44
 _ZN2ft23action_listener_publish10on_successERKN4mqtt5tokenE
 _ZNK4mqtt17string_collection5emptyEv
 _ZNK4mqtt17string_collection4sizeEv
@@ -524,7 +524,7 @@ _ZN4mqtt7messageD2Ev
 _ZN4mqtt10buffer_refIcED2Ev
 _ZN4mqtt10buffer_refIcED2Ev
 
-Block 45: 
+Pattern 45
 _ZN2ft20TxtMqttFactoryClient19publishStateStationENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_13TxtLEDSCode_tES6_liS6_
 _ZN2ft9getnowstrEPc
 _ZN2ft10gettimestrEliPc
@@ -557,7 +557,7 @@ _ZNK4mqtt7message9get_topicB5cxx11Ev
 _ZNK4mqtt10buffer_refIcEcvbEv
 _ZNK4mqtt10buffer_refIcE3strB5cxx11Ev
 
-Block 46: 
+Pattern 46
 _ZN2ft23action_listener_publish10on_successERKN4mqtt5tokenE
 _ZNK4mqtt17string_collection5emptyEv
 _ZNK4mqtt17string_collection4sizeEv
@@ -568,14 +568,14 @@ _ZN4mqtt7messageD2Ev
 _ZN4mqtt10buffer_refIcED2Ev
 _ZN4mqtt10buffer_refIcED2Ev
 
-Block 47: 
+Pattern 47
 _ZN2ft15SubjectObserver6NotifyEv
 
-Block 48: 
+Pattern 48
 _ZN2ft9getnowstrEPc
 _ZN2ft10gettimestrEliPc
 
-Block 49: 
+Pattern 49
 _ZN4mqtt10buffer_refIcEC2EONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
 _ZN4mqtt12make_messageENS_10buffer_refIcEES1_
 _ZN4mqtt10buffer_refIcEC2EOS1_
@@ -604,7 +604,7 @@ _ZNK4mqtt7message9get_topicB5cxx11Ev
 _ZNK4mqtt10buffer_refIcEcvbEv
 _ZNK4mqtt10buffer_refIcE3strB5cxx11Ev
 
-Block 50: 
+Pattern 50
 _ZN2ft23action_listener_publish10on_successERKN4mqtt5tokenE
 _ZNK4mqtt17string_collection5emptyEv
 _ZNK4mqtt17string_collection4sizeEv
@@ -615,13 +615,13 @@ _ZN4mqtt7messageD2Ev
 _ZN4mqtt10buffer_refIcED2Ev
 _ZN4mqtt10buffer_refIcED2Ev
 
-Block 51: 
+Pattern 51
 _ZNK4mqtt10buffer_refIcE5emptyEv
 
-Block 52: 
+Pattern 52
 _ZN8callback15message_arrivedESt10shared_ptrIKN4mqtt7messageEE
 
-Block 53: 
+Pattern 53
 _ZNK4mqtt7message9get_topicB5cxx11Ev
 _ZNK4mqtt10buffer_refIcEcvbEv
 _ZNK4mqtt10buffer_refIcE3strB5cxx11Ev
@@ -636,29 +636,29 @@ _ZNK4mqtt7message15get_payload_strB5cxx11Ev
 _ZNK4mqtt10buffer_refIcEcvbEv
 _ZNK4mqtt10buffer_refIcE3strB5cxx11Ev
 
-Block 54: 
+Pattern 54
 _ZN2ft20trycheckTimestampTTLERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEd
 _ZN2ft15trygettimepointERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
 
-Block 55: 
+Pattern 55
 _ZN2ft10gettimestrEliPc
 
-Block 56: 
+Pattern 56
 _ZN2ft11time_offsetEv
 
-Block 57: 
+Pattern 57
 _ZN2ft12TxtWorkpieceC2Ev
 
-Block 58: 
+Pattern 58
 _ZN4mqtt7messageD2Ev
 _ZN4mqtt10buffer_refIcED2Ev
 _ZN4mqtt10buffer_refIcED2Ev
 
-Block 59: 
+Pattern 59
 _ZN2ft9getnowstrEPc
 _ZN2ft10gettimestrEliPc
 
-Block 60: 
+Pattern 60
 _ZN4mqtt10buffer_refIcEC2EONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
 _ZN4mqtt12make_messageENS_10buffer_refIcEES1_
 _ZN4mqtt10buffer_refIcEC2EOS1_
@@ -687,7 +687,7 @@ _ZNK4mqtt7message9get_topicB5cxx11Ev
 _ZNK4mqtt10buffer_refIcEcvbEv
 _ZNK4mqtt10buffer_refIcE3strB5cxx11Ev
 
-Block 61: 
+Pattern 61
 _ZN2ft23action_listener_publish10on_successERKN4mqtt5tokenE
 _ZNK4mqtt17string_collection5emptyEv
 _ZNK4mqtt17string_collection4sizeEv
@@ -698,14 +698,14 @@ _ZN4mqtt7messageD2Ev
 _ZN4mqtt10buffer_refIcED2Ev
 _ZN4mqtt10buffer_refIcED2Ev
 
-Block 62: 
+Pattern 62
 _ZN2ft15SubjectObserver6NotifyEv
 
-Block 63: 
+Pattern 63
 _ZN2ft9getnowstrEPc
 _ZN2ft10gettimestrEliPc
 
-Block 64: 
+Pattern 64
 _ZN4mqtt10buffer_refIcEC2EONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
 _ZN4mqtt12make_messageENS_10buffer_refIcEES1_
 _ZN4mqtt10buffer_refIcEC2EOS1_
@@ -734,7 +734,7 @@ _ZNK4mqtt7message9get_topicB5cxx11Ev
 _ZNK4mqtt10buffer_refIcEcvbEv
 _ZNK4mqtt10buffer_refIcE3strB5cxx11Ev
 
-Block 65: 
+Pattern 65
 _ZN2ft23action_listener_publish10on_successERKN4mqtt5tokenE
 _ZNK4mqtt17string_collection5emptyEv
 _ZNK4mqtt17string_collection4sizeEv
@@ -745,20 +745,20 @@ _ZN4mqtt7messageD2Ev
 _ZN4mqtt10buffer_refIcED2Ev
 _ZN4mqtt10buffer_refIcED2Ev
 
-Block 66: 
+Pattern 66
 _ZN2ft7TxtAxis9setStatusENS_16TxtAxis_status_tE
 _ZN2ft8toStringENS_16TxtAxis_status_tE
 
-Block 67: 
+Pattern 67
 _ZN2ft7TxtAxis9setStatusENS_16TxtAxis_status_tE
 _ZN2ft8toStringENS_16TxtAxis_status_tE
 _ZN2ft15SubjectObserver6NotifyEv
 
-Block 68: 
+Pattern 68
 _ZN2ft18TxtSimulationModel9getStatusEv
 _ZN2ft18TxtSimulationModel8isActiveEv
 
-Block 69: 
+Pattern 69
 _ZN2ft20TxtMqttFactoryClient19publishStateStationENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS_13TxtLEDSCode_tES6_liS6_
 _ZN2ft9getnowstrEPc
 _ZN2ft10gettimestrEliPc
@@ -791,7 +791,7 @@ _ZNK4mqtt7message9get_topicB5cxx11Ev
 _ZNK4mqtt10buffer_refIcEcvbEv
 _ZNK4mqtt10buffer_refIcE3strB5cxx11Ev
 
-Block 70: 
+Pattern 70
 _ZN2ft23action_listener_publish10on_successERKN4mqtt5tokenE
 _ZNK4mqtt17string_collection5emptyEv
 _ZNK4mqtt17string_collection4sizeEv
@@ -802,14 +802,14 @@ _ZN4mqtt7messageD2Ev
 _ZN4mqtt10buffer_refIcED2Ev
 _ZN4mqtt10buffer_refIcED2Ev
 
-Block 71: 
+Pattern 71
 _ZN2ft15SubjectObserver6NotifyEv
 
-Block 72: 
+Pattern 72
 _ZN2ft9getnowstrEPc
 _ZN2ft10gettimestrEliPc
 
-Block 73: 
+Pattern 73
 _ZN4mqtt10buffer_refIcEC2EONSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
 _ZN4mqtt12make_messageENS_10buffer_refIcEES1_
 _ZN4mqtt10buffer_refIcEC2EOS1_
@@ -838,4 +838,4 @@ _ZNK4mqtt7message9get_topicB5cxx11Ev
 _ZNK4mqtt10buffer_refIcEcvbEv
 _ZNK4mqtt10buffer_refIcE3strB5cxx11Ev
 
-Number of blocks: 73
+Number of patterns: 73
