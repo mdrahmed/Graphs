@@ -4,6 +4,7 @@
 # step1.1-hbw_vgr_common - this folder will contain common patterns between hbw all retrievals and 1 vgr file
 # step1.2-noises_removed - this folder will contain updated hbw retrievals which is obtained after removing the noises
 # step2-extracted_common_part_retrieval - this folder will contain the extracted common pattern between multiple retrievals
+# use `-o` to do maintain the order and without `-o`, this will go back and forth to remove the patterns.
 ## python3 find_remove_patterns.py ../Data/hbw-Retrievals/ -f ../Data/vgr-traces/vgrall3.txt -o
 
 
