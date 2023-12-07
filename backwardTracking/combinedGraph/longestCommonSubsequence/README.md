@@ -1,8 +1,8 @@
 ## For data mining task, we used 3 steps
-1. Step 1 & step 2:
-	Folder: `./file-common-patterns/`
-	Program: `find_remove_patterns.py`
-	Run: `python3 find_remove_patterns.py ../Data/hbw-Retrievals/ -f ../Data/vgr-traces/vgrall3.txt -o`
+1. Step 1 & step 2:</br>
+	Folder: `./file-common-patterns/`</br>
+	Program: `find_remove_patterns.py`</br>
+	Run: `python3 find_remove_patterns.py ../Data/hbw-Retrievals/ -f ../Data/vgr-traces/vgrall3.txt -o`</br>
 
    Step1: The updated retrieval/store traces will be written to this folder `./file-common-patterns/step1.2-noises_removed`
    Step2: The common patterns will be extracted and it will be present here `step2-extracted_common_part_retrieval`
