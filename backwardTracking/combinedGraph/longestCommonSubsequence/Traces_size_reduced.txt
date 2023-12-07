@@ -1,0 +1,29 @@
+The data reduced to following sizes:
+The original size of ALL retrieval process-S1:
+./Data/hbw-Retrievals/1retrieval.txt: 8301
+./Data/hbw-Retrievals/2retrieval.txt: 12452
+./Data/hbw-Retrievals/3retrieval.txt: 20260
+
+S1 minus common pattern size between VGR and HBW = S2:
+./file-common-patterns/step1.2-noises_removed/1retrieval.out.txt: 7248
+./file-common-patterns/step1.2-noises_removed/2retrieval.out.txt: 10637
+./file-common-patterns/step1.2-noises_removed/3retrieval.out.txt: 17959
+
+The size of common part among multiple retrieval processes (S2', S2'', S2''', ...) = S3:
+./file-common-patterns/step2-extracted_common_part_retrieval/patterns: 2425
+
+S3 minus high-frequent patterns = S4:
+./step3/updated_idf_traces/updated_idf_traces_0.0004: 0
+./step3/updated_idf_traces/updated_idf_traces_0.0005: 0
+./step3/updated_idf_traces/updated_idf_traces_0.001: 20
+./step3/updated_idf_traces/updated_idf_traces_0.005: 51
+./step3/updated_idf_traces/updated_idf_traces_0.015: 113
+./step3/updated_idf_traces/updated_idf_traces_0.01: 99
+./step3/updated_idf_traces/updated_idf_traces_0.02: 131
+./step3/updated_idf_traces/updated_idf_traces_0.03: 131
+./step3/updated_idf_traces/updated_idf_traces_0.05: 169
+
+This following file contains all the functions which has a thresold of 0.005.
+./step3/updated_idf_traces/updated_idf_traces_0.005: 51
+
+

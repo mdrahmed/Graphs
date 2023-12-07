@@ -20,7 +20,8 @@ def get_word_frequencies(file_path):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     # specifying input dir to following
-    parser.add_argument("--input_dir", type=str, default="../step2/")
+    #parser.add_argument("--input_dir", type=str, default="../step2/")
+    parser.add_argument("--input_dir", type=str, default="../file-common-patterns/step2-extracted_common_part_retrieval/")
     parser.add_argument("--fname", type=str, required=True)
     parser.add_argument("--freq_to_remove", type=str, required=True)
     args = parser.parse_args()

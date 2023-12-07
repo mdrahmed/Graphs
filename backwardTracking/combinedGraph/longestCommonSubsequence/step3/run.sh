@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# according to the README.md of ../step3-data the following files has minimum traces will most important functions
-# files=("uniqueVariantTraces_1000_256_1_10_100" "uniqueVariantTraces_1000_256_2_10_100")
+# Input folder: ../step2/
+# Input file: patterns
 files=("patterns")
 freq_to_remove=("0.05" "0.03" "0.02" "0.015" "0.01" "0.005" "0.001" "0.0005" "0.0004")
 
