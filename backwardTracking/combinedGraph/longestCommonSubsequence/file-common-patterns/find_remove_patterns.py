@@ -25,9 +25,9 @@ def main():
     filepath = args.file if args.file else None
 
     init_dir()
-    find_and_remove_patterns(directory_path, pattern, order, filepath)
+    find_and_remove_patterns(directory_path, pattern, order=False, filepath=filepath)
     patterns = longest_common_line_sequence(
-        FOLDERS[1], pattern, order, filepath=None)
+        FOLDERS[1], pattern, order=True, filepath=None)
     dump_file(os.path.join(FOLDERS[2], 'patterns'), patterns+'\n')
 
 

@@ -26,3 +26,7 @@ def dump_file(filename: str, data: str):
 
 def get_file_list(directory: str) -> list:
     return [f for f in os.listdir(directory) if f.endswith('.txt')]
+
+def get_filename(filepath:str):
+    return filepath.split(
+                os.path.sep)[-1].split('/')[-1].split('\\')[-1]

@@ -25,8 +25,7 @@ def find_and_remove_patterns(directory: str, pattern: bool = False, order: bool 
     if filepath:
         if os.path.isfile(filepath):
             common_sequence = load_file(filepath)
-            key = filepath.split(
-                os.path.sep)[-1].split('/')[-1].split('\\')[-1]
+            key = get_filename(filepath)
             if key in txt_files:
                 txt_files.remove(key)
         else:
