@@ -1,5 +1,5 @@
 from core.find_and_remove import init_dir, find_and_remove_patterns, FOLDERS
-from core.find import longest_common_line_sequence
+from core.find import LCS_in_dir
 from core.utils import dump_file
 import argparse
 import os
@@ -25,8 +25,9 @@ def main():
     filepath = args.file if args.file else None
 
     init_dir()
-    find_and_remove_patterns(directory_path, pattern, order=False, filepath=filepath)
-    patterns = longest_common_line_sequence(
+    find_and_remove_patterns(directory_path, pattern,
+                             order=False, filepath=filepath)
+    patterns = LCS_in_dir(
         FOLDERS[1], pattern, order=True, filepath=None)
     dump_file(os.path.join(FOLDERS[2], 'patterns'), patterns+'\n')
 

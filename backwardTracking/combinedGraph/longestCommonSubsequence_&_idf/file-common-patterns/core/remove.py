@@ -99,6 +99,7 @@ def dedup_patterns(patterns: list):
                 break
         if not found:
             res.append(sorted_patterns[i])
+    res.append(sorted_patterns[-1])
     res.reverse()
     return res
 

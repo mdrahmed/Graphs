@@ -2,17 +2,20 @@ import os
 
 
 EMPTYLINE = ''
-IGNORE = ['FFF Function: ']
+PREFIX = 'FFF Function: '
+IGNORE = [PREFIX]
 
 
-def load_file(filename: str) -> list:
+def load_file(filename: str, ignore: bool = True) -> list:
     res = []
     with open(filename) as rd:
         for line in rd:
             # remove the 'FFF Function: '
             # func_name = line.strip().split()[-1]
-            for ig in IGNORE:
-                func_name = line.replace(ig, '')
+            func_name = line
+            if ignore:
+                for ig in IGNORE:
+                    func_name = func_name.replace(ig, '')
             func_name = func_name.strip()
             if len(func_name) > 0:
                 res.append(func_name)
@@ -27,6 +30,7 @@ def dump_file(filename: str, data: str):
 def get_file_list(directory: str) -> list:
     return [f for f in os.listdir(directory) if f.endswith('.txt')]
 
-def get_filename(filepath:str):
+
+def get_filename(filepath: str):
     return filepath.split(
-                os.path.sep)[-1].split('/')[-1].split('\\')[-1]
+        os.path.sep)[-1].split('/')[-1].split('\\')[-1]

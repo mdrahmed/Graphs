@@ -1,5 +1,5 @@
 import argparse
-from core.find import longest_common_line_sequence
+from core.find import LCS_in_dir
 from core.utils import dump_file
 
 
@@ -25,7 +25,7 @@ def main():
     dump = False if args.dump else True
     filepath = args.file if args.file else None
 
-    patterns = longest_common_line_sequence(
+    patterns = LCS_in_dir(
         directory_path, pattern, order, filepath)
 
     if len(patterns) == 0:

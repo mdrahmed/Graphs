@@ -44,13 +44,7 @@ def find_and_remove_patterns(directory: str, pattern: bool = False, order: bool 
         else:
             tmp = find_longest_common_subsequences(
                 common_sequence, text)
-        res = []
-        for block in tmp:
-            for line in block:
-                res.append(line)
-            if pattern:
-                # add the pattern spliter
-                res.append(EMPTYLINE)
+        res = pattern2list(tmp, pattern)
         output_text, found_indices = remove_patterns_wrapper(text, res)
         pattern_str = result_handler(res, pattern)+'\n'
         dump_file(os.path.join(FOLDERS[0], file+'.pattern'), pattern_str)
