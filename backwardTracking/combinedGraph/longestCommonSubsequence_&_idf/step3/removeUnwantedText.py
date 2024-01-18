@@ -18,7 +18,7 @@ def process_files(input_folder, output_folder, patterns):
 
 # Example usage
 input_folder= './idf_traces/'
-output_folder= './updated_idf_traces'
+output_folder= './step3-updated_idf_traces'
 
 patterns_to_remove = ['Pattern', "pattern", 'patterns', 'Patterns:', 'Longest_pattern_size']
 
