@@ -27,8 +27,12 @@ def dump_file(filename: str, data: str):
         wt.write(data)
 
 
-def get_file_list(directory: str) -> list:
-    return [f for f in os.listdir(directory) if f.endswith('.txt')]
+def get_file_list(directory: str, txt: bool = True) -> list:
+    res = []
+    for f in os.listdir(directory):
+        if (txt and f.endswith('.txt')) or (not txt):
+            res.append(f)
+    return res
 
 
 def get_filename(filepath: str):
