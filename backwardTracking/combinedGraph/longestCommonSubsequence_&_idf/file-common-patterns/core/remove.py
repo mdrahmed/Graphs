@@ -88,6 +88,8 @@ def init_patterns(pattern_file):
 
 def dedup_patterns(patterns: list):
     res = []
+    if len(patterns) == 0:
+        return res
     sorted_patterns = sorted(patterns, key=len, reverse=False)
     strp = [''.join(p) for p in sorted_patterns]
     lenp = len(sorted_patterns)
