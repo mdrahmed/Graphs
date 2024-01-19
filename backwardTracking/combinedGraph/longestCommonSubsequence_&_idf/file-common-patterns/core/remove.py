@@ -75,9 +75,8 @@ def init_patterns(pattern_file):
     patterns = []
     tmp = []
     for line in pattern_file:
-        if line == EMPTYLINE:
-            continue
-        if ' ' in line:
+        # TODO: make sure the spliter
+        if line == EMPTYLINE or ' ' in line:
             if len(tmp) > 0:
                 patterns.append(tmp)
                 tmp = []
