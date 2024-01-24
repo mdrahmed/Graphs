@@ -7,12 +7,20 @@
 # use `-o` to do maintain the order and without `-o`, this will go back and forth to remove the patterns.
 ## python3 find_remove_patterns.py ../Data/hbw-Retrievals/ -f ../Data/vgr-traces/vgrall3.txt -o
 
-echo "ORIGINAL DATASET SIZES:"
-echo "The data reduced to following sizes:"
 
 # The original size of ALL retrieval process-S1: print total lines in all the retrievals present inside the "/home/raihan/Graphs-all/Graphs/backwardTracking/combinedGraph/longestCommonSubsequence/Data/hbw-Retrievals"
-echo "The original size of ALL retrieval process-S1:"
-directory="./Data/hbw-Retrievals"
+directory=$1
+# Check if the directory argument was provided
+if [ -z "$directory" ]; then
+    echo "Usage: $0 <directory>"
+    exit 1
+fi
+
+echo "ORIGINAL DATASET SIZES:"
+echo "The data reduced to following sizes:"
+echo ""
+echo "The original size \"$directory\" - S1:"
+# directory="./Data/hbw-Retrievals"
 find "$directory" -type f -exec sh -c '
     echo -n "{}: "
     wc -l "{}" | cut -d " " -f 1
@@ -21,7 +29,7 @@ echo ""
 
 echo "STEP 1:"
 # S1 minus common pattern size between VGR and HBW = S2: This is present inside this folder - ./file-common-patterns/step1.2-noises_removed
-echo "S1 minus common pattern size between VGR and HBW = S2:"
+echo "S1 minus common pattern size between Data1 and Data2 = S2:"
 directory="./file-common-patterns/step1.2-noises_removed/"
 find "$directory" -type f -exec sh -c '
     echo -n "{}: "
@@ -31,7 +39,7 @@ echo ""
 
 echo "STEP 2:"
 # The size of common part among multiple retrieval processes (S2', S2'', S2''', ...) = S3: This is present in ./file-common-patterns/step2-extracted_common_part_retrieval
-echo "The size of common part among multiple retrieval processes (S2', S2'', S2''', ...) = S3:"
+echo "The size of common part among multiple controller processes (S2', S2'', S2''', ...) = S3:"
 directory="./file-common-patterns/step2-extracted_common_part_retrieval"
 find "$directory" -type f -exec sh -c '
     echo -n "{}: "

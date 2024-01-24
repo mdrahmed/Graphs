@@ -12,7 +12,11 @@
 3. Step 3 - IDF: Remove functions based on frequency
 	Dir: `step3`	  </br>
 	File: `idf.py` 	  </br>
-        Run: `./run.sh` - It will use the `../step2/patterns` file and remove based on the frequency defined in `run.sh`. The updated traces will be written inside `updated_idf_traces`. It will also store the function frequency in `frequent_traces_removed` and the traces will present inside `idf_traces` with unwanted texts like `patterns, Pattern`. `run.sh` will use `removeUnwantedText` to remove unwanted text like `patterns, Pattern` and it will save files inside `updated_idf_traces`. 
+        Run: `./run.sh` - It will use the `../file-common-patterns/step2-extracted_common_part_retrieval/` file and remove based on the frequency defined in `run.sh`. The updated traces will be written inside `step3-updated_idf_traces`. It will also store the function frequency in `frequent_traces_removed` and the traces will present inside `idf_traces` with unwanted texts like `patterns, Pattern`. `run.sh` will use `removeUnwantedText` to remove unwanted text like `patterns, Pattern` and it will save files inside `updated_idf_traces`. 
 
 ## Get reduction numbers
-Execute `shell.sh` to get the reduced numbers. After executing this, manually check which file has all the important functions. 
+Execute `shell.sh <directory>` to get the reduced numbers. After executing this, manually check which file has all the important functions. 
+Example usage:
+```
+sh shell.sh step3
+```
