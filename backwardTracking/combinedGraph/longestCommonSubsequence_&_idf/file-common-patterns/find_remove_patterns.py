@@ -3,6 +3,7 @@ from core.find import LCS_in_dir
 from core.utils import dump_file
 import argparse
 import os
+import time
 
 
 def main():
@@ -33,4 +34,7 @@ def main():
 
 
 if __name__ == "__main__":
+    start = time.time()
     main()
+    end = time.time()
+    print("Run time: {} s".format(end-start))
